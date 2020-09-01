@@ -140,11 +140,11 @@
 
                             <ul class="list-unstyled f_list">
 
-                                <li><a href="#Tentang">Tentang</a></li>
+                                <li><a href="/about">Tentang</a></li>
 
                                 <li><a href="#">Layanan</a></li>
 
-                                <li><a href="#">Berita</a></li>
+                                <li><a href="/blog">Berita</a></li>
 
                                 <li><a href="#">FAQ</a></li>
 

@@ -115,7 +115,7 @@
 
                 <div class=" text-center bg-black-50">
 
-                    <img class="img-top logo" src="img/care.png" alt="Card">
+                    <img class="img-top logo" src="Asset/img/care.png" alt="Card">
 
                     <div class="card-body">
 
@@ -135,7 +135,7 @@
 
                 <div class=" text-center bg-black-50">
 
-                    <img class="img-top logo" src="img/diamon.png" alt="Card">
+                    <img class="img-top logo" src="Asset/img/diamon.png" alt="Card">
 
                     <div class="card-body">
 
@@ -155,7 +155,7 @@
 
                 <div class=" text-center bg-black-50">
 
-                    <img class="img-top logo" src="img/jempol.png" alt="Card d">
+                    <img class="img-top logo" src="Asset/img/jempol.png" alt="Card d">
 
                     <div class="card-body">
 
