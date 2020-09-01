@@ -72,7 +72,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <input type="submit" class="btnRegister" value="Kirim" />
+                                <input type="submit" class="btnRegister" value="submit" />
                     </form>
                 </div>
             </div>
