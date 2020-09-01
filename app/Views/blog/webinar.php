@@ -3,7 +3,7 @@
 
 <?= $this->section('head'); ?>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="keywords" content="Apps,Spairum,Lisma ,Untan,Statup pontianak,Naufal,Fakhry">
+<meta name="keywords" content="Apps,Spairum,Lisma ,Untan,Statup pontianak,Naufal,Fakhry, berita, launcing, ycsa">
 <meta name="description" content="Registrasi Wbinar & Product Launching SPAIRUM : Make Indonesia Beautiful with Plastic Free">
 
 <?= $this->endSection('head'); ?>
