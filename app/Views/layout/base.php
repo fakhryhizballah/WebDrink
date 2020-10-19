@@ -13,7 +13,7 @@
 
     <link href="Asset/css/desain.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Quicksand" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -26,13 +26,13 @@
 
     <!-- Vendor CSS Files -->
 
-    <link href="Asset/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="Asset/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
 
-    <link href="Asset/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <!-- <link href="Asset/vendor/animate.css/animate.min.css" rel="stylesheet"> -->
 
-    <link href="Asset/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- <link href="Asset/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
 
-    <link href="Asset/vendor/venobox/venobox.css" rel="stylesheet">
+    <!-- <link href="Asset/vendor/venobox/venobox.css" rel="stylesheet"> -->
 
 
     <!-- Vendor CSS Files -->

@@ -30,7 +30,7 @@
             <hr> -->
 
             <!-- Preview Image -->
-            <!-- <img class="img-fluid rounded" src="Asset/img/Blog/<?= $blog['sampul']; ?>" alt="<?= $blog['sampul']; ?>"> -->
+
             <img class="img-fluid rounded" src="/Asset/img/Blog/<?= $blog['sampul']; ?>" alt="<?= $blog['sampul']; ?>">
 
             <hr>
