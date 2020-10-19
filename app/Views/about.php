@@ -10,6 +10,8 @@
 
 <?= $this->section('layout'); ?>
 
+<div class="flash-data" data-flashdata="<?= session()->getFlashdata('flash'); ?>"></div>
+
 <div class="bg-light">
     <div class="container py-5">
         <div class="row h-100 align-items-center py-5">
@@ -63,10 +65,10 @@
                 <div class="bg-white rounded shadow-sm py-5 px-4"><img src="Asset/img/Fakhry.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
                     <h5 class="mb-0">Fakhry Hizballah Al Muminurradian</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
                     <ul class="social mb-0 list-inline mt-3">
-                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
-                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
-                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.facebook.com/adelle.alexa.96" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <!-- <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li> -->
+                        <li class="list-inline-item"><a href="https://www.instagram.com/hizballah_al" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/fakhry-hizballah-al-a99b951a3/?originalSubdomain=id" class="social-link"><i class="fa fa-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -77,19 +79,19 @@
                 <div class="bg-white rounded shadow-sm py-5 px-4"><img src="Asset/img/Team-Naufal.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
                     <h5 class="mb-0">Naufal Fadlurahman Irdasyah</h5><span class="small text-uppercase text-muted">CFO - Founder</span>
                     <ul class="social mb-0 list-inline mt-3">
-                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
-                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.facebook.com/necro.bradley" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <!-- <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li> -->
+                        <li class="list-inline-item"><a href="https://www.instagram.com/naufal_irdasyah/" class="social-link"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-xl-3 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="Asset/img/Team-Naufal.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="Asset/img/Gusti.jpeg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
                     <h5 class="mb-0">Gusti Muhammad Furkan Azmi</h5><span class="small text-uppercase text-muted">Hacker Web Developer</span>
                     <ul class="social mb-0 list-inline mt-3">
-                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
-                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <!-- <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li> -->
+                        <li class="list-inline-item"><a href="https://www.instagram.com/gusti_mfa/" class="social-link"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -97,9 +99,9 @@
                 <div class="bg-white rounded shadow-sm py-5 px-4"><img src="Asset/img/Ridha.jpeg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
                     <h5 class="mb-0">Asha Ridha Hijeriya</h5><span class="small text-uppercase text-muted">CMO - CO-Founder</span>
                     <ul class="social mb-0 list-inline mt-3">
-                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
-                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.facebook.com/sacha.hijeriya" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/sacha_hijeriya1" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/asharidha/" class="social-link"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -113,4 +115,18 @@
                     </ul>
                 </div>
             </div>
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834132/avatar-4_ozhrib.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Puji Astuti</h5><span class="small text-uppercase text-muted">Hipster</span>
+                    <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- sweet alert -->
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+            <script src="Asset/Js/script.js"></script>
             <?= $this->endSection('layout'); ?>

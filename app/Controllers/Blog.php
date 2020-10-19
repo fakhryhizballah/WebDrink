@@ -4,27 +4,49 @@ namespace App\Controllers;
 
 use CodeIgniter\Controller;
 use App\Models\WebinarModel;
+use App\Models\BlogModel;
 
-class Blog extends Controller
+class Blog extends BaseController
 {
     public function __construct()
     {
         $this->WebinarModel = new WebinarModel();
         $this->email = \Config\Services::email();
+        $this->BlogModel = new BlogModel();
     }
 
     public function index()
     {
+        // $blog = $this->BlogModel->findAll();
+        $blog = $this->BlogModel->getBlog();
+        // $blog = $this->BlogModel->orderBy('created_at', 'DESC');
+        // dd($blog);
         $data = [
             'title' => 'Blog |Spairum.com',
+            'blog' => $blog
 
         ];
-        return view('blog/head', $data);
+
+
+        return view('blog/blog', $data);
+    }
+
+    public function detail($slug)
+    {
+        $blog = $this->BlogModel->getBlog($slug);
+        // dd($blog);
+
+        $data = [
+            'title' => 'Blog |Spairum.com',
+            'blog' => $blog
+
+        ];
+        return view('blog/detail', $data);
     }
     public function webinar()
     {
         $data = [
-            'title' => 'Blog |Spairum.com',
+            'title' => 'Launching |Spairum.com',
 
         ];
         return view('blog/webinar', $data);
@@ -38,6 +60,8 @@ class Blog extends Controller
             'email' => $email,
             'telp' => $this->request->getVar('telp'),
             'ket' => $this->request->getVar('ket'),
+            'instansi' => $this->request->getVar('instansi'),
+            'confim' => $this->request->getVar('confim'),
         ]);
 
         $this->email->setFrom('support@apps.spairum.com', 'noreply-spairum');
@@ -59,6 +83,7 @@ class Blog extends Controller
         <br>Link untuk siaran launcing spairum akan kami kirimkan melalui Whataap dan Email yang telah $nama submit
         CP: <a href='https://wa.me/+62895373130201/?text=saya%20$nama%20ingin%20bertanya'>0895373130201</a> Naufal </p> ");
         $this->email->send();
-        return redirect()->to('/');
+        session()->setFlashdata('flash', 'Registration success.');
+        return redirect()->to('/about');
     }
 }

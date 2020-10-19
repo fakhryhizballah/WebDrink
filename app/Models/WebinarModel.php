@@ -17,6 +17,7 @@ class WebinarModel extends Model
         'email',
         'telp',
         'ket',
+        'instansi',
         'confim',
     ];
 }

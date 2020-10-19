@@ -36,6 +36,7 @@ $routes->get('/team', 'Home::team');
 $routes->get('/about', 'Home::about');
 
 $routes->get('/blog', 'Blog::index');
+$routes->get('/blog/(:segment)', 'Blog::detail/$1');
 $routes->get('/webinar', 'Blog::webinar');
 
 /**

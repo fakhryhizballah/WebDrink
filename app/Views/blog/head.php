@@ -17,32 +17,10 @@
         <small>Event Spairum</small>
     </h1>
 
-    <!-- Portfolio Item Row -->
-    <div class="row">
 
-        <div class="col-md-8">
-            <img class="img-fluid" src="Asset/img/blog/laucing.jpg" alt="Launcing">
-        </div>
-
-        <div class="col-md-4">
-            <h3 class="my-3">Official Launching of Spairum</h3>
-            <p>SPAIRUM merupakan salah satu socialenterprice yang berupaya untuk membuat indonesia bebas dari plastik dengan cara menerapkan kebiasaan menggunakan botol kemasan plastik sekali pakai dengan kebiasaan mengisi air ulang di stasiun terdekat,
-
-                Hari hari yang akan di nantikan peluncuan startup spairum akan dia adakan pada tanggal 16 September 2020, pukul 14.00 WIB. berubung dalam masa pandemi covid-19 kegiatan tersebut akan diadakan secara live on youtube atamericaa</p>
-            <h3 class="my-4">Mari hadiri acara Launching Product Spairum dengan hadir pada </h3>
-            <p>Wednesday, 16 september 2020
-                14.00-16.00 WIB
-                Live broadcast on
-                Facebook, Instagram, and Youtube(@america Channel)</p>
-            <p>Registrasi Wbinar & Product Launching SPAIRUM : Make Indonesia Beautiful with Plastic Free</p>
-            <a class="btn btn-primary" href="/webinar">Registrasi</a>
-        </div>
-
-    </div>
-    <!-- /.row -->
 
     <!-- Related Projects Row -->
-    <h3 class="my-4">Related Projects</h3>
+    <!-- <h3 class="my-4">Related Projects</h3> -->
 
     <hr>
 
@@ -50,7 +28,7 @@
     <div class="row">
         <div class="col-md-7">
             <a href="#">
-                <img class="img-fluid rounded mb-3 mb-md-0" src="Asset/img/blog/YCSE 2.0 Day 2-0112.jpg" alt="">
+                <img class="img-fluid rounded mb-3 mb-md-0" src="Asset/img/Blog/YCSE.jpg" alt="">
             </a>
         </div>
         <div class="col-md-5">
@@ -66,7 +44,7 @@
     <div class="row">
         <div class="col-md-7">
             <a href="#">
-                <img class="img-fluid rounded mb-3 mb-md-0" src="Asset/img/blog/pertamina.jpg" alt="">
+                <img class="img-fluid rounded mb-3 mb-md-0" src="Asset/img/Blog/pertamina.jpg" alt="">
             </a>
         </div>
         <div class="col-md-5">
