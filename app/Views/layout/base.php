@@ -83,7 +83,7 @@
                         <a class="nav-link text-dark" href="/about">About Us</a>
                     </li>
 
-
+                    <!-- 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-dark" href="#" id="layanan-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"=>Service</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -94,9 +94,13 @@
 
                             <a class="dropdown-item" href="#">Tempat Usaha</a>
                         </div>
-                    </li>
+                    </li> 
+                    -->
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="/blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="/careers">Karir</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="#">FAQ</a>
@@ -144,7 +148,7 @@
 
                                 <li><a href="#">Langanan</a></li>
 
-                                <li><a href="#">Karir</a></li>
+                                <li><a href="/careers">Karir</a></li>
 
                             </ul>
 
@@ -265,6 +269,9 @@
 
 
     <!-- Template Main JS File -->
+    <!-- sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="Asset/js/script.js"></script>
 
     <script src="assets/js/main.js"></script>
 
