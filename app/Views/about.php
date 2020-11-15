@@ -11,6 +11,7 @@
 <?= $this->section('layout'); ?>
 
 <div class="flash-data" data-flashdata="<?= session()->getFlashdata('flash'); ?>"></div>
+<div class="flash-Success" data-flashdata="<?= session()->getFlashdata('Berhasil'); ?>"></div>
 
 <div class="bg-light">
     <div class="container py-5">
@@ -128,5 +129,5 @@
 
             <!-- sweet alert -->
             <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-            <script src="Asset/Js/script.js"></script>
+            <script src="Asset/js/script.js"></script>
             <?= $this->endSection('layout'); ?>
