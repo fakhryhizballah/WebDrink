@@ -36,7 +36,13 @@ $routes->get('/team', 'Home::team');
 $routes->get('/about', 'Home::about');
 
 $routes->get('/blog', 'Blog::index');
-$routes->get('/blog/(:segment)', 'Blog::detail/$1');
+$routes->get('blog/(:segment)', 'Blog::detail/$1');
+
+$routes->add('/careers', 'Karir::index');
+$routes->post('/jobs', 'Karir::daftar');
+
+
+
 $routes->get('/webinar', 'Blog::webinar');
 
 /**

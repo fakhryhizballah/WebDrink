@@ -641,7 +641,7 @@
     }
     
     .our-webcoderskull {
-        /* background: url("http://www.webcoderskull.com/img/right-sider-banner.png") no-repeat center top / cover; */
+        background: url("http://www.webcoderskull.com/img/right-sider-banner.png") no-repeat center top / cover;
     }
     
     .our-webcoderskull .cnt-block {
@@ -851,3 +851,48 @@
         color: #fff;
     }
     /* end Even regis css */
+
+    header.masthead {
+        position: relative;
+        background-color: #343a40;
+        /* background: url("/Asset/img/team-meeting.jpg") no-repeat center center; */
+        background: url("/Asset/img/banner_depot.jpg") no-repeat center center;
+        background-size: cover;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+      }
+      
+      header.masthead .overlay {
+        position: absolute;
+        background-color: #212529;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.3;
+      }
+      
+      header.masthead h1 {
+        font-size: 2rem;
+      }
+      .features-icons {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+      }
+      
+      .features-icons .features-icons-item {
+        max-width: 20rem;
+      }
+      
+      .features-icons .features-icons-item .features-icons-icon {
+        height: 7rem;
+      }
+      
+      .features-icons .features-icons-item .features-icons-icon i {
+        font-size: 4.5rem;
+      }
+      
+      .features-icons .features-icons-item:hover .features-icons-icon i {
+        font-size: 5rem;
+      }
+      
