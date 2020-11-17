@@ -75,10 +75,10 @@
                                     <input type="text" class="form-control" name="jurusan" placeholder="Pendidikan Jurusan Studi*" value="" required />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="masuk" placeholder="Tahun Masuk Sekolah*" value="" required />
+                                    <input type="number" class="form-control" name="masuk" placeholder="Tahun Masuk Sekolah*" value="" required />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="lulus" placeholder="Tahun Lulus Sekolah*" value="" required />
+                                    <input type="number" class="form-control" name="lulus" placeholder="Tahun Lulus Sekolah*" value="" required />
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control" name="link" placeholder="URL Situs Web (Instagram/Linkin/profil)" value="" required />
