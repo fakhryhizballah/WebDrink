@@ -116,7 +116,6 @@ class Karir extends BaseController
         </table>
         ");
         $this->email->send();
-
         $this->email->setFrom('support@spairum.com', 'noreply-rekrutmen spairum');
         $this->email->setTo($email);
         $email->setCC('necrobradley@gmail.com', 'asharidha2014@gmail.com', 'fakhryhiz@student.untan.ac.id');
