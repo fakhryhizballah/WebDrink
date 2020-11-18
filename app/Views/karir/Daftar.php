@@ -81,7 +81,7 @@
                                     <input type="number" class="form-control" name="lulus" placeholder="Tahun Lulus Sekolah*" value="" required />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="link" placeholder="URL Situs Web (Instagram/Linkin/profil)" value="" required />
+                                    <input type="text" class="form-control" minlength="12" name="link" placeholder="URL Situs Web (Instagram/Linkin/profil)" value="" required />
                                 </div>
                                 <div class="form-group">
                                     <select class="form-control" name="info">

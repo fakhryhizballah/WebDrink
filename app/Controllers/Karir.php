@@ -85,7 +85,7 @@ class Karir extends BaseController
                     Perkenalkan nama saya $nama
                     <br>saya lulusan dari $sekolah, jurusan $jurusan lulus tahun $tahun
                     <br> Email: $email
-                    <br> Nomor Whatsapp: $telp
+                    <br> Nomor Whatsapp: <a href='https://wa.me/+62$telp?text=Hai%20saya%20saya%20dari%20Tim%20Spairum'> $telp <strong>($nama)</strong> </a> 
                     <br>
                     <br> saya ingin melamar di posisi $posisi
                     </p>
