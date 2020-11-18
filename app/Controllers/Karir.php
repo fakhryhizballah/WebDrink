@@ -55,9 +55,10 @@ class Karir extends BaseController
             'posisi' => $posisi,
         ]);
 
-        $this->email->setFrom('support@spairum.com', 'noreply-rekrutmen spairum');
+        $this->email->setFrom('support@spairum.com', 'noreply-Spairum.com');
         $this->email->setTo('falehry88@gmail.com');
-        $email->setCC('necrobradley@gmail.com', 'asharidha2014@gmail.com', 'fakhryhiz@student.untan.ac.id');
+        $this->email->setCC('asharidha2014@gmail.com');
+        $this->email->setSubject('Rekrutmen Spairum');
         $this->email->setMessage("
         <table align='center' cellpadding='0' cellspacing='0' border='0' width='100%' bgcolor='#f0f0f0'>
         <tr>
@@ -83,7 +84,7 @@ class Karir extends BaseController
                     <p style='font-size: 18px; margin: 0; line-height: 24px; font-family: 'Nunito Sans', Arial, Verdana, Helvetica, sans-serif; color: #666; text-align: left; padding-bottom: 3%;'>
                     Perkenalkan nama saya $nama
                     <br>saya lulusan dari $sekolah, jurusan $jurusan lulus tahun $tahun
-                    <br> Email: $Email
+                    <br> Email: $email
                     <br> Nomor Whatsapp: $telp
                     <br>
                     <br> saya ingin melamar di posisi $posisi
@@ -116,9 +117,10 @@ class Karir extends BaseController
         </table>
         ");
         $this->email->send();
-        $this->email->setFrom('support@spairum.com', 'noreply-rekrutmen spairum');
+        $this->email->setFrom('support@spairum.com', 'noreply-Spairum.com');
         $this->email->setTo($email);
-        $email->setCC('necrobradley@gmail.com', 'asharidha2014@gmail.com', 'fakhryhiz@student.untan.ac.id');
+        $this->email->setCC('necrobradley@gmail.com');
+        $this->email->setSubject('Rekrutmen Spairum');
         $this->email->setMessage("
         <table align='center' cellpadding='0' cellspacing='0' border='0' width='100%' bgcolor='#f0f0f0'>
             <tr>
