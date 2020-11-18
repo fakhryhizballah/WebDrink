@@ -181,7 +181,7 @@ class Karir extends BaseController
             ");
         $this->email->send();
 
-        session()->setFlashdata('Berhasil', "Terimakasih $nama telah mendaftar. Untuk informasi lebih lajut silahkan cek Email.");
+        session()->setFlashdata('Berhasil', "Terimakasih $nama telah mendaftar. Untuk informasi lebih lajut silahkan cek Email atau di spam email.");
         return redirect()->to('/about');
 
         // return view('karir/daftar', $data);
