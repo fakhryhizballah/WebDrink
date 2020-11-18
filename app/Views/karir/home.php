@@ -4,7 +4,7 @@
 <?= $this->section('head'); ?>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="keywords" content="Apps,Spairum,Lisma ,Untan,Statup pontianak,Naufal,Fakhry">
-<meta name="description" content="Careers - Ayo bersama Spairum kita membuat pengaruh lokal dan pengaruh secara global untuk membuat bumi lebih baik">
+<meta name="description" content="Careers - Ayo bersama Spairum kita membuat pengaruh lokal dan pengaruh secara global untuk membuat Indonesia maju">
 <!-- Custom styles for this template -->
 <!-- <link href="css/landing-page.min.css" rel="stylesheet"> -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-landing-page/5.0.9/css/landing-page.min.css" rel="stylesheet">
