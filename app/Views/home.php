@@ -14,8 +14,6 @@
 
     <div id="demo" class="carousel slide" data-ride="carousel">
 
-
-
         <!-- Indicators -->
 
         <ol class="carousel-indicators">
@@ -29,28 +27,24 @@
         </ol>
 
 
-
         <!-- The slideshow -->
 
         <div class="carousel-inner" role="listbox">
 
             <div class="carousel-item active">
 
-                <img src="Asset/img/baner.png" alt="">
+                <img class="d-block w-100" src="Asset/img/home/which is better for the environment.jpg" alt="which is better for the environment">
 
                 <div class="carousel-caption">
-
-                    <h3 class="text-dark">Spairum</h3>
-
-                    <p class="text-dark">merupakan sebuah startup perusahaan air minum yang meneydiakan layanan pengisian ulang air minum dalam upaya mengurangi penggunaan plastik sekali pakai.</p>
 
                 </div>
 
             </div>
 
+
             <div class="carousel-item">
 
-                <img src="Asset/img/Refill_Reduce.jpg" alt="">
+                <img class="d-block w-100" src="Asset/img/home/Refill_Reduce.jpg" alt="">
 
                 <div class="carousel-caption">
 
@@ -62,21 +56,34 @@
 
             </div>
 
-            <div class="carousel-item">
-                <img src="Asset/img/bottle-up.jpg" alt="bottle-up">
+            <div class="carousel-item ">
+
+                <img class="d-block w-100" src="Asset/img/home/plastic_earth.jpg" alt="Bumi dan plastic">
 
                 <div class="carousel-caption">
 
-                    <h3 class="text">Edukasi</h3>
+                    <!-- <h3 class="text-dark">Spairum</h3>
 
-                    <p class="text">selain itu Kami mengedukasi masarakan untuk menjaga kelestarian bumi.</p>
+                    <p class="text-dark">merupakan sebuah startup perusahaan air minum yang meneydiakan layanan pengisian ulang air minum dalam upaya mengurangi penggunaan plastik sekali pakai.</p> -->
+
+                </div>
+
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100" src="Asset/img/home/bottle-up.jpg" alt="bottle refill">
+
+                <div class="carousel-caption">
+
+                    <!-- <h3 class="text">Edukasi</h3>
+
+                    <p class="text">selain itu Kami mengedukasi masarakan untuk menjaga kelestarian bumi.</p> -->
 
                 </div>
 
             </div>
 
         </div>
-
 
 
         <!-- Left and right controls -->
@@ -98,12 +105,11 @@
 </section>
 
 
-
 <div class="jumbotron center-block">
 
     <blockquote class="blockquote text-center">
 
-        <q class="mb-0">Mengapa harus <strong class="text-primary">Spairum?</strong></q>
+        <q class="mb-0">What does <strong class="text-primary">spairum </strong>do ?</q>
 
     </blockquote>
 
@@ -119,29 +125,9 @@
 
                     <div class="card-body">
 
-                        <h5 class="card-title">Ramah Lingkungan</h5>
+                        <h5 class="card-title">We build water distribution ecosystem for everyone</h5>
 
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="col-sm-4 col-xs-4">
-
-                <div class=" text-center bg-black-50">
-
-                    <img class="img-top logo" src="Asset/img/diamon.png" alt="Card">
-
-                    <div class="card-body">
-
-                        <h5 class="card-title">Higiene</h5>
-
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                        <p class="card-text">Spairum build a distribution ecosystem for drinking water refill for bottles that are more environmentally friendly.
 
                         </p>
 
@@ -155,13 +141,33 @@
 
                 <div class=" text-center bg-black-50">
 
-                    <img class="img-top logo" src="Asset/img/jempol.png" alt="Card d">
+                    <img class="img-top logo" src="Asset/img/home/jempol.png" alt="Cood">
 
                     <div class="card-body">
 
-                        <h5 class="card-title">Pelayanan Terbaik</h5>
+                        <h5 class="card-title">We guarantee the safety and hygiene of drinking water</h5>
 
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                        <p class="card-text">By using internet of things technology we can guarantee quality and security in real time.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-4 col-xs-4">
+
+                <div class=" text-center bg-black-50">
+
+                    <img class="img-top logo" src="Asset/img/home/365.png" alt="service">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">The best service and provide 365 days non-stop service</h5>
+
+                        <p class="card-text">Spairum station can be used 24 hours without stopping and we guarantee the equality of refilling drinking water with iot.
 
                         </p>
 
@@ -180,28 +186,33 @@
 <div class="container">
 
     <section id="featured" class="featured">
+        <blockquote class="blockquote text-center">
+
+            <q class="mb-0">Our <strong class="text-primary">Service</strong></q>
+
+        </blockquote>
 
         <div class="row ">
 
-            <div class="col-sm-4 col-xs-4">
+            <div class="col-sm-6 col-xs-6">
 
                 <div class="icon-box">
 
-                    <img class="card-img-top fitur" src="img/rumah.png" alt="Rumah">
+                    <img class="card-img-top fitur" src="Asset/img/home/natural-park.svg" alt="park">
 
                     <div class="card-body">
 
-                        <h5 class="card-title text-center">Rumah</h5>
+                        <h5 class="card-title text-center">Public area services</h5>
 
-                        <p class="card-text text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.
+                        <p class="card-text text-center">Find a spairum station in public places such as the futsal court, jogging track, campus, sports hall.
+                            <br> Find it at its location in the spairum application.
 
                         </p>
 
-                        <div c></div>
 
                         <div class="col text-center">
 
-                            <a href="#" class="btn btn-primary">Selengkapnya</a>
+                            <a href="#" class="btn btn-primary">Download Now</a>
 
                         </div>
 
@@ -211,49 +222,19 @@
 
             </div>
 
-            <div class="col-sm-4 col-xs-4">
+            <div class="col-sm-6 col-xs-6">
 
                 <div class="icon-box">
 
-                    <img class="card-img-top fitur" src="img/Kantor.png" alt="Perkantoran">
+                    <img class="card-img-top fitur" src="Asset/img/home/office.svg" alt="Building Office">
 
                     <div class="card-body">
 
-                        <h5 class="card-title text-center">Perkantoran</h5>
+                        <h5 class="card-title text-center">Private area service</h5>
 
-                        <p class="card-text text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.
-
+                        <p class="card-text text-center">The private area is a service for government offices or office buildings.
+                            We provide services for management and quality control and ensure the availability of drinking water needs 24/7
                         </p>
-
-                        <div c></div>
-
-                        <div class="col text-center">
-
-                            <a href="#" class="btn btn-primary">Selengkapnya</a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="col-sm-4 col-xs-4">
-
-                <div class="icon-box">
-
-                    <img class="card-img-top fitur" src="img/tempat usaha.png" alt="tempat usaha">
-
-                    <div class="card-body">
-
-                        <h5 class="card-title text-center">Tempat Usaha</h5>
-
-                        <p class="card-text text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.
-
-                        </p>
-
-                        <div c></div>
 
                         <div class="col text-center">
 
@@ -279,7 +260,7 @@
 
     <div class="blockquote text-center">
 
-        <q class="mb-0">Testimoni <strong class="text-primary">Mitra</strong></q>
+        <q class="mb-0">What do they say about <strong class="text-primary">Spairum</strong></q>
 
     </div>
 
@@ -295,19 +276,16 @@
 
                         <div class="col-md-4">
 
-                            <img src="img/Team-Naufal.jpg" class="img-thumbnail rounded" alt="Naufal fadlurahman irdasyah">
+                            <img src="Asset/img/home/testimoni/Angelina.jpg" class="img-thumbnail rounded" alt="Angelina Diva">
 
                         </div>
 
-                        <div class="col-md-8">
+                        <div class="col-md-8 text-align-middle">
 
-                            <h3 class="text-center">Naufal</h3>
+                            <h3 class="text-center">Angelina Diva</h3>
 
-                            <h5 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-
-                                laborum.
+                            <h5 class="text-center">Hindari pengunaan botol plastik sekali pakai, gunakan spairum untuk isi ulang
+                                #bebasplastik
 
                             </h5>
 
@@ -327,19 +305,16 @@
 
                         <div class="col-md-4">
 
-                            <img src="img/Team-Naufal.jpg" class="img-thumbnail rounded">
+                            <img src="Asset/img/home/testimoni/pegi.jpg" class="img-thumbnail rounded">
 
                         </div>
 
                         <div class="col-md-8">
 
-                            <h3 class="text-center">Naufal</h3>
+                            <h3 class="text-center">Pegi Aprianti</h3>
 
-                            <h5 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-
-                                laborum.
+                            <h5 class="text-center align-middle">Kuy guys generasi millineal yang kece kece biar tambah Kece bawa tumbler kemanapun dan jangan lupa jaga kesehatan.
+                                #bebasplastik
 
                             </h5>
 
@@ -359,19 +334,16 @@
 
                         <div class="col-md-4">
 
-                            <img src="img/Team-Naufal.jpg" class="img-thumbnail rounded">
+                            <img src="Asset/img/home/testimoni/farid.jpg" class="img-thumbnail rounded">
 
                         </div>
 
                         <div class="col-md-8">
 
-                            <h3 class="text-center">Naufal</h3>
+                            <h3 class="text-center">Farid Sayoga</h3>
 
-                            <h5 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-
-                                laborum.
+                            <h5 class="text-center">Mari kita gunakan Botol minum untuk mengurangi sampah plastik.
+                                #bebasplastik
 
                             </h5>
 
@@ -414,10 +386,9 @@
     <div class="container">
 
 
-
         <div class="section-title">
 
-            <h2>Patner</h2>
+            <q class="mb-0">Partnership <strong class="text-primary">Spairum</strong></q>
 
             <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi
 
@@ -426,22 +397,19 @@
         </div>
 
 
+        <!-- <div class="owl-carousel clients-carousel"> -->
+        <!-- <div class="owl-carousel owl-theme"> -->
+        <div class="owl-carousel">
 
-        <div class="owl-carousel clients-carousel">
+            <!-- <img src="Asset/img/home/partnership/untan.png" alt="Untan"> -->
 
-            <img src="Asset/img/untan.png" alt="Untan">
+            <img href="http://www.untan.ac.id/" src="Asset/img/home/partnership/untan.png" alt=" Universitas tanjungpura">
 
-            <img href="http://www.untan.ac.id/" src="Asset/img/untan.png" alt=" Universitas tanjungpura">
+            <img class="mide" href="http://ibt.untan.ac.id/" src="Asset/img/home/partnership/ibtlogo.png" alt="ibt Untan">
 
-            <img class="mide" href="http://ibt.untan.ac.id/" src="Asset/img/ibtlogo.png" alt="ibt Untan">
+            <img src="Asset/img/home/partnership/Logo_PP.jpg" alt="UKM PP Lisma">
 
-            <img src="Asset/img/Logo_PP.jpg" alt="UKM PP Lisma">
-
-            <img src="Asset/img/jj.jpg" alt="polteks pontianak">
-
-            <img src="Asset/img/cropped-Logo-KP-1.png" alt="KP">
-
-            <img src="Asset/img/download.jfif" alt="Untan">
+            <img src="Asset/img/home/partnership/download.jfif" alt="Untan">
 
         </div>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -30,20 +30,20 @@
 
     <!-- <link href="Asset/vendor/animate.css/animate.min.css" rel="stylesheet"> -->
 
-    <!-- <link href="Asset/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- <link href="Asset/vendor/venobox/venobox.css" rel="stylesheet"> -->
 
 
     <!-- Vendor CSS Files -->
 
-    <link href="Asset/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="Asset/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
 
-    <link href="Asset/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <link href="Asset/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
 
 
 
@@ -245,21 +245,21 @@
 
     <!-- Vendor JS Files -->
 
-    <script src="Asset/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
 
-    <script src="Asset/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <script src="Asset/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
 
-    <script src="Asset/vendor/jquery-sticky/jquery.sticky.js"></script>
+    <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
 
-    <script src="Asset/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
 
-    <script src="Asset/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
 
-    <script src="Asset/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
 
-    <script src="Asset/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 
