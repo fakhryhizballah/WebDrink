@@ -257,37 +257,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.2/venobox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
     <script>
-        $('.owl-carousel').owlCarousel({
 
-            autoplay: true,
-
-            dots: true,
-
-            loop: true,
-
-            responsive: {
-
-                0: {
-
-                    items: 2
-
-                },
-
-                768: {
-
-                    items: 4
-
-                },
-
-                900: {
-
-                    items: 6
-
-                }
-
-            }
-
-        });
     </script>
     <!-- Template Main JS File -->
     <script type='text/javascript' src="Asset/js/script.js"></script>
