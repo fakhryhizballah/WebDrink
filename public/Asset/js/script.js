@@ -7,3 +7,4 @@ if (flashSuccess) {
         text: flashSuccess,
     })
 }
+

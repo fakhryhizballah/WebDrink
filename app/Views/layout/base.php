@@ -10,19 +10,19 @@
     <meta name="author" content="Spairum">
 
     <?= $this->renderSection('head'); ?>
-
     <link href="Asset/css/desain.css" rel="stylesheet">
-
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Quicksand" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
 
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Vendor CSS Files -->
+    <!-- <link href="Asset/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.2/venobox.css" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
 
@@ -30,24 +30,10 @@
 
     <!-- <link href="Asset/vendor/animate.css/animate.min.css" rel="stylesheet"> -->
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- <link href="Asset/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet"> -->
 
     <!-- <link href="Asset/vendor/venobox/venobox.css" rel="stylesheet"> -->
-
-
-    <!-- Vendor CSS Files -->
-
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-
-    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-
-
-
-
 
 
 </head>
@@ -243,37 +229,71 @@
     </footer>
 
 
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- sweet alert -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
     <!-- Vendor JS Files -->
 
-    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 
-    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
-    <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
-
-    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-
-    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-
-    <script src="assets/vendor/counterup/counterup.min.js"></script>
-
-    <script src="assets/vendor/venobox/venobox.min.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.js"></script>
 
 
+    <!-- <script src="Asset/vendor/counterup/counterup.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.2/venobox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
 
+            autoplay: true,
+
+            dots: true,
+
+            loop: true,
+
+            responsive: {
+
+                0: {
+
+                    items: 2
+
+                },
+
+                768: {
+
+                    items: 4
+
+                },
+
+                900: {
+
+                    items: 6
+
+                }
+
+            }
+
+        });
+    </script>
     <!-- Template Main JS File -->
-    <!-- sweet alert -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-    <script src="Asset/js/script.js"></script>
+    <script type='text/javascript' src="Asset/js/script.js"></script>
 
     <script src="assets/js/main.js"></script>
+
 
 </body>
 

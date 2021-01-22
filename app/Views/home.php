@@ -181,6 +181,7 @@
 
     </div>
 
+
 </div>
 
 <div class="container">
@@ -380,45 +381,22 @@
 <main id="main"></main>
 
 <!-- ======= Clients Section ======= -->
-
 <section id="clients" class="clients">
 
     <div class="container">
-
-
         <div class="section-title">
-
             <q class="mb-0">Partnership <strong class="text-primary">Spairum</strong></q>
-
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi
-
-                quidem hic quas.</p>
-
+            <p>This activity program is supported by</p>
         </div>
-
-
-        <!-- <div class="owl-carousel clients-carousel"> -->
-        <!-- <div class="owl-carousel owl-theme"> -->
         <div class="owl-carousel">
-
             <!-- <img src="Asset/img/home/partnership/untan.png" alt="Untan"> -->
-
             <img href="http://www.untan.ac.id/" src="Asset/img/home/partnership/untan.png" alt=" Universitas tanjungpura">
-
             <img class="mide" href="http://ibt.untan.ac.id/" src="Asset/img/home/partnership/ibtlogo.png" alt="ibt Untan">
-
             <img src="Asset/img/home/partnership/Logo_PP.jpg" alt="UKM PP Lisma">
-
-            <img src="Asset/img/home/partnership/download.jfif" alt="Untan">
-
+            <img src="Asset/img/home/partnership/download.png" alt="YCSC">
         </div>
-
-
-
     </div>
-
 </section>
-
 <!-- End Clients Section -->
 
 </main>
