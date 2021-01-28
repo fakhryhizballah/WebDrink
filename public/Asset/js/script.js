@@ -9,11 +9,12 @@ if (flashSuccess) {
         text: flashSuccess,
     })
 }
+
 $('.owl-carousel').owlCarousel({
 
     autoplay: true,
 
-    dots: true,
+    dots: false,
 
 
     loop: true,
