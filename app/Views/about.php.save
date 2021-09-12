@@ -1,0 +1,131 @@
+<?= $this->extend('layout/base'); ?>
+
+
+<?= $this->section('head'); ?>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="keywords" content="about,Tentang Spairum,Lisma ,Untan,Statup pontianak,Naufal,Fakhry">
+<meta name="description" content="Spairum merupakan sebuah startup perusahaan air minum yang meneydiakan layanan pengisian ulang air minum dalam upaya mengurangi penggunaan plastik sekali pakai.">
+
+<?= $this->endSection('head'); ?>
+
+<?= $this->section('layout'); ?>
+
+<div class="flash-data" data-flashdata="<?= session()->getFlashdata('flash'); ?>"></div>
+<div class="flash-Success" data-flashdata="<?= session()->getFlashdata('Berhasil'); ?>"></div>
+
+<div class="bg-light">
+    <div class="container py-5">
+        <div class="row h-100 align-items-center py-5">
+            <div class="col-lg-6">
+                <h1 class="display-4">About us Spairum</h1>
+                <p class="lead text-muted mb-0">Spairum merupakan sebuah startup perusahaan air minum yang meneydiakan layanan pengisian ulang air minum di tempat umum seperti di taman, kantor, kampus, rumah sakit dalam upaya mengurangi penggunaan plastik sekali pakai.</p>
+                <p></p>
+                <p class="lead text-muted mb-0">
+                    Kami menawarkan alternatif sederhana untuk tidak membeli air kemasan dan tujuan kami adalah mengurangi jumlah botol plastik sekali pakai yang digunakan secara tidak perlu.
+                </p>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834136/illus_kftyh4.png" alt="" class="img-fluid"></div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-white py-5">
+    <div class="container py-5">
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6 order-2 order-lg-1"><i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
+                <h2 class="font-weight-light">Visi</h2>
+                <p class="font-italic text-muted mb-4"> Kami bertujuan untuk mengurangi sumber masalah plastik, memungkinkan lebih banyak orang menjalani gaya hidup yang sadar, dan memberdayakan komunitas lokal untuk memimpin pengurangan sampah plastik.</p>
+            </div>
+            <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834139/img-1_e25nvh.jpg" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-5 px-5 mx-auto"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834136/img-2_vdgqgn.jpg" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+            <div class="col-lg-6"><i class="fa fa-leaf fa-2x mb-3 text-primary"></i>
+                <h2 class="font-weight-light">Misi</h2>
+                <p class="font-italic text-muted mb-4">1. Menyatukan bisnis lokal dalam 1 platform untuk menikatkan penjualan dan sebagai Suplayer menyediakan air di stasiun pengisian air minum</p>
+                <p class="font-italic text-muted mb-4">2. Melakukan kerja sama keberbagai pihak untuk pengadaan stasiun pengisian air minum</p>
+                <p class="font-italic text-muted mb-4">3. Mengubah perilaku wisatawan dan masyarakat dari membeli botol plastik menjadi mengisi ulang botol mereka</p>
+                <p class="font-italic text-muted mb-4">4. Meningkatkan kesadaran akan solusi untuk masalah plastik</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-light py-5">
+    <div class="container py-5">
+        <div class="row mb-4">
+            <div class="col-lg-5">
+                <h2 class="display-4 font-weight-light">Our team</h2>
+                <p class="font-italic text-muted">Pengelola Spairum</p>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <!-- Team item-->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="Asset/img/" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Fakhry Hizballah Al Muminurradian</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+                    <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/adelle.alexa.96" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <!-- <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li> -->
+                        <li class="list-inline-item"><a href="https://www.instagram.com/hizballah_al" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/fakhry-hizballah-al-a99b951a3/?originalSubdomain=id" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End-->
+
+            <!-- Team item-->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="Asset/img/Team-Naufal.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Naufal Fadlurahman Irdasyah</h5><span class="small text-uppercase text-muted">CFO - Founder</span>
+                    <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/necro.bradley" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <!-- <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li> -->
+                        <li class="list-inline-item"><a href="https://www.instagram.com/naufal_irdasyah/" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="Asset/img/Gusti.jpeg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Gusti Muhammad Furkan Azmi</h5><span class="small text-uppercase text-muted">Hacker Web Developer</span>
+                    <ul class="social mb-0 list-inline mt-3">
+                        <!-- <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li> -->
+                        <li class="list-inline-item"><a href="https://www.instagram.com/gusti_mfa/" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="Asset/img/Ridha.jpeg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Asha Ridha Hijeriya</h5><span class="small text-uppercase text-muted">CMO - CO-Founder</span>
+                    <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/sacha.hijeriya" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/sacha_hijeriya1" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/asharidha/" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834132/avatar-4_ozhrib.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Nasyiya Ulfa</h5><span class="small text-uppercase text-muted">Hipster</span>
+                    <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834132/avatar-4_ozhrib.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Puji Astuti</h5><span class="small text-uppercase text-muted">Hipster</span>
+                    <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <?= $this->endSection('layout'); ?>
