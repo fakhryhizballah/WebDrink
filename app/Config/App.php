@@ -24,7 +24,11 @@ class App extends BaseConfig
 	|
 	*/
 	// public $baseURL = 'http://localhost:8080/';
+<<<<<<< HEAD
 	public $baseURL = 'http://spairum.my.id';
+=======
+	public $baseURL = 'http://spairum.my.id/';
+>>>>>>> 4f108da7e5fb0b7bbe2f5196890c542220f0eb4d
 
 	/*
 	|--------------------------------------------------------------------------
