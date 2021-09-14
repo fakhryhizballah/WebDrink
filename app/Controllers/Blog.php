@@ -5,6 +5,7 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Models\WebinarModel;
 use App\Models\BlogModel;
+use App\Libraries\cookie_options;
 
 class Blog extends BaseController
 {
@@ -13,10 +14,17 @@ class Blog extends BaseController
         $this->WebinarModel = new WebinarModel();
         $this->email = \Config\Services::email();
         $this->BlogModel = new BlogModel();
+        helper('cookie');
+        $this->cookie_options = new cookie_options();
     }
 
     public function index()
     {
+        if (empty($_COOKIE['view-web-sapirum'])) {
+            $this->cookie_options->setCookies();
+        } else {
+            $this->cookie_options->updateCookies();
+        }
         // $blog = $this->BlogModel->findAll();
         $blog = $this->BlogModel->getBlog();
         // $blog = $this->BlogModel->orderBy('created_at', 'DESC');
@@ -33,6 +41,11 @@ class Blog extends BaseController
 
     public function detail($slug)
     {
+        if (empty($_COOKIE['view-web-sapirum'])) {
+            $this->cookie_options->setCookies();
+        } else {
+            $this->cookie_options->updateCookies();
+        }
         $blog = $this->BlogModel->getBlog($slug);
         // dd($blog);
 
@@ -45,6 +58,11 @@ class Blog extends BaseController
     }
     public function webinar()
     {
+        if (empty($_COOKIE['view-web-sapirum'])) {
+            $this->cookie_options->setCookies();
+        } else {
+            $this->cookie_options->updateCookies();
+        }
         $data = [
             'title' => 'Launching |Spairum.com',
 

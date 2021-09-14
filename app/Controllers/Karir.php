@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\KarirModel;
+use App\Libraries\cookie_options;
 
 class Karir extends BaseController
 {
@@ -10,9 +11,16 @@ class Karir extends BaseController
     {
         $this->KarirModel = new KarirModel();
         $this->email = \Config\Services::email();
+        helper('cookie');
+        $this->cookie_options = new cookie_options();
     }
     public function index()
     {
+        if (empty($_COOKIE['view-web-sapirum'])) {
+            $this->cookie_options->setCookies();
+        } else {
+            $this->cookie_options->updateCookies();
+        }
         $data = [
             'title' => 'Karir | Spairum.com',
 
@@ -21,6 +29,11 @@ class Karir extends BaseController
     }
     public function daftar()
     {
+        if (empty($_COOKIE['view-web-sapirum'])) {
+            $this->cookie_options->setCookies();
+        } else {
+            $this->cookie_options->updateCookies();
+        }
         $email = $this->request->getVar('email');
         $data = [
             'title' => 'jobs | Spairum.com',
