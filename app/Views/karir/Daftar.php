@@ -23,7 +23,8 @@
                 <br>3. Berpenampilan Baik, dan dapat berkomunikasi dengan baik.
                 <br>
                 info lebih lanjut:
-                <a class="font-weight-bold text-white" href="https://wa.me/+62895373130201/?text=Hallo%20Salam%20kenal,%0Asaya%20ingin%20bertanya">0895373130201</a> (Naufal)</p>
+                <a class="font-weight-bold text-white" href="https://wa.me/+62895373130201/?text=Hallo%20Salam%20kenal,%0Asaya%20ingin%20bertanya">0895373130201</a> (Naufal)
+            </p>
 
 
         </div>
@@ -117,10 +118,10 @@
                                             <input type="radio" name="confim" value="Business Development and Partnerships">
                                             <span>Business Development and Partnerships</span>
                                         </label>
-                                        <label class="radio inline">
+                                        <!-- <label class="radio inline">
                                             <input type="radio" name="confim" value="Internship">
                                             <span>Internship</span>
-                                        </label>
+                                        </label> -->
                                     </div>
                                 </div>
                                 <input type="submit" class="btnRegister" value="submit" />

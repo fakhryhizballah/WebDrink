@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-xl-9 mx-auto">
                 <h1 class="mb-1">Ayo bergabung dengan tim Spairum</h1>
-                <p1 class="mb-5">Temukan pekerjaan impianmu!</p1>
+                <p1 class="mb-5">Untuk Mewujutkan Mimpi Bersama</p1>
             </div>
             <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
                 <form class="user" method="POST" action="/jobs">
