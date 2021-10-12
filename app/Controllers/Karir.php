@@ -50,6 +50,7 @@ class Karir extends BaseController
         $pendidikan = $this->request->getVar('pendidikan');
         $sekolah = $this->request->getVar('sekolah');
         $jurusan = $this->request->getVar('jurusan');
+        $masuk = $this->request->getVar('masuk');
         $tahun = $this->request->getVar('lulus');
         $posisi = $this->request->getVar('confim');
         $this->KarirModel->save([
@@ -61,7 +62,7 @@ class Karir extends BaseController
             'pendidikan' => $pendidikan,
             'sekolah' => $sekolah,
             'jurusan' => $jurusan,
-            'masuk' => $this->request->getVar('masuk'),
+            'masuk' => $masuk,
             'lulus' => $tahun,
             'link' => $this->request->getVar('link'),
             'info' => $this->request->getVar('info'),
@@ -98,7 +99,7 @@ class Karir extends BaseController
                     </p>
                     <p style='font-size: 18px; margin: 0; line-height: 24px; font-family: 'Nunito Sans', Arial, Verdana, Helvetica, sans-serif; color: #666; text-align: left; padding-bottom: 3%;'>
                     Perkenalkan nama saya $nama
-                    <br>saya lulusan dari $sekolah, jurusan $jurusan 
+                    <br>saya dari $sekolah, jurusan $jurusan angkatan $masuk
                     <br> Alamat: $tahun
                     <br> Email: $email
                     <br> Nomor Whatsapp: <a href='https://wa.me/+62$telp?text=Hai%20saya%20saya%20dari%20Tim%20Spairum'> $telp <strong>($nama)</strong> </a> 
