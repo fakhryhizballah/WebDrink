@@ -18,12 +18,14 @@
             <h4 class="">Saya Siap Membuat perubahan untuk Indonesia</h4>
             <p class="text-left">
                 Persaratan:
-                <br>1. bertanggung jawab atas pilihan perkerjaan,
-                <br>2. Energetic, mobile, and fast learner
-                <br>3. Berpenampilan Baik, dan dapat berkomunikasi dengan baik.
+                <br>1. Pemuda/i yang cinta & peduli terhadap lingkungan,
+                <br>2. Berkomitmen & bertanggung jawab atas pilihan perkerjaan,
+                <br>3. Energetic, mobile, and fast learner
+                <br>4. kirim CV terbaik kamu di info.spairum@gmail.com.
+                <br>5. Mahasiswa aktif - Magang
                 <br>
                 info lebih lanjut:
-                <a class="font-weight-bold text-white" href="https://wa.me/+62895373130201/?text=Hallo%20Salam%20kenal,%0Asaya%20ingin%20bertanya">0895373130201</a> (Naufal)
+                <a class="font-weight-bold text-white" href="https://wa.me/+6282254894778/?text=Hallo%20Salam%20kenal,%0Asaya%20ingin%20bertanya">+62 822-5489-4778</a> (Asha Ridha Hijeriya)
             </p>
 
 
@@ -47,7 +49,7 @@
                                 </div>
                                 <div class="form-group">
                                     <select class="form-control" name="agama" id="agama">
-                                        <option class="hidden" selected disabled>Kepercayaan</option>
+                                        <option class="hidden" selected disabled>Agama</option>
                                         <option>Islam</option>
                                         <option>Kristen</option>
                                         <option>Katolik</option>
@@ -55,6 +57,9 @@
                                         <option>Budha</option>
                                         <option>Konghucu</option>
                                     </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="lulus" placeholder="Alamat*" value="" required />
                                 </div>
                                 <div class="form-group">
                                     <input type="date" id="date" name="date" class="form-control" placeholder="Tanggal lahir*" value="" required />
@@ -70,16 +75,13 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="sekolah" placeholder="Nama Sekolah*" value="" required />
+                                    <input type="text" class="form-control" name="sekolah" placeholder="Nama Universitas*" value="" required />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="jurusan" placeholder="Pendidikan Jurusan Studi*" value="" required />
+                                    <input type="text" class="form-control" name="jurusan" placeholder="Fakultas - Prodi*" value="" required />
                                 </div>
                                 <div class="form-group">
-                                    <input type="number" class="form-control" name="masuk" placeholder="Tahun Masuk Sekolah*" value="" required />
-                                </div>
-                                <div class="form-group">
-                                    <input type="number" class="form-control" name="lulus" placeholder="Tahun Lulus Sekolah*" value="" required />
+                                    <input type="number" class="form-control" name="masuk" placeholder="Tahun Masuk Univ*" value="" required />
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control" minlength="12" name="link" placeholder="URL Situs Web (Instagram/Linkin/profil)" value="" required />
