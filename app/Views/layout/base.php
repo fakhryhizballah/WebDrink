@@ -93,7 +93,7 @@
                         <a class="nav-link text-dark" href="#">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class=" btn btn-sm rounded-pill btn-outline-primary" href="https://app.spairum.my.id">Daftar/Masuk</a>
+                        <a class=" btn btn-sm rounded-pill btn-outline-primary" href="https://air.spairum.my.id">Daftar/Masuk</a>
                     </li>
                 </ul>
             </div>
