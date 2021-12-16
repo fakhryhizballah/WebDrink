@@ -56,7 +56,7 @@ class SurveiControl extends BaseController
         session()->setFlashdata('Berhasil', "Terimakasih $nama telah membantu kami untuk pengembangan aplikasi yang lebih bakik");
         $pesan = [
             'number' => $noHp,
-            'message' => "Terimakasih $nama telah mengisi survi jika ada kedala atau ada masukan silahkan hubungi nomor ini."
+            'message' => "Terimakasih $nama telah mengisi survei jika ada kedala atau ada masukan silahkan hubungi nomor ini."
         ];
 
         $this->pubMqtt->publish('sendPesan', json_encode($pesan));
