@@ -271,7 +271,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.2/venobox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
     <script>
-
+    <?= $this->renderSection('script'); ?>
     </script>
     <!-- Template Main JS File -->
     <script type='text/javascript' src="Asset/js/script.js"></script>

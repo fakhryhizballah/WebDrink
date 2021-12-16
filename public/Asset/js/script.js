@@ -1,47 +1,56 @@
-$( document ).ready(function() {
- 
+$(document).ready(function () {
+
     const flashSuccess = $(".flash-Success").data("flashdata");
-console.log(flashSuccess);
-if (flashSuccess) {
-    Swal.fire({
-        icon: 'success',
-        title: 'Berhasil',
-        text: flashSuccess,
-    })
-}
+    console.log(flashSuccess);
+    if (flashSuccess) {
+        Swal.fire({
+            icon: 'success',
+            title: 'Berhasil',
+            text: flashSuccess,
+        })
+    }
+    const flash = $(".flash-data").data("flashdata");
+    console.log(flash);
+    if (flash) {
+        Swal.fire({
+            icon: 'warning',
+            title: 'Warning',
+            text: flash,
+        })
+    }
 
-$('.owl-carousel').owlCarousel({
+    $('.owl-carousel').owlCarousel({
 
-    autoplay: true,
+        autoplay: true,
 
-    dots: false,
+        dots: false,
 
 
-    loop: true,
+        loop: true,
 
-    responsive: {
+        responsive: {
 
-        0: {
+            0: {
 
-            items: 2
+                items: 2
 
-        },
+            },
 
-        768: {
+            768: {
 
-            items: 4
+                items: 4
 
-        },
+            },
 
-        900: {
+            900: {
 
-            items: 6
+                items: 6
+
+            }
 
         }
 
-    }
-
-});
+    });
 
 });
 
