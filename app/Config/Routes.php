@@ -41,10 +41,9 @@ $routes->get('blog/(:segment)', 'Blog::detail/$1');
 $routes->add('/careers', 'Karir::index');
 $routes->post('/jobs', 'Karir::daftar');
 
-
-
 $routes->get('/webinar', 'Blog::webinar');
 
+$routes->get('/SurveiSmartphone/(:any)', 'SurveiControl::index/$1');
 /**
  * --------------------------------------------------------------------
  * Additional Routing
