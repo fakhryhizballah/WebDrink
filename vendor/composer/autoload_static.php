@@ -30,6 +30,11 @@ class ComposerStaticInitf41d4d3c97a73156a4c53475a96e6446
             'Psr\\Log\\' => 8,
             'Prophecy\\' => 9,
             'Predis\\' => 7,
+            'PhpMqtt\\Client\\' => 15,
+        ),
+        'M' => 
+        array (
+            'MyCLabs\\Enum\\' => 13,
         ),
         'L' => 
         array (
@@ -82,6 +87,14 @@ class ComposerStaticInitf41d4d3c97a73156a4c53475a96e6446
         array (
             0 => __DIR__ . '/..' . '/predis/predis/src',
         ),
+        'PhpMqtt\\Client\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-mqtt/client/src',
+        ),
+        'MyCLabs\\Enum\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/myclabs/php-enum/src',
+        ),
         'Laminas\\Escaper\\' => 
         array (
             0 => __DIR__ . '/..' . '/laminas/laminas-escaper/src',
@@ -123,6 +136,7 @@ class ComposerStaticInitf41d4d3c97a73156a4c53475a96e6446
     );
 
     public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',
         'PHPUnit\\Framework\\AssertionFailedError' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/AssertionFailedError.php',
