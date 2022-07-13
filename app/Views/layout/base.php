@@ -13,6 +13,7 @@
     <link href="Asset/css/desain.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Quicksand" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/30ddaf6bd8.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" /> -->
 
     <!-- Bootstrap CSS -->
@@ -59,26 +60,85 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="nav">
+                <ul class="nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="/">Home</a>
+                        <a href="/" class="nav-link text-dark">
+                            <span class="nav-link-inner-text mr-1">Home</span>
+                        </a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="/about">About Us</a>
+                        <a href="/about" class="nav-link text-dark">
+                            <span class="nav-link-inner-text mr-1">About</span>
+                        </a>
                     </li>
-                    <!-- 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-dark" href="#" id="layanan-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"=>Service</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 
-                            <a class="dropdown-item" href="#">Perumahan</a>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">
+                            <span class="nav-link-inner-text mr-1">Products</span>
+                        </a>
+                    </li>
 
-                            <a class="dropdown-item" href="#">Perkantoran</a>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">
+                            <span class="nav-link-inner-text mr-1">How To</span>
+                        </a>
+                    </li>
 
-                            <a class="dropdown-item" href="#">Tempat Usaha</a>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">
+                            <span class="nav-link-inner-text mr-1">Take Action</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">
+                            <span class="nav-link-inner-text mr-1">Career</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">
+                            <span class="nav-link-inner-text mr-1">Contact Us</span>
+                        </a>
+                    </li>
+
+                    <!-- <li class="nav-item dropdown">
+                        <a href="#" id="contactusDropdown" class="nav-link text-dark dropdown-toggle" aria-expanded="false" data-toggle="dropdown">
+                            <span class="nav-link-inner-text mr-1">Contact Us</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="contactusDropdown">
+                            <div class="col-auto px-0">
+                                <div class="list-group list-group-flush">
+                                    <a href="#" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-2 px-lg-2">
+                                        <span class="fa-stack icon icon-md icon-primary">
+                                            <i class="fa-solid fa-square fa-stack-2x" style="color: #007bff;"></i>
+                                            <i class="fas fa-question fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                        <div class="ml-2">
+                                            <span class="text-dark d-block">Help
+                                                <span class="badge badge-sm badge-secondary ml-2">v3.0</span>
+                                            </span>
+                                            <span class="small">Examples and guides</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-2 px-lg-2">
+                                        <span class="fa-stack icon icon-md icon-primary">
+                                            <i class="fa-solid fa-square fa-stack-2x" style="color: #007bff;"></i>
+                                            <i class="fas fa-info fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                        <div class="ml-2">
+                                            <span class="text-dark d-block">FAQ
+                                                <span class="badge badge-sm badge-secondary ml-2">v3.0</span>
+                                            </span>
+                                            <span class="small">Examples and guides</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                    </li> 
-                    -->
+                    </li> -->
+
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="/blog">Blog</a>
                     </li>

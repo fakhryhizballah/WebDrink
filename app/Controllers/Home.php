@@ -27,7 +27,7 @@ class Home extends BaseController
 			$this->cookie_options->updateCookies();
 		}
 		$data = [
-			'title' => 'Spairum.com',
+			'title' => 'SPAIRUM - Stasiun Pengisian Air Minum',
 		];
 
 		return view('home', $data);
@@ -40,7 +40,7 @@ class Home extends BaseController
 			$this->cookie_options->updateCookies();
 		}
 		$data = [
-			'title' => 'Spairum.com',
+			'title' => 'SPAIRUM - Stasiun Pengisian Air Minum',
 			'page' => 'Explore',
 		];
 
@@ -54,7 +54,7 @@ class Home extends BaseController
 			$this->cookie_options->updateCookies();
 		}
 		$data = [
-			'title' => 'Spairum.com',
+			'title' => 'About - Stasiun Pengisian Air Minum',
 			'page' => 'Explore',
 		];
 		return view('about', $data);
