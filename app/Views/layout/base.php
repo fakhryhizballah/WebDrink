@@ -38,6 +38,13 @@
     <!-- <link href="Asset/vendor/venobox/venobox.css" rel="stylesheet"> -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JM6HPZLXEV"></script>
+
+    <style>
+        span.menu:hover,
+        span.menu.active {
+            color: #17a2b8;
+        }
+    </style>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -51,6 +58,12 @@
 </head>
 
 <body>
+    <?php
+    $directoryURI = $_SERVER['REQUEST_URI'];
+    $path = parse_url($directoryURI, PHP_URL_PATH);
+    $components = explode('/', $path);
+    $page = $components[1];
+    ?>
     <nav class="navbar navbar-expand-lg bg-white fixed-top sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -63,49 +76,49 @@
                 <ul class="nav ml-auto">
                     <li class="nav-item">
                         <a href="/" class="nav-link text-dark">
-                            <span class="nav-link-inner-text mr-1">Home</span>
+                            <span class="nav-link-inner-text mr-1 menu <?php if ($page == "") echo 'active'; ?>">Home</span>
                         </a>
                     </li>
 
                     <li class="nav-item">
                         <a href="/about" class="nav-link text-dark">
-                            <span class="nav-link-inner-text mr-1">About</span>
+                            <span class="nav-link-inner-text mr-1 menu <?php if ($page == "about") echo 'active'; ?>">About</span>
                         </a>
                     </li>
 
                     <li class="nav-item">
                         <a href="#" class="nav-link text-dark">
-                            <span class="nav-link-inner-text mr-1">Products</span>
+                            <span class="nav-link-inner-text mr-1 menu <?php if ($page == "products") echo 'active'; ?>">Products</span>
                         </a>
                     </li>
 
                     <li class="nav-item">
                         <a href="#" class="nav-link text-dark">
-                            <span class="nav-link-inner-text mr-1">How To</span>
+                            <span class="nav-link-inner-text mr-1 menu <?php if ($page == "howto") echo 'active'; ?>">How To</span>
                         </a>
                     </li>
 
                     <li class="nav-item">
                         <a href="#" class="nav-link text-dark">
-                            <span class="nav-link-inner-text mr-1">Take Action</span>
+                            <span class="nav-link-inner-text mr-1 menu <?php if ($page == "takeaction") echo 'active'; ?>">Take Action</span>
                         </a>
                     </li>
 
                     <li class="nav-item">
                         <a href="#" class="nav-link text-dark">
-                            <span class="nav-link-inner-text mr-1">Career</span>
+                            <span class="nav-link-inner-text mr-1 menu <?php if ($page == "career") echo 'active'; ?>">Career</span>
                         </a>
                     </li>
 
                     <li class="nav-item">
                         <a href="#" class="nav-link text-dark">
-                            <span class="nav-link-inner-text mr-1">Contact Us</span>
+                            <span class="nav-link-inner-text mr-1 menu <?php if ($page == "contactus") echo 'active'; ?>">Contact Us</span>
                         </a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="/blog">
-                            <span class="nav-link-inner-text mr-1">Blog</span>
+                            <span class="nav-link-inner-text mr-1 menu <?php if ($page == "blog") echo 'active'; ?>">Blog</span>
                         </a>
                     </li>
 
