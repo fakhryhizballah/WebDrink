@@ -103,6 +103,17 @@
                         </a>
                     </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="/blog">
+                            <span class="nav-link-inner-text mr-1">Blog</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="btn btn-sm rounded-pill btn-outline-info nav-link" href="https://air.spairum.my.id">
+                            <span class="nav-link-inner-text mr-1">Create Account</span>
+                        </a>
+                    </li>
                     <!-- <li class="nav-item dropdown">
                         <a href="#" id="contactusDropdown" class="nav-link text-dark dropdown-toggle" aria-expanded="false" data-toggle="dropdown">
                             <span class="nav-link-inner-text mr-1">Contact Us</span>
@@ -139,18 +150,13 @@
                         </div>
                     </li> -->
 
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="/blog">Blog</a>
-                    </li>
+
                     <!-- <li class="nav-item">
                         <a class="nav-link text-dark" href="/careers">Karir</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="#">FAQ</a>
                     </li> -->
-                    <li class="nav-item">
-                        <a class=" btn btn-sm rounded-pill btn-outline-primary" href="https://air.spairum.my.id">Daftar/Masuk</a>
-                    </li>
                 </ul>
             </div>
         </div>
