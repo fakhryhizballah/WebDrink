@@ -17,7 +17,7 @@
     <div class="container py-5">
         <div class="row h-100 align-items-center py-5">
             <div class="col-lg-6">
-                <h1 class="display-4">About us Spairum</h1>
+                <h1 class="display-4">About Spairum</h1>
                 <p class="lead text-muted mb-0">Spairum merupakan sebuah startup perusahaan air minum yang meneydiakan layanan pengisian ulang air minum di tempat umum seperti di taman, kantor, kampus, rumah sakit dalam upaya mengurangi penggunaan plastik sekali pakai.</p>
                 <p></p>
                 <p class="lead text-muted mb-0">
