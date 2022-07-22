@@ -39,12 +39,6 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JM6HPZLXEV"></script>
 
-    <style>
-        span.menu:hover,
-        span.menu.active {
-            color: #17a2b8;
-        }
-    </style>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -64,7 +58,7 @@
     $components = explode('/', $path);
     $page = $components[1];
     ?>
-    <nav class="navbar navbar-expand-lg bg-white fixed-top sticky-top">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top sticky-top" style="height: 76px;">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="/Asset/img/spairum.png" width="auto" height="60" alt="Logo Spairum">
@@ -72,7 +66,7 @@
             <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="collapse navbar-collapse menu" id="navbarNavDropdown">
                 <ul class="nav ml-auto">
                     <li class="nav-item">
                         <a href="/" class="nav-link text-dark">
@@ -122,11 +116,11 @@
                         </a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="btn btn-sm rounded-pill btn-outline-info nav-link" href="https://air.spairum.my.id">
-                            <span class="nav-link-inner-text mr-1">Create Account</span>
-                        </a>
-                    </li>
+
+                    <a class="btn btn-sm rounded-pill btn-outline-info nav-link" href="https://air.spairum.my.id">
+                        <span class="nav-link-inner-text mr-1">Create Account</span>
+                    </a>
+
                     <!-- <li class="nav-item dropdown">
                         <a href="#" id="contactusDropdown" class="nav-link text-dark dropdown-toggle" aria-expanded="false" data-toggle="dropdown">
                             <span class="nav-link-inner-text mr-1">Contact Us</span>
