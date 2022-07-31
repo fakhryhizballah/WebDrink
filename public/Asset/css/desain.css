@@ -933,11 +933,15 @@
     /* span.menu.active ul li::after{
         width: 100%;
     }     */
+
+    .menu ul li a.active{
+        color : #34abeb;
+    } 
     
     .menu ul li:hover::after{
-        width: 80%;
+        width: 100%;
     }    
 
-    span.menu:hover, span.menu.active {
+    /* span.menu:hover, span.menu.active {
         color: #34abeb;
-    }
+    } */

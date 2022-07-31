@@ -69,53 +69,93 @@
             <div class="collapse navbar-collapse menu" id="navbarNavDropdown">
                 <ul class="nav ml-auto">
                     <li class="nav-item">
-                        <a href="/" class="nav-link text-dark">
-                            <span class="nav-link-inner-text mr-1 menu <?php if ($page == "") echo 'active'; ?>">Home</span>
+                        <a href="/" class="nav-link 
+                        <?php if ($page == "") {
+                            echo 'active';
+                        } else {
+                            echo 'text-dark';
+                        }
+                        ?>">
+                            Home
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="/about" class="nav-link text-dark">
-                            <span class="nav-link-inner-text mr-1 menu <?php if ($page == "about") echo 'active'; ?>">About</span>
+                        <a href="/about" class="nav-link 
+                        <?php if ($page == "about") {
+                            echo 'active';
+                        } else {
+                            echo 'text-dark';
+                        } ?>">
+                            About
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-dark">
-                            <span class="nav-link-inner-text mr-1 menu <?php if ($page == "products") echo 'active'; ?>">Products</span>
+                        <a href="#" class="nav-link 
+                        <?php if ($page == "products") {
+                            echo 'active';
+                        } else {
+                            echo 'text-dark';
+                        } ?>">
+                            Products
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-dark">
-                            <span class="nav-link-inner-text mr-1 menu <?php if ($page == "howto") echo 'active'; ?>">How To</span>
+                        <a href="#" class="nav-link 
+                        <?php if ($page == "howto") {
+                            echo 'active';
+                        } else {
+                            echo 'text-dark';
+                        } ?>">
+                            How To
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-dark">
-                            <span class="nav-link-inner-text mr-1 menu <?php if ($page == "takeaction") echo 'active'; ?>">Take Action</span>
+                        <a href="#" class="nav-link 
+                        <?php if ($page == "takeaction") {
+                            echo 'active';
+                        } else {
+                            echo 'text-dark';
+                        } ?>">
+                            Take Action
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-dark">
-                            <span class="nav-link-inner-text mr-1 menu <?php if ($page == "career") echo 'active'; ?>">Career</span>
+                        <a href="#" class="nav-link 
+                        <?php if ($page == "career") {
+                            echo 'active';
+                        } else {
+                            echo 'text-dark';
+                        } ?>">
+                            Career
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-dark">
-                            <span class="nav-link-inner-text mr-1 menu <?php if ($page == "contactus") echo 'active'; ?>">Contact Us</span>
+                        <a href="#" class="nav-link 
+                        <?php if ($page == "contactus") {
+                            echo 'active';
+                        } else {
+                            echo 'text-dark';
+                        } ?>">
+                            Contact Us
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="/blog">
-                            <span class="nav-link-inner-text mr-1 menu <?php if ($page == "blog") echo 'active'; ?>">Blog</span>
+                        <a class="nav-link 
+                        <?php if ($page == "blog") {
+                            echo 'active';
+                        } else {
+                            echo 'text-dark';
+                        } ?>" href="/blog">
+                            Blog
                         </a>
                     </li>
-
 
                     <a class="btn btn-sm rounded-pill btn-outline-info nav-link" href="https://air.spairum.my.id">
                         <span class="nav-link-inner-text mr-1">Create Account</span>
