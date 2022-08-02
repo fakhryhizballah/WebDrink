@@ -34,15 +34,7 @@ async function list() {
     function createDivNode(item, index) {
         console.log(item.id_blog);
         var div = document.createElement("div");
-        // div.className = "col-md-4";
         div.className = "row mb-4";
-        //     div.innerHTML = `
-        //     <img src="${item.thumbnail}" class="card-img-top" alt="${item.judul}">
-        //     <div class="card-body">
-        //     <h5 class="card-title">${item.judul}</h5>
-        //     <p class="card-text">${item.des}</p>
-        //     <a href="detail/${item.slug}" class="btn btn-primary">View Project</a>
-        // </div>`;
         div.innerHTML = `
         <div class="col-md-7">
             <a href="#">
@@ -52,7 +44,7 @@ async function list() {
         <div class="col-md-5">
             <h3>${item.judul}</h3>
             <p>${item.des}</p>
-            <a class="btn btn-primary" href="detail/${item.slug}">View Project</a>
+            <a class="btn btn-primary" href="blog/${item.slug}">View Project</a>
         </div>
     `;
         return div;
@@ -61,7 +53,6 @@ async function list() {
     divs.forEach(function (item) {
         app.appendChild(item);
     }
-        // data.forEach(createDivNode);
     );
 
 
