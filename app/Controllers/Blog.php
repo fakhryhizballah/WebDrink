@@ -104,4 +104,13 @@ class Blog extends BaseController
         session()->setFlashdata('flash', 'Registration success.');
         return redirect()->to('/about');
     }
+    public function home()
+    {
+        $data = [
+            'title' => 'Blog |Spairum.com',
+            // 'blog' => $blog
+
+        ];
+        return view('blog/Home', $data);
+    }
 }

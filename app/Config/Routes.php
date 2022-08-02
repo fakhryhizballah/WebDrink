@@ -36,6 +36,7 @@ $routes->get('/team', 'Home::team');
 $routes->get('/about', 'Home::about');
 
 $routes->get('/blog', 'Blog::index');
+$routes->get('/blogs', 'Blog::home');
 $routes->get('blog/(:segment)', 'Blog::detail/$1');
 
 $routes->add('/careers', 'Karir::index');
