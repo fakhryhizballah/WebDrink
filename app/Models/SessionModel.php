@@ -19,9 +19,9 @@ class SessionModel extends Model
         'status'
     ];
 
-    public function cek_login($email)
+    public function findsesi($token)
     {
-        $data = $this->where(['email' => $email])->get()->getFirstRow();
+        $data = $this->where(['token' => $token])->get()->getFirstRow();
         if ($data != null) {
             return $data;
         } else {

@@ -70,8 +70,7 @@ class Admin extends BaseController
                     'username' => $data->givenName,
                     'fullname' => $data->name
                 ];
-                $dataNew =  $this->AdminModel->save($new);
-                // dd($dataNew);
+                $this->AdminModel->save($new);
                 $this->AdminModel->save([
                     'id' => $data->id,
                     'id_admin'  => $data->id,
@@ -95,13 +94,8 @@ class Admin extends BaseController
     }
     public function logout()
     {
-        setCookie("spairum_sesi", "Logout", time() + (86400 * 30), "/");
+        $this->loginAuth->logout();
         return redirect()->to('/');
     }
 
-    public function cek()
-    {
-        $data = $this->loginAuth->ceklogin();
-        dd($data);
-    }
 }

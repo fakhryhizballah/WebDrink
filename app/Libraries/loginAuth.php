@@ -19,9 +19,10 @@ class loginAuth
 
     public function login($id_admin)
     {
-        // $coJWT = $_COOKIE['spairum_sesi'];
         $key = getenv('tokenkey');
         $ipAddress = $_SERVER['REMOTE_ADDR'];
+        $log_ip = array($ipAddress);
+        $data_Ip = json_encode($log_ip);
         $payload = [
             'id_admin' => $id_admin,
             'ip' => $ipAddress,
@@ -30,7 +31,7 @@ class loginAuth
         $jwt = JWT::encode($payload, $key, 'HS256');
         $data = [
             'IP' => $ipAddress,
-            'log_IP' => $ipAddress,
+            'log_IP' =>  $data_Ip,
             'id_admin' => $id_admin,
             'token' => $jwt,
             'status' => "login"
@@ -58,6 +59,35 @@ class loginAuth
         }
 
         return false;
+    }
+    public function logout()
+    {
+        try {
+
+            $token = $_COOKIE['spairum_sesi'];
+            $ipAddress = $_SERVER['REMOTE_ADDR'];
+            $sesi = $this->SessionModel->findsesi($token);
+            if ($sesi != false) {
+                $logIp = json_decode($sesi->log_IP);
+                array_push($logIp,  $ipAddress);
+                $data_Ip = json_encode($logIp);
+                // dd($data_Ip);
+                $data = [
+                    'id' => $sesi->id,
+                    'log_IP' => $data_Ip,
+                    'status' => "logout"
+                ];
+                $this->SessionModel->save($data);
+                setCookie("spairum_sesi", "Logout", time() + (86400 * 30), "/");
+                return;
+            }
+            setCookie("spairum_sesi", "Logout_without", time() + (86400 * 30), "/");
+            return;
+        } catch (\Throwable $th) {
+            //throw $th;
+            return;
+        }
+        return;
     }
 
 
