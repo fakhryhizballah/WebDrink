@@ -62,7 +62,7 @@
     $components = explode('/', $path);
     $page = $components[1];
     ?>
-    <nav class="navbar navbar-expand-lg bg-white fixed-top sticky-top" style="height: 76px;">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top sticky-top" style="padding-top: 4px; padding-bottom: 4px;">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="/Asset/img/spairum.png" width="auto" height="60" alt="Logo Spairum">
@@ -70,7 +70,7 @@
             <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse menu" id="navbarNavDropdown">
+            <div class="navbar-collapse collapse show menu" id="navbarNavDropdown">
                 <ul class="nav ml-auto">
                     <li class="nav-item">
                         <a href="/" class="nav-link 
@@ -289,7 +289,9 @@
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            once: true,
+        });
     </script>
 
     <!-- sweet alert -->

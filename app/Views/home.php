@@ -21,26 +21,26 @@
         <!-- The slideshow -->
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="Asset/img/home/which is better for the environment.jpg" alt="which is better for the environment">
+                <img class="d-block img-slide" src="Asset/img/home/which is better for the environment.jpg" alt="which is better for the environment">
                 <div class="carousel-caption">
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="Asset/img/home/Refill_Reduce.jpg" alt="">
+                <img class="d-block img-slide" src="Asset/img/home/Refill_Reduce.jpg" alt="">
                 <div class="carousel-caption">
                     <!-- <h3 class="text-dark">UMKM</h3>
                     <p class="text-dark text-sm">Kami membantu untuk menikatakan kesejahtraan UKM dengan cara mendistribusi minuman kepada konsumen melalui stasiun pengisian air minum (Spairum)</p> -->
                 </div>
             </div>
             <div class="carousel-item ">
-                <img class="d-block w-100" src="Asset/img/home/plastic_earth.jpg" alt="Bumi dan plastic">
+                <img class="d-block img-slide" src="Asset/img/home/plastic_earth.jpg" alt="Bumi dan plastic">
                 <div class="carousel-caption">
                     <!-- <h3 class="text-dark">Spairum</h3>
                     <p class="text-dark">merupakan sebuah startup perusahaan air minum yang meneydiakan layanan pengisian ulang air minum dalam upaya mengurangi penggunaan plastik sekali pakai.</p> -->
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="Asset/img/home/bottle-up.jpg" alt="bottle refill">
+                <img class="d-block img-slide" src="Asset/img/home/bottle-up.jpg" alt="bottle refill">
                 <div class="carousel-caption">
                     <!-- <h3 class="text">Edukasi</h3>
                     <p class="text">selain itu Kami mengedukasi masarakan untuk menjaga kelestarian bumi.</p> -->

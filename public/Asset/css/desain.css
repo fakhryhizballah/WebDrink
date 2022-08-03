@@ -123,6 +123,10 @@
         width: 100%;
         height: 100%;
     }
+
+    /* .carousel-inner img.img-slide {
+        height: 620px;
+    } */
     
     .featured {
         position: relative;
@@ -939,18 +943,17 @@
     } 
     
     .menu ul li:hover::after{
-        width: 100%;
+        width: 50%;
     }    
 
     /* span.menu:hover, span.menu.active {
         color: #34abeb;
     } */
 
+    
     /* CSS Services Section */
 
-    .services {
+    /* .services {
         padding-bottom: 20px;
-    }
-
-    /* CSS Counter Section */
+    } */
     
