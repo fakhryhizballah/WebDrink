@@ -29,4 +29,13 @@ class AdminModel extends Model
             return false;
         }
     }
+    public function cekAkun($id_admin)
+    {
+        $data = $this->where(['id_admin' => $id_admin])->get()->getFirstRow();
+        if ($data != null) {
+            return $data;
+        } else {
+            return false;
+        }
+    }
 }

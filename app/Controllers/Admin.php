@@ -71,7 +71,7 @@ class Admin extends BaseController
                     'fullname' => $data->name
                 ];
                 $dataNew =  $this->AdminModel->save($new);
-                dd($dataNew);
+                // dd($dataNew);
                 $this->AdminModel->save([
                     'id' => $data->id,
                     'id_admin'  => $data->id,
@@ -79,7 +79,7 @@ class Admin extends BaseController
                     'username' => $data->givenName,
                     'fullname' => $data->name
                 ]);
-
+                $this->loginAuth->login($data->id);
                 return redirect()->to('/admin/home');
             }
         }
@@ -94,9 +94,4 @@ class Admin extends BaseController
         return view('admin/home', $data);
     }
 
-    public function cek()
-    {
-        $data = $this->loginAuth->test();
-        dd($data);
-    }
 }

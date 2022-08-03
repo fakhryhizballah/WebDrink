@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class SessionModel extends Model
 {
-    protected $table      = 's';
+    protected $table      = 'session';
     // Uncomment below if you want add primary key
     protected $primaryKey = 'id';
     protected $useTimestamps = true;
@@ -18,4 +18,14 @@ class SessionModel extends Model
         'token',
         'status'
     ];
+
+    public function cek_login($email)
+    {
+        $data = $this->where(['email' => $email])->get()->getFirstRow();
+        if ($data != null) {
+            return $data;
+        } else {
+            return false;
+        }
+    }
 }
