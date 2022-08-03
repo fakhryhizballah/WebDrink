@@ -46,13 +46,13 @@ class loginAuth
             $decoded = JWT::decode($token, new Key($key, 'HS256'));
             $id_admin = $decoded->id_admin;
             $akun = $this->AdminModel->cekAkun($id_admin);
+            // dd($akun);
             if ($akun != false) {
-                session()->setFlashdata('gagal', 'sesi login anda telah habis');
-                setCookie("spairum_sesi", "Logout", time() + (86400 * 30), "/");
                 return $akun;
             }
         } catch (\Exception $exception) {
-            // setCookie("X-Sparum-Token", "Logout-Token-Invalid", SetStatic::cookie_options());
+            session()->setFlashdata('gagal', 'sesi login anda telah habis');
+            setCookie("spairum_sesi", "Logout", time() + (86400 * 30), "/");
             // session()->setFlashdata('gagal', 'Login Dulu');
             return false;
         }

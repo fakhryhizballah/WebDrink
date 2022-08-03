@@ -93,5 +93,15 @@ class Admin extends BaseController
         ];
         return view('admin/home', $data);
     }
+    public function logout()
+    {
+        setCookie("spairum_sesi", "Logout", time() + (86400 * 30), "/");
+        return redirect()->to('/');
+    }
 
+    public function cek()
+    {
+        $data = $this->loginAuth->ceklogin();
+        dd($data);
+    }
 }
