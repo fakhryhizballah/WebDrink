@@ -73,8 +73,7 @@ class Admin extends BaseController
                     'username' => $data->givenName,
                     'fullname' => $data->name
                 ];
-                $dataNew =  $this->AdminModel->save($new);
-                dd($dataNew);
+                $this->AdminModel->save($new);
                 $this->AdminModel->save([
                     'id' => $data->id,
                     'id_admin'  => $data->id,
@@ -82,7 +81,7 @@ class Admin extends BaseController
                     'username' => $data->givenName,
                     'fullname' => $data->name
                 ]);
-
+                $this->loginAuth->login($data->id);
                 return redirect()->to('/admin/home');
             }
         }
@@ -126,10 +125,10 @@ class Admin extends BaseController
         ];
         return view('admin/edit_artikel', $data);
     }
-
-    public function cek()
+    public function logout()
     {
-        $data = $this->loginAuth->test();
-        dd($data);
+        $this->loginAuth->logout();
+        return redirect()->to('/');
     }
+
 }

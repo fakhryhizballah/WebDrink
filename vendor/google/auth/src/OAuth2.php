@@ -18,6 +18,7 @@
 namespace Google\Auth;
 
 use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
 use Google\Auth\HttpHandler\HttpClientCache;
 use Google\Auth\HttpHandler\HttpHandlerFactory;
 use GuzzleHttp\Psr7\Query;
@@ -46,24 +47,24 @@ class OAuth2 implements FetchAuthTokenInterface
      *
      * @var array<string>
      */
-    public static $knownSigningAlgorithms = array(
+    public static $knownSigningAlgorithms = [
         'HS256',
         'HS512',
         'HS384',
         'RS256',
-    );
+    ];
 
     /**
      * The well known grant types.
      *
      * @var array<string>
      */
-    public static $knownGrantTypes = array(
+    public static $knownGrantTypes = [
         'authorization_code',
         'refresh_token',
         'password',
         'client_credentials',
-    );
+    ];
 
     /**
      * - authorizationUri
@@ -380,23 +381,24 @@ class OAuth2 implements FetchAuthTokenInterface
      * - otherwise returns the payload in the idtoken as a PHP object.
      *
      * The behavior of this method varies depending on the version of
-     * `firebase/php-jwt` you are using. In versions lower than 3.0.0, if
-     * `$publicKey` is null, the key is decoded without being verified. In
-     * newer versions, if a public key is not given, this method will throw an
-     * `\InvalidArgumentException`.
+     * `firebase/php-jwt` you are using. In versions 6.0 and above, you cannot
+     * provide multiple $allowed_algs, and instead must provide an array of Key
+     * objects as the $publicKey.
      *
-     * @param string $publicKey The public key to use to authenticate the token
-     * @param array<string> $allowed_algs List of supported verification algorithms
+     * @param string|Key|Key[] $publicKey The public key to use to authenticate the token
+     * @param string|array<string> $allowed_algs algorithm or array of supported verification algorithms.
+     *        Providing more than one algorithm will throw an exception.
      * @throws \DomainException if the token is missing an audience.
      * @throws \DomainException if the audience does not match the one set in
      *         the OAuth2 class instance.
      * @throws \UnexpectedValueException If the token is invalid
+     * @throws \InvalidArgumentException If more than one value for allowed_algs is supplied
      * @throws \Firebase\JWT\SignatureInvalidException If the signature is invalid.
      * @throws \Firebase\JWT\BeforeValidException If the token is not yet valid.
      * @throws \Firebase\JWT\ExpiredException If the token has expired.
      * @return null|object
      */
-    public function verifyIdToken($publicKey = null, $allowed_algs = array())
+    public function verifyIdToken($publicKey = null, $allowed_algs = [])
     {
         $idToken = $this->getIdToken();
         if (is_null($idToken)) {
@@ -461,7 +463,7 @@ class OAuth2 implements FetchAuthTokenInterface
         }
         $assertion += $this->getAdditionalClaims();
 
-        return $this->jwtEncode(
+        return JWT::encode(
             $assertion,
             $this->getSigningKey(),
             $this->getSigningAlgorithm(),
@@ -482,7 +484,7 @@ class OAuth2 implements FetchAuthTokenInterface
         }
 
         $grantType = $this->getGrantType();
-        $params = array('grant_type' => $grantType);
+        $params = ['grant_type' => $grantType];
         switch ($grantType) {
             case 'authorization_code':
                 $params['code'] = $this->getCode();
@@ -580,7 +582,7 @@ class OAuth2 implements FetchAuthTokenInterface
         if ($resp->hasHeader('Content-Type') &&
             $resp->getHeaderLine('Content-Type') == 'application/x-www-form-urlencoded'
         ) {
-            $res = array();
+            $res = [];
             parse_str($body, $res);
 
             return $res;
@@ -1441,30 +1443,86 @@ class OAuth2 implements FetchAuthTokenInterface
 
     /**
      * @param string $idToken
-     * @param string|array<string>|null $publicKey
-     * @param array<string> $allowedAlgs
+     * @param Key|Key[]|string|string[] $publicKey
+     * @param string|string[] $allowedAlgs
      * @return object
      */
     private function jwtDecode($idToken, $publicKey, $allowedAlgs)
     {
-        return JWT::decode($idToken, $publicKey, $allowedAlgs);
+        $keys = $this->getFirebaseJwtKeys($publicKey, $allowedAlgs);
+
+        // Default exception if none are caught. We are using the same exception
+        // class and message from firebase/php-jwt to preserve backwards
+        // compatibility.
+        $e = new \InvalidArgumentException('Key may not be empty');
+        foreach ($keys as $key) {
+            try {
+                return JWT::decode($idToken, $key);
+            } catch (\Exception $e) {
+                // try next alg
+            }
+        }
+        throw $e;
     }
 
     /**
-     * @param array<mixed> $assertion
-     * @param string $signingKey
-     * @param string $signingAlgorithm
-     * @param string $signingKeyId
-     * @return string
+     * @param Key|Key[]|string|string[] $publicKey
+     * @param string|string[] $allowedAlgs
+     * @return Key[]
      */
-    private function jwtEncode($assertion, $signingKey, $signingAlgorithm, $signingKeyId = null)
+    private function getFirebaseJwtKeys($publicKey, $allowedAlgs)
     {
-        return JWT::encode(
-            $assertion,
-            $signingKey,
-            $signingAlgorithm,
-            $signingKeyId
-        );
+        // If $publicKey is instance of Key, return it
+        if ($publicKey instanceof Key) {
+            return [$publicKey];
+        }
+
+        // If $allowedAlgs is empty, $publicKey must be Key or Key[].
+        if (empty($allowedAlgs)) {
+            $keys = [];
+            foreach ((array) $publicKey as $kid => $pubKey) {
+                if (!$pubKey instanceof Key) {
+                    throw new \InvalidArgumentException(sprintf(
+                        'When allowed algorithms is empty, the public key must'
+                        . 'be an instance of %s or an array of %s objects',
+                        Key::class,
+                        Key::class
+                    ));
+                }
+                $keys[$kid] = $pubKey;
+            }
+            return $keys;
+        }
+
+        $allowedAlg = null;
+        if (is_string($allowedAlgs)) {
+            $allowedAlg = $allowedAlg;
+        } elseif (is_array($allowedAlgs)) {
+            if (count($allowedAlgs) > 1) {
+                throw new \InvalidArgumentException(
+                    'To have multiple allowed algorithms, You must provide an'
+                    . ' array of Firebase\JWT\Key objects.'
+                    . ' See https://github.com/firebase/php-jwt for more information.');
+            }
+            $allowedAlg = array_pop($allowedAlgs);
+        } else {
+            throw new \InvalidArgumentException('allowed algorithms must be a string or array.');
+        }
+
+        if (is_array($publicKey)) {
+            // When publicKey is greater than 1, create keys with the single alg.
+            $keys = [];
+            foreach ($publicKey as $kid => $pubKey) {
+                if ($pubKey instanceof Key) {
+                    $keys[$kid] = $pubKey;
+                } else {
+                    $keys[$kid] = new Key($pubKey, $allowedAlg);
+                }
+            }
+            return $keys;
+        }
+
+        return [new Key($publicKey, $allowedAlg)];
     }
 
     /**
