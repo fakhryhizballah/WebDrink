@@ -45,6 +45,16 @@ $routes->post('/jobs', 'Karir::daftar');
 $routes->get('/webinar', 'Blog::webinar');
 
 $routes->get('/SurveiSmartphone/(:any)', 'SurveiControl::index/$1');
+
+
+// restful api
+// $routes->get('/api/v1/', 'AjaxBlog::index');
+// $routes->get('/api/v1/blogs', 'AjaxBlog::getList');
+// $routes->post('/api/v1/artikel', 'AjaxBlog::postArtikel',);
+// $routes->get('/api/v1/artikel', 'AjaxBlog::postArtikel', ['filter' => 'ApiFilter']);
+
+// Admin Routes
+$routes->get('/admin/home', 'Admin::crt_artikel', ['filter' => 'AdminFilter']);
 /**
  * --------------------------------------------------------------------
  * Additional Routing
