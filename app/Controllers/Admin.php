@@ -4,15 +4,18 @@ namespace App\Controllers;
 
 use CodeIgniter\Controller;
 use App\Models\ArtikelModel;
+use App\Models\ArsipModel;
 use App\Models\AdminModel;
 use App\Libraries\cookie_options;
 use App\Libraries\loginAuth;
+
 
 class Admin extends BaseController
 {
     public function __construct()
     {
         $this->ArtikelModel = new ArtikelModel();
+        $this->ArsipModel = new ArsipModel();
         $this->AdminModel = new AdminModel();
         $this->loginAuth = new loginAuth();
 
@@ -85,13 +88,43 @@ class Admin extends BaseController
         }
         return redirect()->to('/');
     }
-    public function home()
+
+    public function crt_artikel()
     {
         $data = [
-            'title' => 'sudah login |Spairum.com',
+            'title' => 'Buat Artikel | Spairum.com',
 
         ];
-        return view('admin/home', $data);
+        return view('admin/crt_artikel', $data);
+    }
+
+    public function arsip_foto()
+    {
+        $arsip = $this->ArsipModel;
+        $data = [
+            'title' => 'Arsip Foto | Spairum.com',
+            'arsip' => $arsip->findAll(),
+        ];
+        return view('admin/arsip_foto', $data);
+    }
+
+    public function upload_foto()
+    {
+        $arsip = $this->ArsipModel;
+        $data = [
+            'title' => 'Upload Foto | Spairum.com',
+            'arsip' => $arsip->findAll(),
+        ];
+        return view('admin/arsip_foto', $data);
+    }
+
+    public function edit_artikel()
+    {
+        $data = [
+            'title' => 'Edit Artikel | Spairum.com',
+
+        ];
+        return view('admin/edit_artikel', $data);
     }
 
     public function cek()
