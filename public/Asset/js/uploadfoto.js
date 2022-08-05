@@ -13,8 +13,6 @@ function onFileUpload(input, id) {
 function thumbnail(id, nama) {
   $("#fotoModal").modal("show");
   $(".uploadBtn").prop("disabled", true);
-  document.getElementById("id_lokasi").value = id;
-  document.getElementById("fotoModalLabel").innerHTML =
     "Upload Foto Maps : " + nama;
   $("#fotoModal").on("hidden.bs.modal", function () {
     console.log("close Modal");
@@ -23,8 +21,8 @@ function thumbnail(id, nama) {
     $(".uploadBtn").html("Upload");
     // $(".uploadBtn").prop("enabled");
     $(".uploadBtn").prop("disabled", true);
+    $("#finput").removeClass('is-invalid');
     document.getElementById("upload_image_form").reset();
-    document.getElementById("id_lokasi").value = null;
     return;
   });
 }
@@ -41,23 +39,33 @@ $("#upload_image_form").on("submit", function (e) {
     contentType: false,
     cache: false,
     dataType: "json",
-    url: "/AjaxUser/thumbnail/",
+    url: "/AjaxBlog/thumbnail/",
     success: function (res) {
       console.log(res);
-      if (res.success == true) {
+      if (res.status == 407) {
+        // alert("Gagal Upload");
+        console.log(res.data.alt);
+        if (res.file) {
+          $("#finput").addClass("is-invalid");
+          $("#valid-file").html(res.data.file);
+        }
+
+        $(".uploadBtn").html("Upload");
+        $(".uploadBtn").prop("disabled", false);
+      }
+
+      if (res.error == false) {
         $("#ajaxImgUpload").attr("src", "https://via.placeholder.com/300");
-        $("#alertMsg").html(res.msg);
+        $("#alertMsg").html(res.data);
         $("#alertMessage").show();
         document.getElementById("upload_image_form").reset();
-        setTimeout(function () {
-          $("#alertMsg").html("");
-          $("#alertMessage").hide();
-        }, 4000);
+        $("#myToast").toast("show");
         $(".uploadBtn").html("Upload");
         $(".uploadBtn").prop("Enabled");
         return;
-      } else if (res.success == false) {
-        $("#alertMsg").html(res.msg);
+      }
+      else if (res.error == true) {
+        $("#alertMsg").html(res.data);
         $("#alertMessage").show();
         setTimeout(function () {
           $("#alertMsg").html("");
@@ -69,5 +77,8 @@ $("#upload_image_form").on("submit", function (e) {
         return;
       }
     },
+    error: function (err) {
+      console.log(err);
+    }
   });
 });
