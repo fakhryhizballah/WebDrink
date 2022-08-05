@@ -24,6 +24,14 @@ class Admin extends BaseController
     }
     public function login()
     {
+        try {
+            $admin = $this->loginAuth->ceklogin();
+            if ($admin != false) {
+                return redirect()->to('/admin/home');
+            }
+        } catch (\Throwable $th) {
+            //throw $th;
+        }
         $client = new \Google_Client();
 
         $clientID = getenv('google.clientID');
