@@ -19,7 +19,7 @@
     <table id="tbfoto" class="display" style="width:100%">
         <thead>
             <tr>
-                <th>Thumbnail</th>
+                <th>no</th>
                 <th>Thumbnail</th>
                 <th>Link Thumbnail</th>
                 <th>ALT</th>
