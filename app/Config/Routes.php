@@ -55,6 +55,8 @@ $routes->get('/SurveiSmartphone/(:any)', 'SurveiControl::index/$1');
 
 // Admin Routes
 $routes->get('/admin/home', 'Admin::crt_artikel', ['filter' => 'AdminFilter']);
+$routes->get('/admin/crt_artikel', 'Admin::crt_artikel', ['filter' => 'AdminFilter']);
+$routes->get('/admin/arsip_foto', 'Admin::arsip_foto', ['filter' => 'AdminFilter']);
 /**
  * --------------------------------------------------------------------
  * Additional Routing
