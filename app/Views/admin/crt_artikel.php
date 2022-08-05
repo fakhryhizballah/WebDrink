@@ -13,8 +13,8 @@
                         </div>
                         <form>
                             <div class="mb-3">
-                                <label for="inputThumbnail" class="form-label">Thumbnail Artikel</label>
-                                <input type="text" class="form-control" id="inputThumbnail">
+                                <label for="inputThumbnail" class="form-label">Url Thumbnail</label>
+                                <input type="url" class="form-control" id="inputThumbnail">
                             </div>
                             <div class="mb-3">
                                 <label for="inputLokasi" class="form-label">Lokasi Kegiatan</label>
@@ -22,7 +22,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="inputTanggal" class="form-label">Tanggal Kegiatan</label>
-                                <input type="text" class="form-control" id="inputTanggal">
+                                <input type="date" class="form-control" id="inputTanggal">
                             </div>
                             <div class="mb-3">
                                 <label for="inputJudul" class="form-label">Judul Artikel</label>
