@@ -9,6 +9,17 @@ class ArtikelModel extends Model
     protected $table      = 'blogs';
     // Uncomment below if you want add primary key
     protected $primaryKey = 'id';
+    protected $useTimestamps    = true;
+    protected $allowedFields = [
+        'thumbnail',
+        'judul',
+        'kota',
+        'tanggal',
+        'id_blog',
+        'slug',
+        'des',
+        'konten'
+    ];
 
     public function getBlog($slug = false)
     {

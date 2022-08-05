@@ -215,5 +215,84 @@ class AjaxBlog extends ResourceController
         return $this->respond($response, 200);
     }
 
+    public function upload_artikel()
+    {
+        try {
+            $admin = $this->loginAuth->ceklogin();
+            $body = $this->request->getPost();
+            $db      = \Config\Database::connect();
+            $id_artikel = uniqid() . "_" . $admin->id_admin;
+            $random = random_string('alnum', 4);
+            $slug = AjaxBlog::slugify($body['inputJudul'] . " " . $random);
+            $db->transStart();
+            $data = [
+                'thumbnail' => $body['inputThumbnail'],
+                'judul' => $body['inputJudul'],
+                'kota' => $body['inputLokasi'],
+                'tanggal' => $body['inputTanggal'],
+                'id_blog' => $id_artikel,
+                'slug' => $slug,
+                'des' => $body['inputDeskripsi'],
+                'konten' => $body['inputKonten']
+            ];
+            $this->ArtikelModel->save($data);
+            $myTime = new Time('now');
+            $penulis = [
+                'id_admin' => $admin->id_admin,
+                'id_blog' => $id_artikel,
+                'created_at' => $myTime,
+                'updated_at' => $myTime
+
+            ];
+            $db->table('author')->insert($penulis);
+            $db->transComplete();
+            // $judul = gettype($body);
+            // $judul = $body['inputJudul'];
+            $response = [
+                'status' => 200,
+                'error' => false,
+                'data' =>  $data,
+                'msg' => 'success',
+                'id_admin' =>  $admin->id_admin,
+            ];
+            return $this->respond($response, 200);
+        } catch (\Throwable $th) {
+            $response = [
+                'status' => 402,
+                'error' => true,
+                'data' =>  "Sorry you are not logged in",
+                'msg' => $th->getMessage()
+            ];
+            return $this->respond($response, 200);
+        }
+    }
+
+    public static function slugify($text, string $divider = '-')
+    {
+        // replace non letter or digits by divider
+        $text = preg_replace('~[^\pL\d]+~u', $divider, $text);
+
+        // transliterate
+        $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
+
+        // remove unwanted characters
+        $text = preg_replace('~[^-\w]+~', '', $text);
+
+        // trim
+        $text = trim($text, $divider);
+
+        // remove duplicate divider
+        $text = preg_replace('~-+~', $divider, $text);
+
+        // lowercase
+        $text = strtolower($text);
+
+        if (empty($text)) {
+            return 'n-a';
+        }
+
+        return $text;
+    }
+
 
 }
