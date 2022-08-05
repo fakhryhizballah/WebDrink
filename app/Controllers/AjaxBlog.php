@@ -195,6 +195,25 @@ class AjaxBlog extends ResourceController
             return $this->respond($response, 200);
         }
     }
+    public function getFotoAll()
+    {
+        $admin = $this->loginAuth->ceklogin();
+        if ($admin == false) {
+            $response = [
+                'status' => 407,
+                'error' => true,
+                'data' =>  "Sorry you are not logged in"
+            ];
+            return $this->respond($response, 407);
+        }
+        $data = $this->ArsipModel->findAll();
+        $response = [
+            'status' => 200,
+            'error' => false,
+            'data' => $data
+        ];
+        return $this->respond($response, 200);
+    }
 
 
 }

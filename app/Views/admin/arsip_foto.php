@@ -16,31 +16,15 @@
         <i class="fa fa-plus"></i> Tambah Foto
     </a>
 
-
-    <table class="table bg-white" id="tabel">
+    <table id="tbfoto" class="display" style="width:100%">
         <thead>
-            <tr style="text-align: center;">
-                <th scope="col">No</th>
-                <th scope="col">Thumbnail</th>
-                <th scope="col">Link Thumbnail</th>
-                <th scope="col">ALT</th>
+            <tr>
+                <th>Thumbnail</th>
+                <th>Thumbnail</th>
+                <th>Link Thumbnail</th>
+                <th>ALT</th>
             </tr>
         </thead>
-        <tbody style="text-align: center;">
-            <?php $i = 1; ?>
-            <?php foreach ($arsip as $ar) : ?>
-                <tr>
-                    <th scope="row"><?= $i; ?></th>
-                    <td>
-                        <source srcset="<?= $ar['url']; ?>" type="image/svg+xml">
-                        <img src="<?= $ar['url']; ?>" alt="<?= $ar['alt']; ?>" class="img-fluid img-thumbnail">
-                    </td>
-                    <td><?= $ar['url']; ?></td>
-                    <td><?= $ar['alt']; ?></td>
-                </tr>
-                <?php $i++;  ?>
-            <?php endforeach; ?>
-        </tbody>
     </table>
 </div>
 
@@ -102,11 +86,8 @@
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
 
-<script>
-    $(document).ready(function() {
-        $('#tabel').DataTable();
-    });
-</script>
+
+<script async src="/Asset/js/arsipFoto.js"></script>
 <script async src="/Asset/js/uploadfoto.js"></script>
 
 

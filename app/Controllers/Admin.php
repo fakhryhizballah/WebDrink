@@ -107,10 +107,11 @@ class Admin extends BaseController
 
     public function arsip_foto()
     {
-        $arsip = $this->ArsipModel;
+        $arsip = $this->ArsipModel->findAll();
+        // dd($arsip);
         $data = [
             'title' => 'Arsip Foto | Spairum.com',
-            'arsip' => $arsip->findAll(),
+            'arsip' => $arsip,
         ];
         return view('admin/arsip_foto', $data);
     }
@@ -120,7 +121,6 @@ class Admin extends BaseController
         $arsip = $this->ArsipModel;
         $data = [
             'title' => 'Upload Foto | Spairum.com',
-            'arsip' => $arsip->findAll(),
         ];
         return view('admin/arsip_foto', $data);
     }

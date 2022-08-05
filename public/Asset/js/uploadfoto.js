@@ -62,6 +62,7 @@ $("#upload_image_form").on("submit", function (e) {
         $("#myToast").toast("show");
         $(".uploadBtn").html("Upload");
         $(".uploadBtn").prop("Enabled");
+        tb_list.ajax.reload();
         return;
       }
       else if (res.error == true) {
