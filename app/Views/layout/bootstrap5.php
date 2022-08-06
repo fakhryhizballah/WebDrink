@@ -25,7 +25,6 @@
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- costume css -->
-    <!-- <link href="/Asset/css/desain.css" rel="stylesheet"> -->
     <link href="\Asset\css\foother.css" rel="stylesheet">
 </head>
 
@@ -159,11 +158,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.2/venobox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
     <!-- Template Main JS File -->
-    <!-- <script type='text/javascript' src="Asset/js/script.js"></script>script -->
-    <!-- <script src="assets/js/main.js"></script> -->
-    <!-- sweet alert -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> -->
-
 
     <?= $this->renderSection('script'); ?>
     <script>
