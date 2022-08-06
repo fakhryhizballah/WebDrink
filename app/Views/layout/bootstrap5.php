@@ -5,19 +5,33 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" type="image/ico" href="/Asset/img/logo.ico" />
     <?= $this->renderSection('head'); ?>
+    <title><?= $title; ?></title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image/ico" href="/Asset/img/logo.ico" />
-    <title><?= $title; ?></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css"> -->
-    <link rel="stylesheet" href="\Asset\css\foother.css">
+    <!-- Font -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/30ddaf6bd8.js" crossorigin="anonymous"></script>
+
+    <!-- Vendor CSS Files -->
+    <!-- <link href="Asset/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.2/venobox.css" rel="stylesheet">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- costume css -->
+    <!-- <link href="/Asset/css/desain.css" rel="stylesheet"> -->
+    <link href="\Asset\css\foother.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-white fixed-top sticky-top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white fixed-top sticky-top" style="padding-top: 4px; padding-bottom: 4px;">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="/Asset/img/spairum.png" width="auto" height="60" alt="Logo Spairum">
@@ -25,39 +39,30 @@
             <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="nav">
+            <div class="navbar-collapse collapse show menu" id="navbarNavDropdown">
+                <ul class="nav ms-auto ">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="/">Home</a>
+                        <a class="nav-link text-dark status-nav" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="/about">About Us</a>
+                        <a class="nav-link text-dark status-nav" href="/about">About Us</a>
                     </li>
-                    <!-- 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-dark" href="#" id="layanan-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"=>Service</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark status-nav" href="/blogs">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark status-nav" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark status-nav" href="#">Take Action</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark status-nav" href="/careers">Karir</a>
+                    </li>
+                    <a class="btn btn-sm rounded-pill btn-outline-info nav-link" href="https://air.spairum.my.id">
+                        <span class="nav-link-inner-text mr-1">Create Account</span>
+                    </a>
 
-                            <a class="dropdown-item" href="#">Perumahan</a>
-
-                            <a class="dropdown-item" href="#">Perkantoran</a>
-
-                            <a class="dropdown-item" href="#">Tempat Usaha</a>
-                        </div>
-                    </li> 
-                    -->
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="/blogs">Blog</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link text-dark" href="/careers">Karir</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">FAQ</a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class=" btn btn-sm rounded-pill btn-outline-primary" href="https://air.spairum.my.id">Daftar/Masuk</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -66,10 +71,7 @@
     <?= $this->renderSection('layout'); ?>
 
     <footer class="new_footer_area bg_color">
-
         <div class="new_footer_top ">
-            <div class="wave"></div>
-            <!-- <div class="wave"></div> -->
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
@@ -138,17 +140,42 @@
 
     <?= $this->renderSection('modal'); ?>
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
-
     <!-- Option 2: Separate Popper and Bootstrap JS -->
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- Vendor JS Files -->
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.2/venobox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <!-- Template Main JS File -->
+    <!-- <script type='text/javascript' src="Asset/js/script.js"></script>script -->
+    <!-- <script src="assets/js/main.js"></script> -->
+    <!-- sweet alert -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> -->
+
 
     <?= $this->renderSection('script'); ?>
+    <script>
+        const currentLocation = location.href;
+        const menuItem = document.querySelectorAll('.status-nav');
+        const menuLength = menuItem.length
+        for (let i = 0; i < menuLength; i++) {
+            if (menuItem[i].href === currentLocation) {
+                menuItem[i].className = "nav-link active"
+            }
+        }
+    </script>
 </body>
 
 </html>
