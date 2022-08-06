@@ -36,6 +36,7 @@ $routes->get('/team', 'Home::team');
 $routes->get('/about', 'Home::about');
 
 $routes->get('/blog', 'Blog::index');
+$routes->get('/blogs', 'Blog::home');
 $routes->get('blog/(:segment)', 'Blog::detail/$1');
 
 $routes->add('/careers', 'Karir::index');
@@ -44,6 +45,18 @@ $routes->post('/jobs', 'Karir::daftar');
 $routes->get('/webinar', 'Blog::webinar');
 
 $routes->get('/SurveiSmartphone/(:any)', 'SurveiControl::index/$1');
+
+
+// restful api
+// $routes->get('/api/v1/', 'AjaxBlog::index');
+// $routes->get('/api/v1/blogs', 'AjaxBlog::getList');
+// $routes->post('/api/v1/artikel', 'AjaxBlog::postArtikel',);
+// $routes->get('/api/v1/artikel', 'AjaxBlog::postArtikel', ['filter' => 'ApiFilter']);
+
+// Admin Routes
+$routes->get('/admin/home', 'Admin::crt_artikel', ['filter' => 'AdminFilter']);
+$routes->get('/admin/crt_artikel', 'Admin::crt_artikel', ['filter' => 'AdminFilter']);
+$routes->get('/admin/arsip_foto', 'Admin::arsip_foto', ['filter' => 'AdminFilter']);
 /**
  * --------------------------------------------------------------------
  * Additional Routing

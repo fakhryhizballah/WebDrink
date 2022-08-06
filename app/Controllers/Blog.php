@@ -5,6 +5,7 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Models\WebinarModel;
 use App\Models\BlogModel;
+use App\Models\ArtikelModel;
 use App\Libraries\cookie_options;
 
 class Blog extends BaseController
@@ -14,6 +15,7 @@ class Blog extends BaseController
         $this->WebinarModel = new WebinarModel();
         $this->email = \Config\Services::email();
         $this->BlogModel = new BlogModel();
+        $this->ArtikelModel = new ArtikelModel();
         helper('cookie');
         $this->cookie_options = new cookie_options();
     }
@@ -41,16 +43,17 @@ class Blog extends BaseController
 
     public function detail($slug)
     {
-        if (empty($_COOKIE['view-web-sapirum'])) {
-            $this->cookie_options->setCookies();
-        } else {
-            $this->cookie_options->updateCookies();
-        }
-        $blog = $this->BlogModel->getBlog($slug);
-        // dd($blog);
+        // if (empty($_COOKIE['view-web-sapirum'])) {
+        //     $this->cookie_options->setCookies();
+        // } else {
+        //     $this->cookie_options->updateCookies();
+        // }
+        $blog = $this->ArtikelModel->getBlog($slug);
+        // dd($slug);
+        $judul = $blog['judul'];
 
         $data = [
-            'title' => 'Blog |Spairum.com',
+            'title' => "$judul |Spairum.com",
             'blog' => $blog
 
         ];
@@ -103,5 +106,14 @@ class Blog extends BaseController
         $this->email->send();
         session()->setFlashdata('flash', 'Registration success.');
         return redirect()->to('/about');
+    }
+    public function home()
+    {
+        $data = [
+            'title' => 'Blog |Spairum.com',
+            // 'blog' => $blog
+
+        ];
+        return view('blog/Home', $data);
     }
 }

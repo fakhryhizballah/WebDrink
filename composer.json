@@ -14,7 +14,8 @@
 		"laminas/laminas-escaper": "^2.6",
 		"psr/log": "^1.1",
 		"firebase/php-jwt": "^5.4",
-		"php-mqtt/client": "^1.1"
+		"php-mqtt/client": "^1.1",
+		"google/apiclient": "2.12.1"
 	},
 	"require-dev": {
 		"codeigniter4/codeigniter4-standard": "^1.0",
