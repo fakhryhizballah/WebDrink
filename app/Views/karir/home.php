@@ -1,4 +1,4 @@
-<?= $this->extend('layout/base'); ?>
+<?= $this->extend('layout/bootstrap5'); ?>
 
 
 <?= $this->section('head'); ?>
