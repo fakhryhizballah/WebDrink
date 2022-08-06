@@ -10,15 +10,21 @@
     <meta name="author" content="Spairum">
 
     <?= $this->renderSection('head'); ?>
-    <link href="Asset/css/desain.css" rel="stylesheet">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Font -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Quicksand" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/30ddaf6bd8.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" /> -->
 
+    <link href="Asset/css/desain.css" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link href="Asset/css/bootstrap.min.css" rel="stylesheet"> -->
+
 
     <!-- Vendor CSS Files -->
     <!-- <link href="Asset/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -27,8 +33,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.2/venobox.css" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-
-    <!-- <link href="Asset/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
 
     <!-- <link href="Asset/vendor/animate.css/animate.min.css" rel="stylesheet"> -->
 
@@ -39,12 +43,6 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JM6HPZLXEV"></script>
 
-    <style>
-        span.menu:hover,
-        span.menu.active {
-            color: #17a2b8;
-        }
-    </style>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -64,7 +62,7 @@
     $components = explode('/', $path);
     $page = $components[1];
     ?>
-    <nav class="navbar navbar-expand-lg bg-white fixed-top sticky-top">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top sticky-top" style="padding-top: 4px; padding-bottom: 4px;">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="/Asset/img/spairum.png" width="auto" height="60" alt="Logo Spairum">
@@ -72,61 +70,101 @@
             <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="navbar-collapse collapse show menu" id="navbarNavDropdown">
                 <ul class="nav ml-auto">
                     <li class="nav-item">
-                        <a href="/" class="nav-link text-dark">
-                            <span class="nav-link-inner-text mr-1 menu <?php if ($page == "") echo 'active'; ?>">Home</span>
+                        <a href="/" class="nav-link 
+                        <?php if ($page == "") {
+                            echo 'active';
+                        } else {
+                            echo 'text-dark';
+                        }
+                        ?>">
+                            Home
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="/about" class="nav-link text-dark">
-                            <span class="nav-link-inner-text mr-1 menu <?php if ($page == "about") echo 'active'; ?>">About</span>
+                        <a href="/about" class="nav-link 
+                        <?php if ($page == "about") {
+                            echo 'active';
+                        } else {
+                            echo 'text-dark';
+                        } ?>">
+                            About
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-dark">
-                            <span class="nav-link-inner-text mr-1 menu <?php if ($page == "products") echo 'active'; ?>">Products</span>
+                        <a href="#" class="nav-link 
+                        <?php if ($page == "products") {
+                            echo 'active';
+                        } else {
+                            echo 'text-dark';
+                        } ?>">
+                            Products
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-dark">
-                            <span class="nav-link-inner-text mr-1 menu <?php if ($page == "howto") echo 'active'; ?>">How To</span>
+                        <a href="#" class="nav-link 
+                        <?php if ($page == "howto") {
+                            echo 'active';
+                        } else {
+                            echo 'text-dark';
+                        } ?>">
+                            How To
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-dark">
-                            <span class="nav-link-inner-text mr-1 menu <?php if ($page == "takeaction") echo 'active'; ?>">Take Action</span>
+                        <a href="#" class="nav-link 
+                        <?php if ($page == "takeaction") {
+                            echo 'active';
+                        } else {
+                            echo 'text-dark';
+                        } ?>">
+                            Take Action
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-dark">
-                            <span class="nav-link-inner-text mr-1 menu <?php if ($page == "career") echo 'active'; ?>">Career</span>
+                        <a href="#" class="nav-link 
+                        <?php if ($page == "career") {
+                            echo 'active';
+                        } else {
+                            echo 'text-dark';
+                        } ?>">
+                            Career
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-dark">
-                            <span class="nav-link-inner-text mr-1 menu <?php if ($page == "contactus") echo 'active'; ?>">Contact Us</span>
+                        <a href="#" class="nav-link 
+                        <?php if ($page == "contactus") {
+                            echo 'active';
+                        } else {
+                            echo 'text-dark';
+                        } ?>">
+                            Contact Us
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="/blog">
-                            <span class="nav-link-inner-text mr-1 menu <?php if ($page == "blog") echo 'active'; ?>">Blog</span>
+                        <a class="nav-link 
+                        <?php if ($page == "blog") {
+                            echo 'active';
+                        } else {
+                            echo 'text-dark';
+                        } ?>" href="/blog">
+                            Blog
                         </a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="btn btn-sm rounded-pill btn-outline-info nav-link" href="https://air.spairum.my.id">
-                            <span class="nav-link-inner-text mr-1">Create Account</span>
-                        </a>
-                    </li>
+                    <a class="btn btn-sm rounded-pill btn-outline-info nav-link" href="https://air.spairum.my.id">
+                        <span class="nav-link-inner-text mr-1">Create Account</span>
+                    </a>
+
                     <!-- <li class="nav-item dropdown">
                         <a href="#" id="contactusDropdown" class="nav-link text-dark dropdown-toggle" aria-expanded="false" data-toggle="dropdown">
                             <span class="nav-link-inner-text mr-1">Contact Us</span>
@@ -247,6 +285,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
+
     <!-- sweet alert -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
@@ -257,6 +304,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.js"></script>
     <!-- <script src="Asset/vendor/counterup/counterup.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <!-- <script src="lib/counterup/counterup.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.2/venobox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
     <script>
