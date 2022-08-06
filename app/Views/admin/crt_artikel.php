@@ -58,7 +58,6 @@
 
 <?= $this->endSection('content'); ?>
 <?= $this->section('script'); ?>
-<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script>
     $('#upload_artikel').on('submit', function(e) {
         e.preventDefault();
