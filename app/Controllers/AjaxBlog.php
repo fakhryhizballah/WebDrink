@@ -213,8 +213,8 @@ class AjaxBlog extends ResourceController
             $admin = $this->loginAuth->ceklogin();
             $body = $this->request->getPost();
             $db      = \Config\Database::connect();
-            $id_artikel = uniqid() . "_" . $admin->id_admin;
             $random = random_string('alnum', 4);
+            $id_artikel = $random . uniqid();
             $slug = AjaxBlog::slugify($body['inputJudul'] . " " . $random);
             $db->transStart();
             $data = [
@@ -234,9 +234,14 @@ class AjaxBlog extends ResourceController
                 'id_blog' => $id_artikel,
                 'created_at' => $myTime,
                 'updated_at' => $myTime
-
             ];
             $db->table('author')->insert($penulis);
+            $this->StatusModel->save([
+                'id_blog' => $id_artikel,
+                'last_admin' => $admin->id_admin,
+                'status' => 0,
+            ]);
+
             $db->transComplete();
             // $judul = gettype($body);
             // $judul = $body['inputJudul'];
