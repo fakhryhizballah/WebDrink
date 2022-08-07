@@ -49,7 +49,7 @@ class Blog extends BaseController
         //     $this->cookie_options->updateCookies();
         // }
         $blog = $this->ArtikelModel->getBlog($slug);
-        // dd($slug);
+        // dd($blog);
         $judul = $blog['judul'];
 
         $data = [
