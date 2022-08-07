@@ -49,7 +49,9 @@ class Blog extends BaseController
         //     $this->cookie_options->updateCookies();
         // }
         $blog = $this->ArtikelModel->getBlog($slug);
-        // dd($slug);
+        if (empty($blog)) {
+            return redirect()->to(base_url('blogs'));
+        }
         $judul = $blog['judul'];
 
         $data = [

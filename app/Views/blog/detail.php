@@ -1,10 +1,12 @@
-<?= $this->extend('layout/base'); ?>
+<?= $this->extend('layout/bootstrap5'); ?>
 
 
 <?= $this->section('head'); ?>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="keywords" content="Apps,Spairum ,Untan,Statup pontianak,Naufal,Fakhry">
 <meta name="description" content="<?= $blog['des']; ?>">
+<meta name="author" content="<?= $blog['fullname']; ?>">
+<meta name="keywords" content="spairum, blog, <?= $blog['kota']; ?>">
 
 <?= $this->endSection('head'); ?>
 
@@ -24,13 +26,16 @@
 
 
             <!-- Date/Time -->
-            <p>Posted on <?= $blog['tanggal']; ?></p>
+            <p>Posted on <?= $blog['tanggal']; ?>, <?= $blog['kota']; ?></p>
+            <p>Author <?= $blog['fullname']; ?></p>
+            </p>
+
 
             <hr>
 
             <!-- Preview Image -->
 
-            <img class="img-fluid rounded" src="<?= $blog['thumbnail']; ?>" alt="<?= $blog['judul']; ?>">
+            <img class="img-fluid rounded" src="<?= $blog['thumbnail']; ?>" alt="<?= $blog['alt']; ?>">
 
             <hr>
 

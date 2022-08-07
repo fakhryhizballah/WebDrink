@@ -116,23 +116,15 @@ class Admin extends BaseController
         return view('admin/arsip_foto', $data);
     }
 
-    public function upload_foto()
+
+    public function arsip_arikel()
     {
-        $arsip = $this->ArsipModel;
         $data = [
             'title' => 'Upload Foto | Spairum.com',
         ];
-        return view('admin/arsip_foto', $data);
+        return view('admin/arsip_arikel', $data);
     }
 
-    public function edit_artikel()
-    {
-        $data = [
-            'title' => 'Edit Artikel | Spairum.com',
-
-        ];
-        return view('admin/edit_artikel', $data);
-    }
     public function logout()
     {
         $this->loginAuth->logout();
