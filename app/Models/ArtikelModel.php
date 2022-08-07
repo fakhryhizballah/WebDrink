@@ -32,4 +32,21 @@ class ArtikelModel extends Model
     {
         return $this->select('kota, tanggal, id_blog, judul,slug,thumbnail,des')->get()->getResultArray();
     }
+    public function getlistArtikel()
+    {
+        return $this->select('judul,thumbnail,des,fullname, status, blogs.id_blog')
+        ->join('author', 'author.id_blog = blogs.id_blog')
+        ->join('admin', 'admin.id_admin = author.id_admin')
+        ->join('status', 'status.id_blog = blogs.id_blog')
+        ->get()->getResultArray();
+    }
+    public function detailArtikel($id_blog)
+    {
+        return $this->select('judul,thumbnail,fullname, des, konten, tanggal,kota, blogs.id')
+        ->where(['blogs.id_blog' => $id_blog])
+            ->join('author', 'author.id_blog = blogs.id_blog')
+            ->join('admin', 'admin.id_admin = author.id_admin')
+            ->first();
+
+    }
 }

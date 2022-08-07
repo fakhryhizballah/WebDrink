@@ -17,7 +17,7 @@
             <div class="nav flex-column nav-pills" id="v-pills-tab">
                 <a class="nav-link item" href="/admin/crt_artikel">Tulis Artikel</a>
                 <a class="nav-link item" href="/admin/arsip_foto">Arsip Foto</a>
-                <a class="nav-link disabled" href="#">Sunting Artikel</a>
+                <a class="nav-link item" href="/admin/arsip_arikel">Sunting Artikel</a>
             </div>
         </div>
         <div class="col-10 ">
@@ -35,12 +35,12 @@
 <?= $this->section('script'); ?>
 
 <script>
-    const currentLocation = location.href;
-    const menuItem = document.querySelectorAll('.item');
-    const menuLength = menuItem.length
-    for (let i = 0; i < menuLength; i++) {
-        if (menuItem[i].href === currentLocation) {
-            menuItem[i].className = "nav-link active"
+    const currentLoca = location.href;
+    const menuItemAdmin = document.querySelectorAll('.item');
+    const menuLengthAdmin = menuItemAdmin.length
+    for (let i = 0; i < menuLengthAdmin; i++) {
+        if (menuItemAdmin[i].href === currentLoca) {
+            menuItemAdmin[i].className = "nav-link active"
         }
     }
 </script>

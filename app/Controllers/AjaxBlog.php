@@ -7,6 +7,7 @@ use CodeIgniter\I18n\Time;
 use App\Models\LogModel;
 use App\Models\ArtikelModel;
 use App\Models\ArsipModel;
+use App\Models\StatusModel;
 use App\Libraries\loginAuth;
 
 class AjaxBlog extends ResourceController
@@ -19,6 +20,7 @@ class AjaxBlog extends ResourceController
         $this->LogModel = new LogModel();
         $this->ArtikelModel = new ArtikelModel();
         $this->ArsipModel = new ArsipModel();
+        $this->StatusModel = new StatusModel();
         $this->loginAuth = new loginAuth();
         helper('text');
         helper('cookie');
@@ -67,16 +69,6 @@ class AjaxBlog extends ResourceController
             'data' =>   $admin
         ];
         return $this->respond($response, 200);
-    }
-    public function valid()
-    {
-        $response = [
-            'status' => 407,
-            'error' => true,
-            'data' =>  "Sorry you are not logged in"
-        ];
-        return $this->respond($response, 200);
-        
     }
 
     public function thumbnail()
@@ -267,30 +259,122 @@ class AjaxBlog extends ResourceController
         }
     }
 
+    public function getArtikelAll()
+    {
+        $admin = $this->loginAuth->ceklogin();
+        if ($admin == false) {
+            $response = [
+                'status' => 407,
+                'error' => true,
+                'data' =>  "Sorry you are not logged in"
+            ];
+            return $this->respond($response, 200);
+        }
+
+        $data = $this->ArtikelModel->getlistArtikel();
+        $response = [
+            'status' => 200,
+            'error' => false,
+            'data' => $data
+        ];
+        return $this->respond($response, 200);
+    }
+    public function editStatus()
+    {
+        $admin = $this->loginAuth->ceklogin();
+        if ($admin == false) {
+            $response = [
+                'status' => 407,
+                'error' => true,
+                'data' =>  "Sorry you are not logged in"
+            ];
+            return $this->respond($response, 200);
+        }
+        $body = $this->request->getPost();
+        $id_artikel = $this->StatusModel->getIdArtikel($body['id_blog']);
+        $db      = \Config\Database::connect();
+        $db->transStart();
+        $this->StatusModel->save([
+            'id' => $id_artikel['id'],
+            'status' => $body['status'],
+            'last_admin' => $admin->id_admin,
+        ]);
+        $db->transComplete();
+        $response = [
+            'status' => 200,
+            'error' => false,
+            'data' =>  null,
+            'id_admin' =>  $admin->id_admin,
+        ];
+        return $this->respond($response, 200);
+    }
+    public function getArtikel()
+    {
+        $admin = $this->loginAuth->ceklogin();
+        if ($admin == false) {
+            $response = [
+                'status' => 407,
+                'error' => true,
+                'data' =>  "Sorry you are not logged in"
+            ];
+            return $this->respond($response, 200);
+        }
+        $body = $this->request->getPost();
+        $data = $this->ArtikelModel->detailArtikel($body['id_blog']);
+        $response = [
+            'status' => 200,
+            'error' => false,
+            'data' => $data
+        ];
+        return $this->respond($response, 200);
+    }
+    public function update_artikel()
+    {
+        $admin = $this->loginAuth->ceklogin();
+        if ($admin == false) {
+            $response = [
+                'status' => 407,
+                'error' => true,
+                'data' =>  "Sorry you are not logged in"
+            ];
+            return $this->respond($response, 200);
+        }
+        $body = $this->request->getPost();
+        $data = [
+            'id' => $body['hidden'],
+            'thumbnail' => $body['inputThumbnail'],
+            'judul' => $body['inputJudul'],
+            'kota' => $body['inputLokasi'],
+            'tanggal' => $body['inputTanggal'],
+            'des' => $body['inputDeskripsi'],
+            'konten' => $body['inputKonten']
+        ];
+        $this->ArtikelModel->save($data);
+        $response = [
+            'status' => 200,
+            'error' => false,
+            'data' => $data
+        ];
+        return $this->respond($response, 200);
+    }
+
     public static function slugify($text, string $divider = '-')
     {
         // replace non letter or digits by divider
         $text = preg_replace('~[^\pL\d]+~u', $divider, $text);
-
         // transliterate
         $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
-
         // remove unwanted characters
         $text = preg_replace('~[^-\w]+~', '', $text);
-
         // trim
         $text = trim($text, $divider);
-
         // remove duplicate divider
         $text = preg_replace('~-+~', $divider, $text);
-
         // lowercase
         $text = strtolower($text);
-
         if (empty($text)) {
             return 'n-a';
         }
-
         return $text;
     }
 
