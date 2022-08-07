@@ -1,23 +1,4 @@
 console.log("homeblog.js");
-// fectch data
-// fetch("AjaxBlog/getList")
-//     .then(response => response.json())
-//     .then(data => {
-//         console.log(data);
-//         // create html
-//     }
-//     );
-//# sourceMappingURL=homeblog.js.map
-// .catch(error => console.log(error));
-//# sourceMappingURL=homeblog.js.map
-
-// fetch('/AjaxBlog/getList')
-//     .then((response) => response.json())
-//     .then((data) => console.log(data.data)
-//         // create html
-//         //   var app = document.getElementById("app");
-//         // return data.data;
-//     );
 
 async function getList() {
     const response = await fetch('/AjaxBlog/getList');

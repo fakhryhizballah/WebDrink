@@ -30,7 +30,10 @@ class ArtikelModel extends Model
     }
     public function getlist()
     {
-        return $this->select('kota, tanggal, id_blog, judul,slug,thumbnail,des')->get()->getResultArray();
+        return $this->select('kota, tanggal, blogs.id_blog judul,slug,thumbnail,des')
+        ->join('status', 'status.id_blog = blogs.id_blog')
+        ->where('status.status', '1')
+            ->get()->getResultArray();
     }
     public function getlistArtikel()
     {
