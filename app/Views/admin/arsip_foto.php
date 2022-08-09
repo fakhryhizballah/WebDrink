@@ -19,10 +19,10 @@
     <table id="tbfoto" class="display" style="width:100%">
         <thead>
             <tr>
-                <th>no</th>
+                <th>No</th>
                 <th>Thumbnail</th>
                 <th>Link Thumbnail</th>
-                <th>ALT</th>
+                <th>Nama Foto</th>
             </tr>
         </thead>
     </table>
@@ -54,7 +54,7 @@
                 <div class="container mt-5">
                     <form class="user" id="upload_image_form" method="POST" enctype="multipart/form-data">
                         <div class="d-grid position-relative mb-4 text-center">
-                            <img class="mx-auto" id="ajaxImgUpload" alt="Preview Image" src="https://via.placeholder.com/300" />
+                            <img class="mx-auto" id="ajaxImgUpload" alt="Preview Image" src="https://cdn.spairum.my.id/image/1660032342999-previewimg.png" />
                         </div>
                         <div class="mb-3">
                             <input type="file" name="file" multiple="true" id="finput" onchange="onFileUpload(this);" class="form-control form-control-lg " accept="image/*">
@@ -62,8 +62,8 @@
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="alt" class="form-label">Masukan nama foto</label>
-                            <input type="text" name="alt" id="alt" class="form-control form-control-lg invalid" placeholder="nama foto" required>
+                            <label for="alt" class="form-label">Masukan Nama Foto</label>
+                            <input type="text" name="alt" id="alt" class="form-control form-control-lg invalid" placeholder="Nama Foto" required>
                         </div>
                         <div class="d-grid">
                             <button type="submit" class="btn btn-danger uploadBtn">Upload</button>
