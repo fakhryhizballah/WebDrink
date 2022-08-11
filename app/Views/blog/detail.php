@@ -41,7 +41,7 @@
 
             <!-- Post Content -->
 
-            <p><?= $blog['konten']; ?></p>
+            <p class="text-break text-start"><?= $blog['konten']; ?></p>
 
             <hr>
 

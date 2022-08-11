@@ -29,7 +29,7 @@ class ArtikelModel extends Model
         return  $this->where(['slug' => $slug])
         ->join('author', 'author.id_blog = blogs.id_blog')
         ->join('admin', 'admin.id_admin = author.id_admin')
-        ->join('thumbnail', 'thumbnail.url = blogs.thumbnail')
+        ->join('thumbnail', 'thumbnail.url = blogs.thumbnail', 'left')
         ->first();
     }
     public function getlist()
@@ -37,7 +37,8 @@ class ArtikelModel extends Model
         return $this->select('kota, tanggal, blogs.id_blog, judul,slug,thumbnail,des')
         ->join('status', 'status.id_blog = blogs.id_blog')
         ->where('status.status', '1')
-            ->get()->getResultArray();
+            ->orderBy('tanggal', 'DESC')
+        ->get()->getResultArray();
     }
     public function getlistArtikel()
     {

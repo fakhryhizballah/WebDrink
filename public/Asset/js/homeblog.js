@@ -23,8 +23,8 @@ async function list() {
             </a>
         </div>
         <div class="col-md-5">
-            <h3>${item.judul}</h3>
-            <p>${item.des}</p>
+            <h2>${item.judul}</h2>
+            <p class="lh-sm text-break">${item.des}</p>
             <a class="btn btn-primary" href="blog/${item.slug}">View Project</a>
         </div>
     `;

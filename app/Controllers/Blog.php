@@ -59,6 +59,7 @@ class Blog extends BaseController
             'blog' => $blog
 
         ];
+        
         return view('blog/detail', $data);
     }
     public function webinar()
