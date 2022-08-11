@@ -151,6 +151,7 @@
                 // alert('Artikel berhasil ditambahkan');
                 // location.reload();
                 document.getElementById("upload_artikel").reset();
+                $(".card-img-top").attr("src", "https://cdn.spairum.my.id/image/1660032342999-previewimg.png");
             }
         });
     });
