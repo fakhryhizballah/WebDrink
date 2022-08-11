@@ -60,7 +60,31 @@
     <div class="card-body">
         <h5 class="card-title">Gunakan Standar layout HTML</h5>
         <p class="card-text">
-            <!-- // <h></h> menulis artikel dengan standar layout HTML -->
+
+        <div class="mb-3">
+            <label class="form-label"><strong>Huruf tebal</strong></label>
+            <input type="text" class="form-control" readonly="readonly" value="<strong>huhuf tebal</strong>"></input>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Untuk menabahkan Enter atau spasi</label>
+            <input type="text" class="form-control" readonly="readonly" value="<br>"></input>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Untuk menabahkan foto</label>
+            <input class="form-control" readonly="readonly" value="<img class='figure-img img-fluid rounded mx-auto d-block' src='https://cdn.spairum.my.id/image/url...' alt='nama Foto'>"></input>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">
+                <h3>Head Line huruf besar</h3>
+            </label>
+            <input type="text" class="form-control" readonly="readonly" value="<h3>Head Line huruf besar</h3>"></input>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">
+                <h3>Panduan lebih lanjut</h3>
+            </label>
+            <a href="https://getbootstrap.com/docs/5.0/utilities/text/">html lebih lanjut bootstrap5</a>
+        </div>
         </p>
     </div>
 </div>
