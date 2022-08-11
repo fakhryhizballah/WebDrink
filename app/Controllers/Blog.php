@@ -116,6 +116,6 @@ class Blog extends BaseController
             // 'blog' => $blog
 
         ];
-        return view('blog/Home', $data);
+        return view('blog/home', $data);
     }
 }
