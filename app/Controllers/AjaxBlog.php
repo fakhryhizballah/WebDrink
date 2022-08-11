@@ -108,8 +108,8 @@ class AjaxBlog extends ResourceController
 
             $namafile = $imageFile->getClientName();
             $mime = $imageFile->getClientMimeType();
-            $imageFile->move(WRITEPATH . './img/', $namafile);
-            $file = new \CodeIgniter\Files\File(WRITEPATH . "./img/$namafile");
+            $imageFile->move(WRITEPATH . 'img/', $namafile);
+            $file = new \CodeIgniter\Files\File(WRITEPATH . "img/$namafile");
             $link = $file->getRealPath();
             $img = new \CURLFILE($link);
             $img->setMimetype($mime);
@@ -132,7 +132,7 @@ class AjaxBlog extends ResourceController
 
             $res = curl_exec($curl);
             $status = curl_getinfo($curl);
-            unlink(WRITEPATH . "./img/$namafile");
+            unlink(WRITEPATH . "img/$namafile");
 
             if (!curl_errno($curl)) {
                 $status = curl_getinfo($curl);
