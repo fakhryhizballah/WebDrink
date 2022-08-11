@@ -51,7 +51,7 @@
             <a class="navbar-brand" href="#">
                 <img src="/Asset/img/spairum.png" width="auto" height="60" alt="Logo Spairum">
             </a>
-            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse show menu" id="navbarNavDropdown">
