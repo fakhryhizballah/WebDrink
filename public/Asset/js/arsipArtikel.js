@@ -87,8 +87,8 @@ $(document).ready(function () {
         $("#editArtikel").modal("show");
         $("#judulModalLabel").html("Edit Arikel : " + data.data.judul);
         $(".card-img-top").attr("src", data.data.thumbnail);
-        $(".card-title").html("Penulis : " + data.data.judul);
-        $(".card-text").html(data.data.fullname);
+        $(".card-title").html("Penulis : " + data.data.fullname);
+        $(".card-text").html("Diedit terakhir : " + data.data.updated_at);
         $("#inputThumbnail").val(data.data.thumbnail);
         $("#inputLokasi").val(data.data.kota);
         $("#inputTanggal").val(data.data.tanggal);

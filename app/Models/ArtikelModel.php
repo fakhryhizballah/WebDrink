@@ -50,7 +50,7 @@ class ArtikelModel extends Model
     }
     public function detailArtikel($id_blog)
     {
-        return $this->select('judul,thumbnail,fullname, des, konten, tanggal,kota, blogs.id')
+        return $this->select('judul,thumbnail,fullname, des, konten, tanggal,kota, blogs.id, blogs.updated_at')
         ->where(['blogs.id_blog' => $id_blog])
             ->join('author', 'author.id_blog = blogs.id_blog')
             ->join('admin', 'admin.id_admin = author.id_admin')
