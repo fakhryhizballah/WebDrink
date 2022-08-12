@@ -90,6 +90,16 @@
     </div>
 </section>
 
+<section>
+    <div class="infinite-container">
+        <div class="infinite-item">...</div>
+        <div class="infinite-item">...</div>
+        <div class="infinite-item">...</div>
+        ...
+    </div>
+    <a class="infinite-more-link" href="/next/page">More</a>
+</section>
+
 <div class="container">
     <section id="featured" class="featured">
         <blockquote class="blockquote text-center" data-aos="fade-up" data-aos-duration="1500">

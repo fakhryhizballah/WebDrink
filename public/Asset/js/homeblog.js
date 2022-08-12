@@ -19,7 +19,7 @@ async function list() {
         div.innerHTML = `
         <div class="col-md-7">
             <a href="#">
-                <img class="img-fluid rounded mb-3 mb-md-0" src="${item.thumbnail}" alt="${item.judul}">
+                <img class="img-fluid rounded mb-3 mb-md-0"  loading="eager" src="${item.thumbnail}" alt="${item.judul}">
             </a>
         </div>
         <div class="col-md-5">
@@ -39,5 +39,12 @@ async function list() {
 
 
 }
-list();
+// list();
+// document ready
+$(document).ready(function () {
+    console.log("ready");
+    list();
+}
+);
+
 // getList();
