@@ -4,6 +4,10 @@
         padding: 10px 10px 10px;
         width: 90px;
     }
+    .icons {
+        padding: 10px 10px 10px;
+        width: 150px;
+    }
 
     .fitur {
         padding: 10px 10px 0px;
@@ -198,7 +202,7 @@
         font-style: normal;
         font-variant: normal;
         font-weight: 700;
-        line-height: 15.4px;
+        line-height: 25px;
     }
 
     p {

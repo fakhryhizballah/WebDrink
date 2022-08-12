@@ -9,92 +9,86 @@
 
 <?= $this->section('layout'); ?>
 
-<section class="carousel-default" id="Tentang">
-    <div id="demo" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-        </ol>
-        <!-- The slideshow -->
-        <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-                <img class="d-block img-slide" src="Asset/img/home/which is better for the environment.jpg" alt="which is better for the environment">
-                <div class="carousel-caption">
+<section class="" id="Tentang">
+    <div class="container-fluid">
+        <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://cdn.spairum.my.id/image/1660318465838-baner-air-gratis.jpg" class="d-block h-10" alt="...">
+                </div>
+                <div class="carousel-item ">
+                    <img src="Asset/img/home/which is better for the environment.jpg" class="d-block h-10" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="Asset/img/home/Refill_Reduce.jpg" class="d-block h-10" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="Asset/img/home/plastic_earth.jpg" class="d-block h-10" alt="...">
                 </div>
             </div>
-            <div class="carousel-item">
-                <img class="d-block img-slide" src="Asset/img/home/Refill_Reduce.jpg" alt="">
-                <div class="carousel-caption">
-                    <!-- <h3 class="text-dark">UMKM</h3>
-                    <p class="text-dark text-sm">Kami membantu untuk menikatakan kesejahtraan UKM dengan cara mendistribusi minuman kepada konsumen melalui stasiun pengisian air minum (Spairum)</p> -->
-                </div>
-            </div>
-            <div class="carousel-item ">
-                <img class="d-block img-slide" src="Asset/img/home/plastic_earth.jpg" alt="Bumi dan plastic">
-                <div class="carousel-caption">
-                    <!-- <h3 class="text-dark">Spairum</h3>
-                    <p class="text-dark">merupakan sebuah startup perusahaan air minum yang meneydiakan layanan pengisian ulang air minum dalam upaya mengurangi penggunaan plastik sekali pakai.</p> -->
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img class="d-block img-slide" src="Asset/img/home/bottle-up.jpg" alt="bottle refill">
-                <div class="carousel-caption">
-                    <!-- <h3 class="text">Edukasi</h3>
-                    <p class="text">selain itu Kami mengedukasi masarakan untuk menjaga kelestarian bumi.</p> -->
-                </div>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
     </div>
 </section>
 
-<div class="jumbotron center-block">
-    <blockquote class="blockquote text-center" data-aos="fade-up" data-aos-duration="1500">
-        <q class="mb-0">What does <strong class="text-primary">spairum </strong>do ?</q>
-    </blockquote>
-    <div class="container" data-aos="fade-up" data-aos-duration="1500">
+<section>
+    <div class="container-fluid md-3">
+        <figure class="text-end" data-aos="fade-up" data-aos-duration="1500">
+            <blockquote class="blockquote text-center mt-5">
+                <q>Apa yang bisa kita lakukan bersama <strong class="text-primary">Spairum</strong> ? </q>
+            </blockquote>
+            <figcaption class="blockquote-footer mt-2 text-center">
+                Ayo Mulai kebiasaan baru untuk<cite title="Source Title"> lebih mencintai lingkungan</cite>
+            </figcaption>
+        </figure>
+
+
         <div class="row justify-content-center align-self-center">
             <div class="col-sm-4 col-xs-4">
                 <div class=" text-center bg-black-50">
-                    <img class="img-top logo" src="Asset/img/care.png" alt="Card">
+                    <img class="img-top icons" src="https://cdn.spairum.my.id/image/1660321194608-Bawatubler.png" alt="Bawa Botol Minum">
                     <div class="card-body">
-                        <h5 class="card-title">We build water distribution ecosystem for everyone</h5>
-                        <p class="card-text">Spairum build a distribution ecosystem for drinking water refill for bottles that are more environmentally friendly.
+                        <h5 class="card-title">Kurangi penggunaan plastik sekali pakai</h5>
+                        <p class="card-text">
+                            Ayo kita mulai dari kita membisaakan diri untuk mebawa tubler dan kantong belanja yang lebih ringan,
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4 col-xs-4">
                 <div class=" text-center bg-black-50">
-                    <img class="img-top logo" src="Asset/img/home/jempol.png" alt="Cood">
+                    <img class="img-top icons" src="https://cdn.spairum.my.id/image/1660322025252-Stop-AMDK.png" alt="Stop AMDK">
                     <div class="card-body">
-                        <h5 class="card-title">We guarantee the safety and hygiene of drinking water</h5>
-                        <p class="card-text">By using internet of things technology we can guarantee quality and security in real time.
+                        <h5 class="card-title">Stop pengunaan air minum dalam kemasan sekali pakai</h5>
+                        <p class="card-text">
+                            Saat kamu membeli air minum dalam kemasan kamu telah mempercepat kiamat untuk datang, dan membantu dajal merusak lingkungan
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4 col-xs-4">
                 <div class=" text-center bg-black-50">
-                    <img class="img-top logo" src="Asset/img/home/365.png" alt="service">
+                    <img class="img-top icons" src="https://cdn.spairum.my.id/image/1660322831485-Pilah-sampah.png" alt="Pilah smpah">
                     <div class="card-body">
-                        <h5 class="card-title">The best service and provide 365 days non-stop service</h5>
-                        <p class="card-text">Spairum station can be used 24 hours without stopping and we guarantee the equality of refilling drinking water with iot.
+                        <h5 class="card-title">Meminimalisir dan memilah sampah</h5>
+                        <p class="card-text">
+                            Ayo kita mulai dari kita membisaakan diri untuk meminimalisir dan memilah sampah, karena sampah dapat menjadi manfaat kembali di bank sampah.
+                            temukan bank sampah terdekat di <a href="https://air.spairum.my.id/stasiun">aplikasi air.spairum.my.id</a>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
-</div>
+</section>
 
 <div class="container">
     <section id="featured" class="featured">
@@ -136,7 +130,7 @@
 
 
 
-<div class="jumbotron">
+<div class="container-fluid">
     <div class="blockquote text-center" data-aos="fade-up" data-aos-duration="1500">
         <q class="mb-0">What do they say about <strong class="text-primary">Spairum</strong></q>
     </div>
