@@ -51,7 +51,7 @@
 
 
         <div class="row justify-content-center align-self-center">
-            <div class="col-sm-4 col-xs-4">
+            <div class="col-sm-4 col-xs-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500">
                 <div class=" text-center bg-black-50">
                     <img class="img-top icons" src="https://cdn.spairum.my.id/image/1660321194608-Bawatubler.png" alt="Bawa Botol Minum">
                     <div class="card-body">
@@ -63,7 +63,7 @@
                 </div>
             </div>
             <div class="col-sm-4 col-xs-4">
-                <div class=" text-center bg-black-50">
+                <div class=" text-center bg-black-50" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500">
                     <img class="img-top icons" src="https://cdn.spairum.my.id/image/1660322025252-Stop-AMDK.png" alt="Stop AMDK">
                     <div class="card-body">
                         <h5 class="card-title">Stop pengunaan air minum dalam kemasan sekali pakai</h5>
@@ -74,7 +74,7 @@
                 </div>
             </div>
             <div class="col-sm-4 col-xs-4">
-                <div class=" text-center bg-black-50">
+                <div class=" text-center bg-black-50" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500">
                     <img class="img-top icons" src="https://cdn.spairum.my.id/image/1660322831485-Pilah-sampah.png" alt="Pilah smpah">
                     <div class="card-body">
                         <h5 class="card-title">Meminimalisir dan memilah sampah</h5>
