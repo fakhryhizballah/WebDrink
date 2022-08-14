@@ -120,8 +120,8 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
                             <h3 class="f-title f_600 t_color f_size_18">Spairum</h3>
-                            <h3 class="f-title f_600 t_color f_size_18">PT.EET</h3>
-                            <p>PT.EET Merupakan Perusahaan yang memiliki merek dagang Spairum berlokasi di Pontianak-Kalimantan Barat </p>
+                            <h3 class="f-title f_600 t_color f_size_18">PT. STASIUN PENGISIAN AIR</h3>
+                            <p>PT.SPA Merupakan Perusahaan yang memiliki merek dagang Spairum berlokasi di Pontianak-Kalimantan Barat </p>
                         </div>
                         <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
                             <h3 class="f-title f_600 t_color f_size_18">Follow us and keep updated!</h3>
