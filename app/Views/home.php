@@ -1,7 +1,6 @@
 <?= $this->extend('layout/bootstrap5'); ?>
 
 <?= $this->section('head'); ?>
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="keywords" content="Apps,Spairum,Lisma ,Untan,Statup pontianak,Naufal,Fakhry">
 <meta name="description" content="Spairum merupakan sebuah startup perusahaan air minum yang meneydiakan layanan pengisian ulang air minum dalam upaya mengurangi penggunaan plastik sekali pakai.">
 
@@ -90,15 +89,6 @@
     </div>
 </section>
 
-<section>
-    <div class="infinite-container">
-        <div class="infinite-item">...</div>
-        <div class="infinite-item">...</div>
-        <div class="infinite-item">...</div>
-        ...
-    </div>
-    <a class="infinite-more-link" href="/next/page">More</a>
-</section>
 
 <div class="container">
     <section id="featured" class="featured">
@@ -202,8 +192,6 @@
         </a>
     </div>
 </div>
-
-<main id="main"></main>
 
 <!-- ======= Clients Section ======= -->
 <section id="clients" class="clients">
