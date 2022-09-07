@@ -49,8 +49,6 @@
                     Ayo Mulai kebiasaan baru untuk<cite title="Source Title"> lebih mencintai lingkungan</cite>
                 </figcaption>
             </figure>
-
-
             <div class="row justify-content-center align-self-center">
                 <div class="col-sm-4 col-xs-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500">
                     <div class=" text-center bg-black-50">
@@ -87,7 +85,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -101,8 +98,8 @@
     <a class="infinite-more-link" href="/next/page">More</a>
 </section> -->
 
-    <div class="container">
-        <section id="featured" class="featured">
+    <section id="featured" class="featured">
+        <div class="container">
             <blockquote class="blockquote text-center" data-aos="fade-up" data-aos-duration="1500">
                 <q class="mb-0">Our <strong class="text-primary">Service</strong></q>
             </blockquote>
@@ -136,78 +133,78 @@
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
-
-
-
-    <div class="container-fluid">
-        <div class="blockquote text-center" data-aos="fade-up" data-aos-duration="1500">
-            <q class="mb-0">What do they say about <strong class="text-primary">Spairum</strong></q>
         </div>
-        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner" data-aos="fade-up" data-aos-duration="1500">
-                <div class="carousel-item active" data-interval="10000">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="Asset/img/home/testimoni/Angelina.jpg" class="img-thumbnail rounded" alt="Angelina Diva">
-                            </div>
-                            <div class="col-md-8 text-align-middle">
-                                <h3 class="text-center">Angelina Diva</h3>
-                                <h5 class="text-center">Hindari pengunaan botol plastik sekali pakai, gunakan spairum untuk isi ulang
-                                    #bebasplastik
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item" data-interval="2000">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="Asset/img/home/testimoni/pegi.jpg" class="img-thumbnail rounded">
-                            </div>
-                            <div class="col-md-8">
-                                <h3 class="text-center">Pegi Aprianti</h3>
-                                <h5 class="text-center align-middle">Kuy guys generasi millineal yang kece kece biar tambah Kece bawa tumbler kemanapun dan jangan lupa jaga kesehatan.
-                                    #bebasplastik
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="Asset/img/home/testimoni/farid.jpg" class="img-thumbnail rounded">
-                            </div>
-                            <div class="col-md-8">
-                                <h3 class="text-center">Farid Sayoga</h3>
-                                <h5 class="text-center">Mari kita gunakan Botol minum untuk mengurangi sampah plastik.
-                                    #bebasplastik
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    </section>
+
+
+    <section>
+        <div class="container-fluid">
+            <div class="blockquote text-center" data-aos="fade-up" data-aos-duration="1500">
+                <q class="mb-0">What do they say about <strong class="text-primary">Spairum</strong></q>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="carousel-item active" data-interval="10000">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="Asset/img/home/testimoni/Angelina.jpg" class="img-thumbnail rounded" alt="Angelina Diva">
+                                </div>
+                                <div class="col-md-8 text-align-middle">
+                                    <h3 class="text-center">Angelina Diva</h3>
+                                    <h5 class="text-center">Hindari pengunaan botol plastik sekali pakai, gunakan spairum untuk isi ulang
+                                        #bebasplastik
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="2000">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="Asset/img/home/testimoni/pegi.jpg" class="img-thumbnail rounded">
+                                </div>
+                                <div class="col-md-8">
+                                    <h3 class="text-center">Pegi Aprianti</h3>
+                                    <h5 class="text-center align-middle">Kuy guys generasi millineal yang kece kece biar tambah Kece bawa tumbler kemanapun dan jangan lupa jaga kesehatan.
+                                        #bebasplastik
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="Asset/img/home/testimoni/farid.jpg" class="img-thumbnail rounded">
+                                </div>
+                                <div class="col-md-8">
+                                    <h3 class="text-center">Farid Sayoga</h3>
+                                    <h5 class="text-center">Mari kita gunakan Botol minum untuk mengurangi sampah plastik.
+                                        #bebasplastik
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </div>
-    </div>
+    </section>
 
 
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients">
-
         <div class="container" data-aos="fade-up" data-aos-duration="1500">
             <div class="section-title">
                 <q class="mb-0">Partnership <strong class="text-primary">Spairum</strong></q>
@@ -222,7 +219,6 @@
             </div>
         </div>
     </section>
-    </div>
     <!-- End Clients Section -->
 
 </main>
@@ -235,24 +231,22 @@
 <!-- custom JS code after importing jquery and owl -->
 <script type="text/javascript">
     $(document).ready(function() {
-        $(".owl-carousel").owlCarousel();
-    });
-
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 5
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
             }
-        }
-    })
+        })
+    });
 </script>
 <?= $this->endSection('script'); ?>
