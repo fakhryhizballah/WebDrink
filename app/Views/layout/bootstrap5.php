@@ -16,7 +16,8 @@
     <!-- Font -->
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"> -->
     <script src="https://kit.fontawesome.com/30ddaf6bd8.js" crossorigin="anonymous"></script>
-    <link href="http://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <!-- <link href="http://fonts.cdnfonts.com/css/poppins" rel="stylesheet"> -->
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
     <link href="http://fonts.cdnfonts.com/css/quicksand" rel="stylesheet">
 
 
