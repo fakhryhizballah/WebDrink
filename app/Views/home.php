@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4 col-xs-4">
-                    <div class=" text-center bg-black-50" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500">
+                    <div class="text-center bg-black-50" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500">
                         <img class="img-top icons" src="https://cdn.spairum.my.id/image/1660322025252-Stop-AMDK.png" alt="Stop AMDK">
                         <div class="card-body">
                             <h5 class="card-title">Stop pengunaan air minum dalam kemasan sekali pakai</h5>
@@ -93,6 +93,7 @@
                 <q class="mb-0">Our <strong class="text-primary">Service</strong></q>
             </blockquote>
             <div class="row">
+                <div class="col-lg-6 col-xs-12">
                     <div class="icon-box" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <img class="card-img-top fitur" src="Asset/img/home/natural-park.svg" alt="park">
                         <div class="card-body">
@@ -106,7 +107,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xs-6">
+
+                <div class="col-lg-6 col-xs-12">
                     <div class="icon-box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <img class="card-img-top fitur" src="Asset/img/home/office.svg" alt="Building Office">
                         <div class="card-body">
@@ -204,6 +206,7 @@
                 <img class="mide" href="http://ibt.untan.ac.id/" src="Asset/img/home/partnership/ibtlogo.png" alt="ibt Untan">
                 <img src="Asset/img/home/partnership/Logo_PP.jpg" alt="UKM PP Lisma">
                 <img src="Asset/img/home/partnership/download.png" alt="YCSC">
+                <!-- <img href="https://startupcampus.id/" src="https://cdn.spairum.my.id/image/1662549491991-Startup-Campus-Logo.png" alt="Startup Campus"> -->
             </div>
         </div>
     </section>
