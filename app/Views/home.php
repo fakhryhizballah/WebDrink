@@ -93,34 +93,34 @@
                 <q class="mb-0">Our <strong class="text-primary">Service</strong></q>
             </blockquote>
             <div class="row">
-                    <div class="icon-box" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                        <img class="card-img-top fitur" src="Asset/img/home/natural-park.svg" alt="park">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Public area services</h5>
-                            <p class="card-text text-center">Find a spairum station in public places such as the futsal court, jogging track, campus, sports hall.
-                                <br> Find it at its location in the spairum application.
-                            </p>
-                            <div class="col text-center">
-                                <a href="#" class="btn btn-primary">Download Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-xs-6">
-                    <div class="icon-box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                        <img class="card-img-top fitur" src="Asset/img/home/office.svg" alt="Building Office">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Private area service</h5>
-                            <p class="card-text text-center">The private area is a service for government offices or office buildings.
-                                We provide services for management and quality control and ensure the availability of drinking water needs 24/7
-                            </p>
-                            <div class="col text-center">
-                                <a href="#" class="btn btn-primary">Selengkapnya</a>
-                            </div>
+                <div class="icon-box" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img class="card-img-top fitur" src="Asset/img/home/natural-park.svg" alt="park">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Public area services</h5>
+                        <p class="card-text text-center">Find a spairum station in public places such as the futsal court, jogging track, campus, sports hall.
+                            <br> Find it at its location in the spairum application.
+                        </p>
+                        <div class="col text-center">
+                            <a href="#" class="btn btn-primary">Download Now</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-sm-6 col-xs-6">
+                <div class="icon-box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img class="card-img-top fitur" src="Asset/img/home/office.svg" alt="Building Office">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Private area service</h5>
+                        <p class="card-text text-center">The private area is a service for government offices or office buildings.
+                            We provide services for management and quality control and ensure the availability of drinking water needs 24/7
+                        </p>
+                        <div class="col text-center">
+                            <a href="#" class="btn btn-primary">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
 
@@ -192,18 +192,17 @@
 
 
     <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
-        <div class="container" data-aos="fade-up" data-aos-duration="1500">
+    <section id="clients" class="clients" data-aos="fade-up" data-aos-duration="1500">
+        <div class="container">
             <div class="section-title">
                 <q class="mb-0">Partnership <strong class="text-primary">Spairum</strong></q>
                 <p>This activity program is supported by</p>
             </div>
             <div class="owl-carousel">
-                <!-- <img src="Asset/img/home/partnership/untan.png" alt="Untan"> -->
-                <img href="http://www.untan.ac.id/" src="Asset/img/home/partnership/untan.png" alt=" Universitas tanjungpura">
-                <img class="mide" href="http://ibt.untan.ac.id/" src="Asset/img/home/partnership/ibtlogo.png" alt="ibt Untan">
-                <img src="Asset/img/home/partnership/Logo_PP.jpg" alt="UKM PP Lisma">
-                <img src="Asset/img/home/partnership/download.png" alt="YCSC">
+                <div class="item"><img href="http://www.untan.ac.id/" src="Asset/img/home/partnership/untan.png" alt=" Universitas tanjungpura"></div>
+                <div class="item"><img href="http://ibt.untan.ac.id/" src="Asset/img/home/partnership/ibtlogo.png" alt="ibt Untan"></div>
+                <div class="item"><img src="Asset/img/home/partnership/Logo_PP.jpg" alt="UKM PP Lisma"></div>
+                <div class="item"><img src="Asset/img/home/partnership/download.png" alt="YCSC"></div>
             </div>
         </div>
     </section>
@@ -222,7 +221,6 @@
         loop: true,
         margin: 10,
         autoWidth: true,
-        items: 4
     })
 </script>
 <?= $this->endSection('script'); ?>
