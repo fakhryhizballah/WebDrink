@@ -1,7 +1,6 @@
 <?= $this->extend('layout/bootstrap5'); ?>
 
 <?= $this->section('head'); ?>
-<meta name="viewport" content="shrink-to-fit=no">
 <meta name="keywords" content="Apps,Spairum,Lisma ,Untan,Statup pontianak,Naufal,Fakhry">
 <meta name="description" content="Spairum merupakan sebuah startup perusahaan air minum yang meneydiakan layanan pengisian ulang air minum dalam upaya mengurangi penggunaan plastik sekali pakai.">
 
@@ -90,16 +89,6 @@
 
         </div>
     </section>
-
-    <!-- <section>
-    <div class="infinite-container">
-        <div class="infinite-item">...</div>
-        <div class="infinite-item">...</div>
-        <div class="infinite-item">...</div>
-        ...
-    </div>
-    <a class="infinite-more-link" href="/next/page">More</a>
-</section> -->
 
     <div class="container">
         <section id="featured" class="featured">
@@ -234,25 +223,11 @@
 <?= $this->section('script'); ?>
 <!-- custom JS code after importing jquery and owl -->
 <script type="text/javascript">
-    $(document).ready(function() {
-        $(".owl-carousel").owlCarousel();
-    });
-
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
-        nav: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 5
-            }
-        }
+        autoWidth: true,
+        items: 4
     })
 </script>
 <?= $this->endSection('script'); ?>
