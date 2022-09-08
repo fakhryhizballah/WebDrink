@@ -4,7 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="shortcut icon" type="image/ico" href="/Asset/img/logo.ico" />
@@ -14,9 +14,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Font -->
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"> -->
     <script src="https://kit.fontawesome.com/30ddaf6bd8.js" crossorigin="anonymous"></script>
-    <link href="http://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
     <link href="http://fonts.cdnfonts.com/css/quicksand" rel="stylesheet">
 
 
@@ -166,7 +165,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init({
-            once: true,
+            // once: true,
+            disable: false,
+            mirror: false,
         });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
