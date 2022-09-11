@@ -29,6 +29,41 @@
     </div>
 </div>
 
+<div class="container py-5">
+
+    <figure class="text-end" data-aos="fade-up" data-aos-duration="1500">
+        <blockquote class="blockquote text-center mt-5">
+            <q>Our <strong class="text-primary">Milestone</strong></q>
+        </blockquote>
+    </figure>
+    <div class="milestone" style="box-sizing: border-box;" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300">
+        <div class="contain left">
+            <div class="content">
+                <h2>2019</h2>
+                <p>Lorem ipsum..</p>
+            </div>
+        </div>
+        <div class="contain right">
+            <div class="content">
+                <h2>2020</h2>
+                <p>Lorem ipsum..</p>
+            </div>
+        </div>
+        <div class="contain left">
+            <div class="content">
+                <h2>2021</h2>
+                <p>Lorem ipsum..</p>
+            </div>
+        </div>
+        <div class="contain right">
+            <div class="content">
+                <h2>2022</h2>
+                <p>Lorem ipsum..</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="bg-white py-5">
     <div class="container py-5">
         <div class="row align-items-center mb-5">

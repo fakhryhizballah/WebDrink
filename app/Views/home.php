@@ -26,6 +26,7 @@
                         <img src="Asset/img/home/plastic_earth.jpg" class="d-block h-10" alt="...">
                     </div>
                 </div>
+
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -34,6 +35,13 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                    <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+                    <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="3" aria-label="Slide 4" class="active" aria-current="true"></button>
+                </div>
             </div>
         </div>
     </section>
@@ -55,7 +63,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Kurangi penggunaan plastik sekali pakai</h5>
                             <p class="card-text">
-                                Ayo kita mulai dari kita membisaakan diri untuk mebawa tubler dan kantong belanja yang lebih ringan,
+                                Ayo kita mulai dari kita membiasakan diri untuk membawa tumbler dan kantong belanja yang lebih ringan,
                             </p>
                         </div>
                     </div>
@@ -87,9 +95,52 @@
         </div>
     </section>
 
+    <section>
+        <div class="container-fluid md-3 mt-5">
+            <figure class="text-end" data-aos="fade-up" data-aos-duration="1500">
+                <blockquote class="blockquote text-center mt-5">
+                    <q>Our <strong class="text-primary">Scale</strong></q>
+                </blockquote>
+            </figure>
+            <div class="hori" style="box-sizing: border-box;" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="200">
+                <div class="vert">
+                    <div class="card">
+                        <h2><i class="fa fa-user"></i></h2>
+                        <h2>1K+</h2>
+                        <h2>User</h2>
+                    </div>
+                </div>
+
+                <div class="vert">
+                    <div class="card">
+                        <h2><i class="fa fa-tint"></i></h2>
+                        <h2>100+</h2>
+                        <h2>Station</h2>
+                    </div>
+                </div>
+
+                <div class="vert">
+                    <div class="card">
+                        <h2><i class="fa fa-handshake"></i></h2>
+                        <h2>100+</h2>
+                        <h2>Partner</h2>
+                    </div>
+                </div>
+
+                <div class="vert">
+                    <div class="card">
+                        <h2><i class="fa fa-dollar-sign"></i></h2>
+                        <h2>1 Million+</h2>
+                        <h2>Income</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="featured" class="featured">
         <div class="container">
-            <blockquote class="blockquote text-center" data-aos="fade-up" data-aos-duration="1500">
+            <blockquote class="blockquote text-center mt-5" data-aos="fade-up" data-aos-duration="1500">
                 <q class="mb-0">Our <strong class="text-primary">Service</strong></q>
             </blockquote>
             <div class="row">
@@ -129,7 +180,7 @@
 
     <section>
         <div class="container-fluid">
-            <div class="blockquote text-center" data-aos="fade-up" data-aos-duration="1500">
+            <div class="blockquote text-center mt-5" data-aos="fade-up" data-aos-duration="1500">
                 <q class="mb-0">What do they say about <strong class="text-primary">Spairum</strong></q>
             </div>
             <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
@@ -196,23 +247,28 @@
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients" data-aos="fade-up" data-aos-duration="1500">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title mt-5">
                 <q class="mb-0">Partnership <strong class="text-primary">Spairum</strong></q>
                 <p>This activity program is supported by</p>
             </div>
             <div class="owl-carousel">
-                <<<<<<< HEAD <!-- <img src="Asset/img/home/partnership/untan.png" alt="Untan"> -->
-                    <img href="http://www.untan.ac.id/" src="Asset/img/home/partnership/untan.png" alt=" Universitas tanjungpura">
-                    <img class="mide" href="http://ibt.untan.ac.id/" src="Asset/img/home/partnership/ibtlogo.png" alt="ibt Untan">
-                    <img src="Asset/img/home/partnership/Logo_PP.jpg" alt="UKM PP Lisma">
-                    <img src="Asset/img/home/partnership/download.png" alt="YCSC">
-                    <!-- <img href="https://startupcampus.id/" src="https://cdn.spairum.my.id/image/1662549491991-Startup-Campus-Logo.png" alt="Startup Campus"> -->
-                    =======
-                    <div class="item"><img href="http://www.untan.ac.id/" src="Asset/img/home/partnership/untan.png" alt=" Universitas tanjungpura"></div>
-                    <div class="item"><img href="http://ibt.untan.ac.id/" src="Asset/img/home/partnership/ibtlogo.png" alt="ibt Untan"></div>
-                    <div class="item"><img src="Asset/img/home/partnership/Logo_PP.jpg" alt="UKM PP Lisma"></div>
-                    <div class="item"><img src="Asset/img/home/partnership/download.png" alt="YCSC"></div>
-                    >>>>>>> 3a4c921c324c04188c5eab914e31602c72ab328d
+                <!-- <img src="Asset/img/home/partnership/untan.png" alt="Untan"> -->
+                <!-- <img href="http://www.untan.ac.id/" src="Asset/img/home/partnership/untan.png" alt=" Universitas tanjungpura">
+                <img class="mide" href="http://ibt.untan.ac.id/" src="Asset/img/home/partnership/ibtlogo.png" alt="ibt Untan">
+                <img src="Asset/img/home/partnership/Logo_PP.jpg" alt="UKM PP Lisma">
+                <img src="Asset/img/home/partnership/download.png" alt="YCSC"> -->
+                <div class="item"><img href="http://www.untan.ac.id/" src="https://cdn.spairum.my.id/image/1662879314307-untan.png" alt=" Universitas tanjungpura"></div>
+                <div class="item"><img href="http://ibt.untan.ac.id/" src="https://cdn.spairum.my.id/image/1662879325342-ibtlogo.png" alt="ibt Untan"></div>
+                <div class="item"><img src="https://cdn.spairum.my.id/image/1662879339556-Logo_PP.jpg" alt="UKM PP Lisma"></div>
+                <div class="item"><img src="https://cdn.spairum.my.id/image/1662879468726-YCSE.png" alt="YCSE"></div>
+                <div class="item"><img href="https://startupcampus.id/" src="https://cdn.spairum.my.id/image/1662549491991-Startup-Campus-Logo.png" alt="Startup Campus"></div>
+                <div class="item"><img href="" src="https://cdn.spairum.my.id/image/1662722737891-1000startup.png" alt="1000 Startup"></div>
+                <div class="item"><img href="" src="https://cdn.spairum.my.id/image/1662722821888-KMIEXPO.png" alt="KMI"></div>
+                <div class="item"><img href="" src="https://cdn.spairum.my.id/image/1662722836117-SIAP.png" alt="SIAP"></div>
+                <div class="item"><img href="" src="https://cdn.spairum.my.id/image/1662722854910-youthcolab.png" alt="Youth co:lab"></div>
+                <div class="item"><img href="" src="https://cdn.spairum.my.id/image/1662722943292-blmtau.png" alt=""></div>
+                <div class="item"><img href="" src="https://cdn.spairum.my.id/image/1662722674730-moveonprojectpertamina.png" alt="Move On Project Pertamina"></div>
+                <div class="item"><img href="" src="https://cdn.spairum.my.id/image/1662722611390-pertamuda.png" alt="Pertamuda"></div>
             </div>
         </div>
     </section>
@@ -231,6 +287,7 @@
         loop: true,
         margin: 10,
         autoWidth: true,
+        autoHeight: true
     })
 </script>
 <?= $this->endSection('script'); ?>
