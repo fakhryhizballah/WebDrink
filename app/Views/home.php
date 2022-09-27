@@ -95,14 +95,15 @@
         </div>
     </section>
 
-    <section>
+    <section class="featured-scale">
         <div class="container-fluid md-3 mt-5">
             <figure class="text-end" data-aos="fade-up" data-aos-duration="1500">
                 <blockquote class="blockquote text-center mt-5">
                     <q>Our <strong class="text-primary">Scale</strong></q>
                 </blockquote>
             </figure>
-            <div class="hori" style="box-sizing: border-box;" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="200">
+
+            <div class="hori" style="box-sizing: border-box; margin-left : 48px;" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="200">
                 <div class="vert">
                     <div class="card">
                         <h2><i class="fa fa-user"></i></h2>
@@ -177,13 +178,39 @@
         </div>
     </section>
 
+    <section id="Tiny Slider">
+        <div class="container-fluid">
+            <div id="carouselControls" class="tns-slider">
+                <div class="slide">
+
+                </div>
+
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                    <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+                    <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="3" aria-label="Slide 4" class="active" aria-current="true"></button>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section>
         <div class="container-fluid">
             <div class="blockquote text-center mt-5" data-aos="fade-up" data-aos-duration="1500">
                 <q class="mb-0">What do they say about <strong class="text-primary">Spairum</strong></q>
             </div>
-            <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner" data-aos="fade-up" data-aos-duration="1500">
                     <div class="carousel-item active" data-interval="10000">
                         <div class="container">
@@ -231,11 +258,11 @@
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
