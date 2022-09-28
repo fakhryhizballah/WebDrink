@@ -166,7 +166,7 @@
 
         <div class="row mb-4">
             <figure class="text-end" data-aos="fade-up" data-aos-duration="1500">
-                <h3 class="text-center" style="font-size: 20px; color: #34abeb;">Volunteer</h3>
+                <h3 class="text-center" style="font-size: 20px; color: #34abeb;">Contributor</h3>
             </figure>
         </div>
 
