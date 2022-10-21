@@ -177,29 +177,55 @@
             </div>
         </div>
     </section>
-
-    <section id="Tiny Slider">
-        <div class="container-fluid">
-            <div id="carouselControls" class="tns-slider">
-                <div class="slide">
-
+    <br>
+    <section id="tiny" class="featured-scale">
+        <div class="container">
+            <div class="hori" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="200">
+                <div class="controller">
+                    <div>
+                        <h2>
+                            Artikel
+                        </h2>
+                    </div>
+                    <div id="controls">
+                        <button class="previous">
+                            <i class="fas fa-angle-left"></i>
+                        </button>
+                        <button class="next">
+                            <i class="fas fa-angle-right"></i>
+                        </button>
+                    </div>
                 </div>
+                <div class="tns-slider">
+                    <div class="vert">
+                        <div class="card">
+                            <h2><i class="fa fa-user"></i></h2>
+                            <h2>1K+</h2>
+                            <h2>User</h2>
+                        </div>
+                    </div>
+                    <div class="vert">
+                        <div class="card">
+                            <h2><i class="fa fa-user"></i></h2>
+                            <h2>1K+</h2>
+                            <h2>User</h2>
+                        </div>
+                    </div>
+                    <div class="vert">
+                        <div class="card">
+                            <h2><i class="fa fa-user"></i></h2>
+                            <h2>1K+</h2>
+                            <h2>User</h2>
+                        </div>
+                    </div>
+                    <div class="vert">
+                        <div class="card">
+                            <h2><i class="fa fa-user"></i></h2>
+                            <h2>1K+</h2>
+                            <h2>User</h2>
+                        </div>
+                    </div>
 
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-                    <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
-                    <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="3" aria-label="Slide 4" class="active" aria-current="true"></button>
                 </div>
             </div>
         </div>
@@ -316,5 +342,42 @@
         autoWidth: true,
         autoHeight: true
     })
+</script>
+<script>
+    var tiny = tns({
+        "container": '.tns-slider',
+        "items": 2,
+        // "startIndex": 1,
+        "mouseDrag": true,
+        // "center": true,
+        "rewind": true,
+        "autoplay": true,
+        "autoplayHoverPause": true,
+        "autoplayButtonOutput": false,
+        controlsContainer: "#controls",
+        prevButton: ".previous",
+        nextButton: ".next",
+        "responsive": {
+            "1600": {
+                "items": 4,
+                "guttter": 20
+            },
+            "1024": {
+                "items": 3,
+                "guttter": 20
+            },
+            "768": {
+                "items": 2,
+                "guttter": 20
+            },
+            "480": {
+                "items": 1,
+                "guttter": 20
+            },
+        },
+        "nav": false,
+        "swipeAngle": false,
+        "speed": 400
+    });
 </script>
 <?= $this->endSection('script'); ?>
