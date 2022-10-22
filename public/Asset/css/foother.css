@@ -182,7 +182,7 @@
     }
 
     h1 {
-        font-family: Quicksand;
+        font-family: Josefin Sans;
         font-size: 24px;
         font-style: normal;
         font-variant: normal;
@@ -191,7 +191,7 @@
     }
 
     h3 {
-        font-family: Quicksand;
+        font-family: Josefin Sans;
         font-size: 14px;
         font-style: normal;
         font-variant: normal;
@@ -200,7 +200,7 @@
     }
 
     h5 {
-        font-family: Quicksand;
+        font-family: Josefin Sans;
         font-size: 20px;
         font-style: normal;
         font-variant: normal;
@@ -209,7 +209,7 @@
     }
 
     p {
-        font-family: Quicksand;
+        font-family: Josefin Sans;
         font-size: 14px;
         font-style: normal;
         font-variant: normal;
@@ -218,7 +218,7 @@
     }
 
     q {
-        font-family: Quicksand;
+        font-family: Josefin Sans;
         font-size: 25px;
         font-style: normal;
         font-variant: normal;
@@ -227,7 +227,7 @@
     }
 
     blockquote {
-        font-family: Quicksand;
+        font-family: Josefin Sans;
         font-size: 21px;
         font-style: normal;
         font-variant: normal;
@@ -236,7 +236,7 @@
     }
 
     pre {
-        font-family: Quicksand;
+        font-family: Josefin Sans;
         font-size: 13px;
         font-style: normal;
         font-variant: normal;
@@ -245,7 +245,7 @@
     }
 
     a {
-        font-family: Quicksand;
+        font-family: Josefin Sans;
         font-size: 14px;
         font-style: normal;
         font-variant: normal;
@@ -1200,6 +1200,7 @@ hori.heading h2 {
 }
 
 /* Tiny Slider Control */
+
 .controller{
     display: flex;
     justify-content: space-between;
@@ -1226,4 +1227,49 @@ hori.heading h2 {
     border: 3px solid gray;
 }
 
+/* Features Tiny*/
+.featured-tiny {
+    position: relative;
+    z-index: 2;
+}
+
+.featured-tiny .card {
+    padding: 40px 30px;
+    width: 100%;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    background: #fff;
+    transition: all ease-in-out 0.3s;
+}
+
+.featured-tiny .card i {
+    font-size: 42px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.featured-tiny .card img {
+    width: 100%;
+}
+
+.featured-tiny .card h5 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.featured-tiny .card h5,
+.featured-tiny .card p {
+    color: #545454;
+    transition: 0.3s;
+}
+
+.featured-tiny .card:hover {
+    background: #0dcaf0;
+}
+
+.featured-tiny .card:hover p,
+.featured-tiny .card:hover h5 {
+    color: #fff;
+}
 

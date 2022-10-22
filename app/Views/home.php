@@ -178,7 +178,7 @@
         </div>
     </section>
     <br>
-    <section id="tiny" class="featured-scale">
+    <section id="tiny" class="featured-tiny">
         <div class="container">
             <div class="hori" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="200">
                 <div class="controller">
@@ -199,30 +199,50 @@
                 <div class="tns-slider">
                     <div class="vert">
                         <div class="card">
-                            <h2><i class="fa fa-user"></i></h2>
-                            <h2>1K+</h2>
-                            <h2>User</h2>
+                            <img class="card-img-top fitur" src="https://cdn.spairum.my.id/image/1660210275296-YCSE2.0Day2-0112.jpg" alt="YCSE">
+                            <br>
+                            <h5 class="card-title text-center">YCSE</h5>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro atque cumque omnis maiores earum! Fugit quas rem repudiandae dolores! Temporibus aliquam laboriosam in nam exercitationem nihil incidunt dicta aut tempora!
+                            </p>
+                            <div class="col text-center">
+                                <a href="#" class="btn btn-primary">Selengkapnya</a>
+                            </div>
                         </div>
                     </div>
                     <div class="vert">
                         <div class="card">
-                            <h2><i class="fa fa-user"></i></h2>
-                            <h2>1K+</h2>
-                            <h2>User</h2>
+                            <img class="card-img-top fitur" src="https://cdn.spairum.my.id/image/1660210290201-pertamina.jpg" alt="Pertamina Borneo">
+                            <br>
+                            <h5 class="card-title text-center">Pertamina Borneo</h5>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro atque cumque omnis maiores earum! Fugit quas rem repudiandae dolores! Temporibus aliquam laboriosam in nam exercitationem nihil incidunt dicta aut tempora!
+                            </p>
+                            <div class="col text-center">
+                                <a href="#" class="btn btn-primary">Selengkapnya</a>
+                            </div>
                         </div>
                     </div>
                     <div class="vert">
                         <div class="card">
-                            <h2><i class="fa fa-user"></i></h2>
-                            <h2>1K+</h2>
-                            <h2>User</h2>
+                            <img class="card-img-top fitur" src="https://cdn.spairum.my.id/image/1660218528073-YCSE2.0Day3-3883.jpg" alt="Bootcamp">
+                            <br>
+                            <h5 class="card-title text-center">Bootcamp</h5>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro atque cumque omnis maiores earum! Fugit quas rem repudiandae dolores! Temporibus aliquam laboriosam in nam exercitationem nihil incidunt dicta aut tempora!
+                            </p>
+                            <div class="col text-center">
+                                <a href="#" class="btn btn-primary">Selengkapnya</a>
+                            </div>
                         </div>
                     </div>
                     <div class="vert">
                         <div class="card">
-                            <h2><i class="fa fa-user"></i></h2>
-                            <h2>1K+</h2>
-                            <h2>User</h2>
+                            <img class="card-img-top fitur" src="https://cdn.spairum.my.id/image/1660210254250-IMG20200916154303.jpg" alt="Launching">
+                            <br>
+                            <h5 class="card-title text-center">Launching</h5>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro atque cumque omnis maiores earum! Fugit quas rem repudiandae dolores! Temporibus aliquam laboriosam in nam exercitationem nihil incidunt dicta aut tempora!
+                            </p>
+                            <div class="col text-center">
+                                <a href="#" class="btn btn-primary">Selengkapnya</a>
+                            </div>
                         </div>
                     </div>
 
@@ -359,15 +379,15 @@
         nextButton: ".next",
         "responsive": {
             "1600": {
-                "items": 4,
-                "guttter": 20
-            },
-            "1024": {
                 "items": 3,
                 "guttter": 20
             },
-            "768": {
+            "1024": {
                 "items": 2,
+                "guttter": 20
+            },
+            "768": {
+                "items": 1,
                 "guttter": 20
             },
             "480": {

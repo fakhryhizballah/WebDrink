@@ -15,7 +15,7 @@
 
     <!-- Font -->
     <script src="https://kit.fontawesome.com/30ddaf6bd8.js" crossorigin="anonymous"></script>
-    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
 
     <!-- Vendor CSS Files -->
     <!-- <link href="Asset/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
