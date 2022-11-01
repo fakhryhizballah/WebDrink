@@ -198,7 +198,7 @@ class AjaxBlog extends ResourceController
             ];
             return $this->respond($response, 407);
         }
-        $data = $this->ArsipModel->findAll();
+        $data = $this->ArsipModel->orderBy('id', 'DESC')->findAll();
         $response = [
             'status' => 200,
             'error' => false,
