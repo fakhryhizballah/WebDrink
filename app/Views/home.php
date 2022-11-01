@@ -202,17 +202,11 @@
             </div>
             <div class="owl-carousel">
                 <!-- <img src="Asset/img/home/partnership/untan.png" alt="Untan"> -->
-                <img href="http://www.untan.ac.id/" src="Asset/img/home/partnership/untan.png" alt=" Universitas tanjungpura">
-                <img class="mide" href="http://ibt.untan.ac.id/" src="Asset/img/home/partnership/ibtlogo.png" alt="ibt Untan">
-                <img src="Asset/img/home/partnership/Logo_PP.jpg" alt="UKM PP Lisma">
-                <img src="Asset/img/home/partnership/download.png" alt="YCSC">
-                <!-- <img href="https://startupcampus.id/" src="https://cdn.spairum.my.id/image/1662549491991-Startup-Campus-Logo.png" alt="Startup Campus"> -->
-                =======
+                <!-- <div class="item"><img href="https://startupcampus.id/" src="https://cdn.spairum.my.id/image/1662549491991-Startup-Campus-Logo.png" alt="Startup Campus"></div> -->
                 <div class="item"><img href="http://www.untan.ac.id/" src="Asset/img/home/partnership/untan.png" alt=" Universitas tanjungpura"></div>
                 <div class="item"><img href="http://ibt.untan.ac.id/" src="Asset/img/home/partnership/ibtlogo.png" alt="ibt Untan"></div>
                 <div class="item"><img src="Asset/img/home/partnership/Logo_PP.jpg" alt="UKM PP Lisma"></div>
                 <div class="item"><img src="Asset/img/home/partnership/download.png" alt="YCSC"></div>
-
             </div>
         </div>
     </section>
