@@ -13,7 +13,7 @@ $(document).ready(function () {
             {
                 targets: 1,
                 render: function (data) {
-                    return '<img src="' + data + '" class="img-fluid img-thumbnail">'
+                    return '<img src="' + data + '" loading="lazy" class="img-fluid img-thumbnail">'
                 }
             }
         ]
