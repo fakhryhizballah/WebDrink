@@ -181,6 +181,7 @@
         color: #fff;
     }
 
+    
     h1 {
         font-family: Josefin Sans;
         font-size: 24px;
@@ -219,10 +220,10 @@
 
     q {
         font-family: Josefin Sans;
-        font-size: 25px;
+        font-size: 30px;
         font-style: normal;
         font-variant: normal;
-        font-weight: 500;
+        font-weight: bolder;
         line-height: 20px;
     }
 
@@ -233,6 +234,10 @@
         font-variant: normal;
         font-weight: 400;
         line-height: 30px;
+    }
+
+    .blockquote-footer {
+        font-size: 1.1em;
     }
 
     pre {
@@ -1133,6 +1138,30 @@ hori.heading h2 {
     color: white;
 }
 
+/* Features habit*/
+.featured-habit {
+    position: relative;
+    z-index: 2;
+}
+
+.featured-habit .card {
+    width: 100%;
+    padding: 40px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 90px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #7ed4e6;
+    transition: all ease-in-out 0.3s;
+}
+
+.featured-habit p {
+    color: black;
+}
+
+
 /* Features Scale*/
 .featured-scale {
     position: relative;
@@ -1219,18 +1248,24 @@ hori.heading h2 {
     outline: none;
     transition: 0.7s ease-in-out;
     border: 3px solid white;
-    background-color: #34abeb;
+    background-color: #0dcaf0;
     box-shadow: 0 0 5px #bbb;
-}
-
-.previous:hover, .next:hover{
-    border: 3px solid gray;
 }
 
 /* Features Tiny*/
 .featured-tiny {
     position: relative;
     z-index: 2;
+}
+
+.featured-tiny .previous:hover, .featured-tiny .next:hover {
+    border: 3px solid #0dcaf0;
+    background-color: white;
+}
+
+.featured-tiny .previous:hover i,
+.featured-tiny .next:hover i {
+    color: #fff;
 }
 
 .featured-tiny .card {

@@ -46,7 +46,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="featured-habit">
         <div class="container-fluid md-3">
             <figure class="text-end" data-aos="fade-up" data-aos-duration="1500">
                 <blockquote class="blockquote text-center mt-5">
@@ -56,38 +56,41 @@
                     Ayo Mulai kebiasaan baru untuk<cite title="Source Title"> lebih mencintai lingkungan</cite>
                 </figcaption>
             </figure>
-            <div class="row justify-content-center align-self-center">
-                <div class="col-sm-4 col-xs-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500">
-                    <div class=" text-center bg-black-50">
-                        <img class="img-top icons" src="https://cdn.spairum.my.id/image/1660321194608-Bawatubler.png" alt="Bawa Botol Minum">
-                        <div class="card-body">
-                            <h5 class="card-title">Kurangi penggunaan plastik sekali pakai</h5>
-                            <p class="card-text">
-                                Ayo kita mulai dari kita membiasakan diri untuk membawa tumbler dan kantong belanja yang lebih ringan,
-                            </p>
+            <br>
+            <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                <div class="row justify-content-center align-self-center">
+                    <div class="col-sm-4 col-xs-4" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1500">
+                        <div class="text-center bg-black-50">
+                            <img class="img-top icons" src="https://cdn.spairum.my.id/image/1660321194608-Bawatubler.png" alt="Bawa Botol Minum">
+                            <div class="card-body">
+                                <h5 class="card-title">Kurangi penggunaan plastik sekali pakai</h5>
+                                <p class="card-text">
+                                    Ayo kita mulai dari kita membiasakan diri untuk membawa tumbler dan kantong belanja yang lebih ringan,
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-4 col-xs-4">
-                    <div class="text-center bg-black-50" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500">
-                        <img class="img-top icons" src="https://cdn.spairum.my.id/image/1660322025252-Stop-AMDK.png" alt="Stop AMDK">
-                        <div class="card-body">
-                            <h5 class="card-title">Stop pengunaan air minum dalam kemasan sekali pakai</h5>
-                            <p class="card-text">
-                                Saat kamu membeli air minum dalam kemasan kamu telah mempercepat kiamat untuk datang, dan membantu dajal merusak lingkungan
-                            </p>
+                    <div class="col-sm-4 col-xs-4">
+                        <div class="text-center bg-black-50" data-aos="fade-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1500">
+                            <img class="img-top icons" src="https://cdn.spairum.my.id/image/1660322025252-Stop-AMDK.png" alt="Stop AMDK">
+                            <div class="card-body">
+                                <h5 class="card-title">Stop pengunaan air minum dalam kemasan sekali pakai</h5>
+                                <p class="card-text">
+                                    Saat kamu membeli air minum dalam kemasan kamu telah mempercepat kiamat untuk datang, dan membantu dajal merusak lingkungan
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-4 col-xs-4">
-                    <div class=" text-center bg-black-50" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500">
-                        <img class="img-top icons" src="https://cdn.spairum.my.id/image/1660322831485-Pilah-sampah.png" alt="Pilah smpah">
-                        <div class="card-body">
-                            <h5 class="card-title">Meminimalisir dan memilah sampah</h5>
-                            <p class="card-text">
-                                Ayo kita mulai dari kita membisaakan diri untuk meminimalisir dan memilah sampah, karena sampah dapat menjadi manfaat kembali di bank sampah.
-                                temukan bank sampah terdekat di <a href="https://air.spairum.my.id/stasiun">aplikasi air.spairum.my.id</a>
-                            </p>
+                    <div class="col-sm-4 col-xs-4">
+                        <div class=" text-center bg-black-50" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1500">
+                            <img class="img-top icons" src="https://cdn.spairum.my.id/image/1660322831485-Pilah-sampah.png" alt="Pilah smpah">
+                            <div class="card-body">
+                                <h5 class="card-title">Meminimalisir dan memilah sampah</h5>
+                                <p class="card-text">
+                                    Ayo kita mulai dari kita membisaakan diri untuk meminimalisir dan memilah sampah, karena sampah dapat menjadi manfaat kembali di bank sampah.
+                                    temukan bank sampah terdekat di <a href="https://air.spairum.my.id/stasiun">aplikasi air.spairum.my.id</a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
