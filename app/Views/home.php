@@ -56,8 +56,7 @@
                     Ayo Mulai kebiasaan baru untuk<cite title="Source Title"> lebih mencintai lingkungan</cite>
                 </figcaption>
             </figure>
-            <br>
-            <div class="card" data-aos="fade-up" data-aos-duration="1500">
+            <div class="card mt-5" data-aos="fade-up" data-aos-duration="1500">
                 <div class="row justify-content-center align-self-center">
                     <div class="col-sm-4 col-xs-4" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1500">
                         <div class="text-center bg-black-50">
@@ -106,7 +105,7 @@
                 </blockquote>
             </figure>
 
-            <div class="hori" style="box-sizing: border-box; margin-left : 48px;" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="200">
+            <div class="hori mt-5" style="box-sizing: border-box; margin-left : 48px;" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="200">
                 <div class="vert">
                     <div class="card">
                         <h2><i class="fa fa-user"></i></h2>
@@ -147,7 +146,7 @@
             <blockquote class="blockquote text-center mt-5" data-aos="fade-up" data-aos-duration="1500">
                 <q class="mb-0">Our <strong class="text-primary">Service</strong></q>
             </blockquote>
-            <div class="row">
+            <div class="row mt-5">
                 <div class="col-lg-6 col-xs-12">
                     <div class="icon-box" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <img class="card-img-top fitur" src="Asset/img/home/natural-park.svg" alt="park">
@@ -184,12 +183,10 @@
     <section id="tiny" class="featured-tiny">
         <div class="container">
             <div class="hori" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="200">
-                <div class="controller">
-                    <div>
-                        <h2>
-                            Artikel
-                        </h2>
-                    </div>
+                <blockquote class="blockquote text-center mt-5">
+                    <q class="mb-0">Our <strong class="text-primary">Article</strong></q>
+                </blockquote>
+                <div class="controller mt-5">
                     <div id="controls">
                         <button class="previous">
                             <i class="fas fa-angle-left"></i>
@@ -199,7 +196,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="tns-slider">
+                <div class="tns-slider mt-3">
                     <div class="vert">
                         <div class="card">
                             <img class="card-img-top fitur" src="https://cdn.spairum.my.id/image/1660210275296-YCSE2.0Day2-0112.jpg" alt="YCSE">
@@ -254,12 +251,80 @@
         </div>
     </section>
 
-    <section>
+    <section id="our-testimonial" class="padding">
         <div class="container-fluid">
             <div class="blockquote text-center mt-5" data-aos="fade-up" data-aos-duration="1500">
                 <q class="mb-0">What do they say about <strong class="text-primary">Spairum</strong></q>
             </div>
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="col-md-12 col-sm-12">
+                <div id="testimonial-slider" class="owl-carousel" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="item">
+                        <div class="testimonial-wrapp"> <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                            <div class="testimonial-text">
+                                <p class="bottom40">Hindari pengunaan botol plastik sekali pakai, gunakan spairum untuk isi ulang
+                                    #bebasplastik</p>
+                            </div>
+                            <div class="testimonial-photo"><img alt="" src="Asset/img/home/testimoni/Angelina.jpg"></div>
+                            <h4 class="darkcolor">Angelina Diva</h4>
+                            <small class="defaultcolor">Businessman</small>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-wrapp"> <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                            <div class="testimonial-text">
+                                <p class="bottom40">Kuy guys generasi millineal yang kece kece biar tambah Kece bawa tumbler kemanapun dan jangan lupa jaga kesehatan.
+                                    #bebasplastik</p>
+                            </div>
+                            <div class="testimonial-photo"><img alt="" src="Asset/img/home/testimoni/pegi.jpg"></div>
+                            <h4 class="darkcolor">Pegi Aprianti</h4>
+                            <small class="defaultcolor">Businessman</small>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-wrapp"> <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                            <div class="testimonial-text">
+                                <p class="bottom40">Mari kita gunakan Botol minum untuk mengurangi sampah plastik.
+                                    #bebasplastik</p>
+                            </div>
+                            <div class="testimonial-photo"><img alt="" src="Asset/img/home/testimoni/farid.jpg"></div>
+                            <h4 class="darkcolor">Farid Sayoga</h4>
+                            <small class="defaultcolor">Businessman</small>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-wrapp"> <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                            <div class="testimonial-text">
+                                <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                            </div>
+                            <div class="testimonial-photo"><img alt="" src="Asset/img/home/testimoni/farid.jpg"></div>
+                            <h4 class="darkcolor">David Zucker</h4>
+                            <small class="defaultcolor">Businessman</small>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-wrapp"> <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                            <div class="testimonial-text">
+                                <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                            </div>
+                            <div class="testimonial-photo"><img alt="" src="Asset/img/home/testimoni/farid.jpg"></div>
+                            <h4 class="darkcolor">Akten Jansen</h4>
+                            <small class="defaultcolor">Businessman</small>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-wrapp"> <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                            <div class="testimonial-text">
+                                <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                            </div>
+                            <div class="testimonial-photo"><img alt="" src="Asset/img/home/testimoni/farid.jpg"></div>
+                            <h4 class="darkcolor">Doe Raleway</h4>
+                            <small class="defaultcolor">Businessman</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner" data-aos="fade-up" data-aos-duration="1500">
                     <div class="carousel-item active" data-interval="10000">
                         <div class="container">
@@ -315,7 +380,7 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -359,6 +424,33 @@
 <?= $this->section('script'); ?>
 <!-- custom JS code after importing jquery and owl -->
 <script type="text/javascript">
+    "use strict";
+    var $window = $(window);
+    var windowsize = $(window).width();
+    var $root = $("html, body");
+    var $this = $(this);
+    /*Testimonials 3columns*/
+    $("#testimonial-slider").owlCarousel({
+        items: 3,
+        autoplay: 2500,
+        autoplayHoverPause: true,
+        loop: true,
+        margin: 30,
+        dots: true,
+        nav: false,
+        responsive: {
+            1280: {
+                items: 3,
+            },
+            600: {
+                items: 2,
+            },
+            320: {
+                items: 1,
+            },
+        }
+    });
+
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
@@ -366,6 +458,7 @@
         autoHeight: true
     })
 </script>
+
 <script>
     var tiny = tns({
         "container": '.tns-slider',
