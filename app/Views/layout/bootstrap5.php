@@ -48,7 +48,7 @@
     <nav class="navbar navbar-expand-lg bg-white fixed-top sticky-top" style="padding-top: 4px; padding-bottom: 4px;">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="/Asset/img/spairum.png" width="auto" height="60" alt="Logo Spairum">
+                <img src="https://cdn.spairum.my.id/image/spairum.webp" width="auto" height="60" alt="Logo Spairum">
             </a>
             <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
