@@ -79,11 +79,11 @@ class AjaxBlog extends ResourceController
             $imageFile = $this->request->getFile('file');
             $validate = $this->validate([
                 'file' => [
-                    'rules' => 'uploaded[file]|max_size[file,4096]|is_image[file]|mime_in[file,image/png,image/jpg,image/jpeg]',
+                    'rules' => 'uploaded[file]|max_size[file,10240]|is_image[file]|mime_in[file,image/png,image/jpg,image/jpeg]',
                     'errors' => [
                         'mime_in' => 'file harus berupa gambar jpg/jpeg/png',
-                        'max_size' => 'Foto tidak boleh lebih dari 3MB',
-                        'uploaded' => 'file tidak boleh lebih dari 3MB',
+                        'max_size' => 'Foto tidak boleh lebih dari 10MB',
+                        'uploaded' => 'file tidak boleh lebih dari 10MB',
                         'is_image' => 'file harus berupa gambar'
                     ]
                 ],
