@@ -65,7 +65,7 @@
         <div class="row text-center" data-aos="fade-up" data-aos-duration="1500">
             <!-- Team item-->
             <div class="col-xl-4 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="Asset/img/team-fakhryh.jpeg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://cdn.spairum.my.id/image/1668593873958-fakhry.webp" alt="" width="100" height="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
                     <h5 class="mb-0">Fakhry Hizballah Al Muminurradian</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
                     <ul class="social mb-0 list-inline mt-3">
                         <!-- <li class="list-inline-item"><a href="https://www.facebook.com/adelle.alexa.96" class="social-link"><i class="fa fa-facebook-f"></i></a></li> -->
@@ -76,7 +76,7 @@
             </div>
 
             <div class="col-xl-4 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="Asset/img/Team-Naufal.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://cdn.spairum.my.id/image/1668593944032-Naufal2.webp" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
                     <h5 class="mb-0">Naufal Fadlurahman Irdasyah</h5><span class="small text-uppercase text-muted">CFO - Founder</span>
                     <ul class="social mb-0 list-inline mt-3">
                         <li class="list-inline-item"><a href="https://www.facebook.com/necro.bradley" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
@@ -98,25 +98,25 @@
         </div>
         <div class="row text-center" data-aos="fade-up" data-aos-duration="1500">
             <div class="col-xl-4 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="Asset/img/Gusti.jpeg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://cdn.spairum.my.id/image/1668593930030-gusti2.webp" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
                     <h5 class="mb-0">Gusti Muhammad Furkan Azmi</h5><span class="small text-uppercase text-muted">Software Engineer · IT Executive </span>
                     <ul class="social mb-0 list-inline mt-3">
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/gusti-muhammad-furkan-azmi-49611b233/" class="social-link"><i class="fa fa-linkedin"></i></a></li>
                         <li class="list-inline-item"><a href="https://www.instagram.com/gusti_mfa/" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/gusti-muhammad-furkan-azmi-49611b233/" class="social-link"><i class="fa fa-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-xl-4 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="Asset/img/user.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                    <h5 class="mb-0">Feby Dwi Rahmini</h5><span class="small text-uppercase text-muted">Chief Operating Officer</span>
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://cdn.spairum.my.id/image/1667666518308-febi.webp" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Feby Dwi Rahmini</h5><span class="small text-uppercase text-muted">Chief Marketing Officer</span>
                     <ul class="social mb-0 list-inline mt-3">
                         <li class="list-inline-item"><a href="https://www.instagram.com/febydr1/" class="social-link"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-xl-4 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="Asset/img/user.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                    <h5 class="mb-0">Moh Ilham Al Ghozali</h5><span class="small text-uppercase text-muted">Chief Marketing Officer</span>
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://cdn.spairum.my.id/image/1667666528924-IlhamGhozali.webp" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Moh Ilham Al Ghozali</h5><span class="small text-uppercase text-muted">Chief Operating Officer</span>
                     <ul class="social mb-0 list-inline mt-3">
                         <!-- <li class="list-inline-item"><a href="https://www.facebook.com/sacha.hijeriya" class="social-link"><i class="fa fa-facebook-f"></i></a></li> -->
                         <li class="list-inline-item"><a href="https://www.instagram.com/ilhamghozali14/" class="social-link"><i class="fa fa-instagram"></i></a></li>
@@ -124,43 +124,32 @@
                 </div>
             </div>
         </div>
-        <hr>
-
-        <div class="row mb-4">
-            <figure class="text-end" data-aos="fade-up" data-aos-duration="1500">
-                <h3 class="text-center" style="font-size: 20px; color: #34abeb;">Engineer Team</h3>
-            </figure>
-        </div>
-
         <div class="row text-center" data-aos="fade-up" data-aos-duration="1500">
-
-            <!-- Team item-->
             <div class="col-xl-4 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="http://pddikti.untan.ac.id/mahasiswax/pic/D1021191091" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                    <h5 class="mb-0">Aidil Muhamad</h5>
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://cdn.spairum.my.id/image/1667666545635-MarfiratunNisa.webp" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Marfiratun Nisa</h5><span class="small text-uppercase text-muted">Content Writer</span>
                     <ul class="social mb-0 list-inline mt-3">
-                        <!-- <li class="list-inline-item"><a href="https://www.facebook.com/adelle.alexa.96" class="social-link"><i class="fa fa-facebook-f"></i></a></li> -->
-                        <li class="list-inline-item"><a href="https://www.instagram.com/aidil_muhamad_01/" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-xl-4 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="http://pddikti.untan.ac.id/mahasiswax/pic/D1021191085" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                    <h5 class="mb-0">Sultan Zulhafizan</h5>
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://cdn.spairum.my.id/image/1667666841518-HibatulAzizi.webp" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Hibatul Azizi</h5><span class="small text-uppercase text-muted">Product Designer</span>
                     <ul class="social mb-0 list-inline mt-3">
-                        <li class="list-inline-item"><a href="instagram.com/suzul_789/" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/kobeazi07/" class="social-link"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-xl-4 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="http://pddikti.untan.ac.id/mahasiswax/pic/D1021191011" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                    <h5 class="mb-0">Rigo Maulana</h5>
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://cdn.spairum.my.id/image/1667924055502-SarahPratiwi.webp" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Sarah Pratiwi</h5><span class="small text-uppercase text-muted">Human Resources (HR)</span>
                     <ul class="social mb-0 list-inline mt-3">
-                        <li class="list-inline-item"><a href="https://www.instagram.com/rigomaulana_/" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <!-- <li class="list-inline-item"><a href="https://www.facebook.com/sacha.hijeriya" class="social-link"><i class="fa fa-facebook-f"></i></a></li> -->
+                        <li class="list-inline-item"><a href="https://www.instagram.com/sarahpratiwiam/" class="social-link"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
-            <!-- End-->
         </div>
         <hr>
 
@@ -264,16 +253,16 @@
         <div class="row text-center" data-aos="fade-up" data-aos-duration="1500">
             <!-- Team item-->
             <div class="col-xl-4 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="Asset/img/user.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://cdn.spairum.my.id/image/1668597559792-Calvin.webp" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
                     <h5 class="mb-0">Calvin</h5>
                     <ul class="social mb-0 list-inline mt-3">
                         <!-- <li class="list-inline-item"><a href="https://www.facebook.com/adelle.alexa.96" class="social-link"><i class="fa fa-facebook-f"></i></a></li> -->
-                        <li class="list-inline-item"><a href="instagram.com/clvnn__/" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/clvnn__/" class="social-link"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-xl-4 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="Asset/img/user.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://cdn.spairum.my.id/image/1668597589358-SilvesterBillyZoe.webp" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
                     <h5 class="mb-0">Silvester Billy Zoe</h5>
                     <ul class="social mb-0 list-inline mt-3">
                         <li class="list-inline-item"><a href="https://www.instagram.com/slvtr_jo/" class="social-link"><i class="fa fa-instagram"></i></a></li>
@@ -281,11 +270,36 @@
                 </div>
             </div>
             <div class="col-xl-4 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="Asset/img/user.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                    <h5 class="mb-0">...</h5>
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://cdn.spairum.my.id/image/1668597572115-FatraHikmawani.webp" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Fatra Hikmawani</h5>
                     <ul class="social mb-0 list-inline mt-3">
                         <!-- <li class="list-inline-item"><a href="https://www.facebook.com/sacha.hijeriya" class="social-link"><i class="fa fa-facebook-f"></i></a></li> -->
-                        <li class="list-inline-item"><a href="" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/ftrahkmwni/" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-4 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://cdn.spairum.my.id/image/1668594125709-Aidil.webp" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Aidil Muhamad</h5>
+                    <ul class="social mb-0 list-inline mt-3">
+                        <!-- <li class="list-inline-item"><a href="https://www.facebook.com/adelle.alexa.96" class="social-link"><i class="fa fa-facebook-f"></i></a></li> -->
+                        <li class="list-inline-item"><a href="https://www.instagram.com/aidil_muhamad_01/" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-4 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://cdn.spairum.my.id/image/1668594151162-SULTANZULHAFIZAN.webp" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Sultan Zulhafizan</h5>
+                    <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item"><a href="instagram.com/suzul_789/" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-4 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://cdn.spairum.my.id/image/1668594141281-rigo.webp" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Rigo Maulana</h5>
+                    <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item"><a href="https://www.instagram.com/rigomaulana_/" class="social-link"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
