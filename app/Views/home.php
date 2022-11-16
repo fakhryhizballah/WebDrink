@@ -14,16 +14,16 @@
             <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="https://cdn.spairum.my.id/image/1660318465838-baner-air-gratis.jpg" class="d-block h-10" alt="...">
+                        <img src="https://cdn.spairum.my.id/image/1660318465838-baner-air-gratis.webp" class="d-block h-10" alt="...">
                     </div>
                     <div class="carousel-item ">
-                        <img src="Asset/img/home/which is better for the environment.jpg" class="d-block h-10" alt="...">
+                        <img src="Asset/img/home/which is better for the environment.webp" class="d-block h-10" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="Asset/img/home/Refill_Reduce.jpg" class="d-block h-10" alt="...">
+                        <img src="Asset/img/home/Refill_Reduce.webp" class="d-block h-10" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="Asset/img/home/plastic_earth.jpg" class="d-block h-10" alt="...">
+                        <img src="Asset/img/home/plastic_earth.webp" class="d-block h-10" alt="...">
                     </div>
                 </div>
 
@@ -199,7 +199,7 @@
                 <div class="tns-slider mt-3">
                     <div class="vert">
                         <div class="card">
-                            <img class="card-img-top fitur" src="https://cdn.spairum.my.id/image/1660210275296-YCSE2.0Day2-0112.jpg" alt="YCSE">
+                            <img class="card-img-top fitur" src="https://cdn.spairum.my.id/image/1660210275296-YCSE2.0Day2-0112.webp" alt="YCSE">
                             <br>
                             <h5 class="card-title text-center">YCSE</h5>
                             <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro atque cumque omnis maiores earum! Fugit quas rem repudiandae dolores! Temporibus aliquam laboriosam in nam exercitationem nihil incidunt dicta aut tempora!
@@ -211,7 +211,7 @@
                     </div>
                     <div class="vert">
                         <div class="card">
-                            <img class="card-img-top fitur" src="https://cdn.spairum.my.id/image/1660210290201-pertamina.jpg" alt="Pertamina Borneo">
+                            <img class="card-img-top fitur" src="https://cdn.spairum.my.id/image/1660210290201-pertamina.webp" alt="Pertamina Borneo">
                             <br>
                             <h5 class="card-title text-center">Pertamina Borneo</h5>
                             <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro atque cumque omnis maiores earum! Fugit quas rem repudiandae dolores! Temporibus aliquam laboriosam in nam exercitationem nihil incidunt dicta aut tempora!
@@ -223,7 +223,7 @@
                     </div>
                     <div class="vert">
                         <div class="card">
-                            <img class="card-img-top fitur" src="https://cdn.spairum.my.id/image/1660218528073-YCSE2.0Day3-3883.jpg" alt="Bootcamp">
+                            <img class="card-img-top fitur" src="https://cdn.spairum.my.id/image/1660218528073-YCSE2.0Day3-3883.webp" alt="Bootcamp">
                             <br>
                             <h5 class="card-title text-center">Bootcamp</h5>
                             <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro atque cumque omnis maiores earum! Fugit quas rem repudiandae dolores! Temporibus aliquam laboriosam in nam exercitationem nihil incidunt dicta aut tempora!
@@ -235,7 +235,7 @@
                     </div>
                     <div class="vert">
                         <div class="card">
-                            <img class="card-img-top fitur" src="https://cdn.spairum.my.id/image/1660210254250-IMG20200916154303.jpg" alt="Launching">
+                            <img class="card-img-top fitur" src="https://cdn.spairum.my.id/image/1660210254250-IMG20200916154303.webp" alt="Launching">
                             <br>
                             <h5 class="card-title text-center">Launching</h5>
                             <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro atque cumque omnis maiores earum! Fugit quas rem repudiandae dolores! Temporibus aliquam laboriosam in nam exercitationem nihil incidunt dicta aut tempora!
@@ -264,7 +264,7 @@
                                 <p class="bottom40">Hindari pengunaan botol plastik sekali pakai, gunakan spairum untuk isi ulang
                                     #bebasplastik</p>
                             </div>
-                            <div class="testimonial-photo"><img alt="" src="Asset/img/home/testimoni/Angelina.jpg"></div>
+                            <div class="testimonial-photo"><img alt="" src="Asset/img/home/testimoni/Angelina.webp"></div>
                             <h4 class="darkcolor">Angelina Diva</h4>
                             <small class="defaultcolor">Businessman</small>
                         </div>
@@ -275,7 +275,7 @@
                                 <p class="bottom40">Kuy guys generasi millineal yang kece kece biar tambah Kece bawa tumbler kemanapun dan jangan lupa jaga kesehatan.
                                     #bebasplastik</p>
                             </div>
-                            <div class="testimonial-photo"><img alt="" src="Asset/img/home/testimoni/pegi.jpg"></div>
+                            <div class="testimonial-photo"><img alt="" src="Asset/img/home/testimoni/pegi.webp"></div>
                             <h4 class="darkcolor">Pegi Aprianti</h4>
                             <small class="defaultcolor">Businessman</small>
                         </div>
@@ -286,7 +286,7 @@
                                 <p class="bottom40">Mari kita gunakan Botol minum untuk mengurangi sampah plastik.
                                     #bebasplastik</p>
                             </div>
-                            <div class="testimonial-photo"><img alt="" src="Asset/img/home/testimoni/farid.jpg"></div>
+                            <div class="testimonial-photo"><img alt="" src="Asset/img/home/testimoni/farid.webp"></div>
                             <h4 class="darkcolor">Farid Sayoga</h4>
                             <small class="defaultcolor">Businessman</small>
                         </div>
@@ -296,7 +296,7 @@
                             <div class="testimonial-text">
                                 <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
                             </div>
-                            <div class="testimonial-photo"><img alt="" src="Asset/img/home/testimoni/farid.jpg"></div>
+                            <div class="testimonial-photo"><img alt="" src="Asset/img/home/testimoni/farid.webp"></div>
                             <h4 class="darkcolor">David Zucker</h4>
                             <small class="defaultcolor">Businessman</small>
                         </div>
@@ -306,7 +306,7 @@
                             <div class="testimonial-text">
                                 <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
                             </div>
-                            <div class="testimonial-photo"><img alt="" src="Asset/img/home/testimoni/farid.jpg"></div>
+                            <div class="testimonial-photo"><img alt="" src="Asset/img/home/testimoni/farid.webp"></div>
                             <h4 class="darkcolor">Akten Jansen</h4>
                             <small class="defaultcolor">Businessman</small>
                         </div>
@@ -316,7 +316,7 @@
                             <div class="testimonial-text">
                                 <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
                             </div>
-                            <div class="testimonial-photo"><img alt="" src="Asset/img/home/testimoni/farid.jpg"></div>
+                            <div class="testimonial-photo"><img alt="" src="Asset/img/home/testimoni/farid.webp"></div>
                             <h4 class="darkcolor">Doe Raleway</h4>
                             <small class="defaultcolor">Businessman</small>
                         </div>
@@ -482,11 +482,7 @@
                 "items": 2,
                 "guttter": 20
             },
-            "768": {
-                "items": 1,
-                "guttter": 20
-            },
-            "480": {
+            "360": {
                 "items": 1,
                 "guttter": 20
             },
