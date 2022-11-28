@@ -11,36 +11,20 @@
 <main id="main">
     <section id="Tentang">
         <div class="container-fluid">
-            <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
+            <div class="col-md-12 col-sm-12">
+                <div id="carousel-slider" class="owl-carousel carousel-inner">
+                    <div class="item">
                         <img src="https://cdn.spairum.my.id/image/1660318465838-baner-air-gratis.webp" class="d-block h-10" alt="...">
                     </div>
-                    <div class="carousel-item ">
+                    <div class="item ">
                         <img src="Asset/img/home/which is better for the environment.webp" class="d-block h-10" alt="...">
                     </div>
-                    <div class="carousel-item">
+                    <div class="item">
                         <img src="Asset/img/home/Refill_Reduce.webp" class="d-block h-10" alt="...">
                     </div>
-                    <div class="carousel-item">
+                    <div class="item">
                         <img src="Asset/img/home/plastic_earth.webp" class="d-block h-10" alt="...">
                     </div>
-                </div>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-                    <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
-                    <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="3" aria-label="Slide 4" class="active" aria-current="true"></button>
                 </div>
             </div>
         </div>
@@ -451,12 +435,36 @@
         }
     });
 
-    $('.owl-carousel').owlCarousel({
+    $("#carousel-slider").owlCarousel({
+        center: true,
+        items: 3,
+        autoplay: 2500,
+        autoplayHoverPause: true,
         loop: true,
-        margin: 10,
+        margin: 30,
+        dots: true,
         autoWidth: true,
-        autoHeight: true
-    })
+        nav: true,
+        navText: ["<div class='prev-slide'><i class='fa fa-chevron-left'></i></div>", "<div class='next-slide'><i class='fa fa-chevron-right'></i></div>"],
+        responsive: {
+            1280: {
+                items: 3,
+            },
+            600: {
+                items: 2,
+            },
+            320: {
+                items: 1,
+            },
+        }
+    });
+
+    // $('.owl-carousel').owlCarousel({
+    //     loop: true,
+    //     margin: 10,
+    //     autoWidth: true,
+    //     autoHeight: true
+    // })
 </script>
 
 <script>

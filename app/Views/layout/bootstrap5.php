@@ -76,7 +76,7 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark status-nav" href="/careers">Karir</a>
                     </li>
-                    <a class="btn btn-sm rounded-pill btn-outline-info nav-link" href="https://air.spairum.my.id">
+                    <a class="btn btn-sm rounded-pill btn-create nav-link" href="https://air.spairum.my.id">
                         <span class="nav-link-inner-text mr-1">Create Account</span>
                     </a>
 
@@ -84,6 +84,7 @@
             </div>
         </div>
     </nav>
+    <br>
     <!-- Navbar END -->
     <?= $this->renderSection('layout'); ?>
 

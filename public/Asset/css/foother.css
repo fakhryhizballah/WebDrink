@@ -417,9 +417,42 @@ h1, h2, h3, h4, h5, h6 {
 
     /* Make the image fully responsive */
 
+.owl-nav .owl-prev i, .owl-nav .owl-next i{
+    color: #1AB0FB;
+    font-size: 40px;
+    margin: auto;
+    text-align: center;
+}
+.owl-carousel .prev-slide{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    left: 180px !important;
+    bottom: 1px !important;
+}
+
+.owl-carousel .next-slide{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    right: 180px !important;
+    bottom: 1px !important;
+}
+
     .carousel-inner img {
-        width: 100%;
+        width: 900px !important;
         height: auto;
+        border-radius: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+        .carousel-inner img{
+            width : 300px !important;
+        }
     }
 
     .featured {
@@ -1244,6 +1277,10 @@ hori.heading h2 {
         position: relative;
     } */
 
+nav {
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.2);
+}
+
 .menu ul {
     display: flex;
     justify-content: center;
@@ -1270,6 +1307,11 @@ hori.heading h2 {
 
 .menu ul li:hover::after {
     width: 50%;
+}
+
+.btn-create {
+    background-image: linear-gradient(to right, #00AAFF, #FFFFFF);
+    color: #FFFFFF;
 }
 
 /* span.menu:hover, span.menu.active {
