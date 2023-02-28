@@ -54,7 +54,7 @@ class cookie_options
             'IP' => $ipAddress,
         ];
 
-        $jwt = JWT::encode($token, key::$keys);
+        $jwt = JWT::encode($token, key::$keys,  'HS256');
         $this->LogModel->save([
             'token' => $id_token,
             'IP' => $ipAddress,

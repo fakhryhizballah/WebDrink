@@ -90,6 +90,7 @@ class Apigee extends \Google\Service
   public $organizations_environments_references;
   public $organizations_environments_resourcefiles;
   public $organizations_environments_securityReports;
+  public $organizations_environments_securityStats;
   public $organizations_environments_sharedflows_deployments;
   public $organizations_environments_sharedflows_revisions;
   public $organizations_environments_stats;
@@ -1657,6 +1658,20 @@ class Apigee extends \Google\Service
                   'required' => true,
                 ],
               ],
+            ],'getDeployedIngressConfig' => [
+              'path' => 'v1/{+name}',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'name' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'view' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+              ],
             ],'list' => [
               'path' => 'v1/{+parent}/envgroups',
               'httpMethod' => 'GET',
@@ -1791,6 +1806,16 @@ class Apigee extends \Google\Service
                   'required' => true,
                 ],
               ],
+            ],'getApiSecurityRuntimeConfig' => [
+              'path' => 'v1/{+name}',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'name' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
             ],'getDebugmask' => [
               'path' => 'v1/{+name}',
               'httpMethod' => 'GET',
@@ -1833,6 +1858,20 @@ class Apigee extends \Google\Service
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
+                ],
+              ],
+            ],'modifyEnvironment' => [
+              'path' => 'v1/{+name}',
+              'httpMethod' => 'PATCH',
+              'parameters' => [
+                'name' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'updateMask' => [
+                  'location' => 'query',
+                  'type' => 'string',
                 ],
               ],
             ],'setIamPolicy' => [
@@ -3014,6 +3053,36 @@ class Apigee extends \Google\Service
                 'to' => [
                   'location' => 'query',
                   'type' => 'string',
+                ],
+              ],
+            ],
+          ]
+        ]
+    );
+    $this->organizations_environments_securityStats = new Apigee\Resource\OrganizationsEnvironmentsSecurityStats(
+        $this,
+        $this->serviceName,
+        'securityStats',
+        [
+          'methods' => [
+            'queryTabularStats' => [
+              'path' => 'v1/{+orgenv}/securityStats:queryTabularStats',
+              'httpMethod' => 'POST',
+              'parameters' => [
+                'orgenv' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
+            ],'queryTimeSeriesStats' => [
+              'path' => 'v1/{+orgenv}/securityStats:queryTimeSeriesStats',
+              'httpMethod' => 'POST',
+              'parameters' => [
+                'orgenv' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
                 ],
               ],
             ],

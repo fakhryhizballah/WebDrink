@@ -59,6 +59,10 @@ class AttachedDiskInitializeParams extends \Google\Collection
   /**
    * @var string[]
    */
+  public $resourceManagerTags;
+  /**
+   * @var string[]
+   */
   public $resourcePolicies;
   /**
    * @var string
@@ -66,12 +70,14 @@ class AttachedDiskInitializeParams extends \Google\Collection
   public $sourceImage;
   protected $sourceImageEncryptionKeyType = CustomerEncryptionKey::class;
   protected $sourceImageEncryptionKeyDataType = '';
+  public $sourceImageEncryptionKey;
   /**
    * @var string
    */
   public $sourceSnapshot;
   protected $sourceSnapshotEncryptionKeyType = CustomerEncryptionKey::class;
   protected $sourceSnapshotEncryptionKeyDataType = '';
+  public $sourceSnapshotEncryptionKey;
 
   /**
    * @param string
@@ -198,6 +204,20 @@ class AttachedDiskInitializeParams extends \Google\Collection
   public function getProvisionedIops()
   {
     return $this->provisionedIops;
+  }
+  /**
+   * @param string[]
+   */
+  public function setResourceManagerTags($resourceManagerTags)
+  {
+    $this->resourceManagerTags = $resourceManagerTags;
+  }
+  /**
+   * @return string[]
+   */
+  public function getResourceManagerTags()
+  {
+    return $this->resourceManagerTags;
   }
   /**
    * @param string[]

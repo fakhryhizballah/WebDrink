@@ -22,8 +22,13 @@ class GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadata extends \Google\Coll
   protected $collection_key = 'individualImportStatuses';
   protected $commonMetadataType = GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata::class;
   protected $commonMetadataDataType = '';
+  public $commonMetadata;
+  protected $importConfigValidationResultsType = GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadataImportConfigValidationResult::class;
+  protected $importConfigValidationResultsDataType = 'array';
+  public $importConfigValidationResults;
   protected $individualImportStatusesType = GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadataIndividualImportStatus::class;
   protected $individualImportStatusesDataType = 'array';
+  public $individualImportStatuses;
   /**
    * @var int
    */
@@ -42,6 +47,20 @@ class GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadata extends \Google\Coll
   public function getCommonMetadata()
   {
     return $this->commonMetadata;
+  }
+  /**
+   * @param GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadataImportConfigValidationResult[]
+   */
+  public function setImportConfigValidationResults($importConfigValidationResults)
+  {
+    $this->importConfigValidationResults = $importConfigValidationResults;
+  }
+  /**
+   * @return GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadataImportConfigValidationResult[]
+   */
+  public function getImportConfigValidationResults()
+  {
+    return $this->importConfigValidationResults;
   }
   /**
    * @param GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadataIndividualImportStatus[]
