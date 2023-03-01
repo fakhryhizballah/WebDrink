@@ -77,9 +77,9 @@ class TagValues extends \Google\Service\Resource
     return $this->call('delete', [$params], Operation::class);
   }
   /**
-   * Retrieves TagValue. If the TagValue or namespaced name does not exist, or if
-   * the user does not have permission to view it, this method will return
-   * `PERMISSION_DENIED`. (tagValues.get)
+   * Retrieves a TagValue. This method will return `PERMISSION_DENIED` if the
+   * value does not exist or the user does not have permission to view it.
+   * (tagValues.get)
    *
    * @param string $name Required. Resource name for TagValue to be fetched in the
    * format `tagValues/456`.
@@ -125,8 +125,7 @@ class TagValues extends \Google\Service\Resource
    * @opt_param string pageToken Optional. A pagination token returned from a
    * previous call to `ListTagValues` that indicates where this listing should
    * continue from.
-   * @opt_param string parent Required. Resource name for TagKey, parent of the
-   * TagValues to be listed, in the format `tagKeys/123`.
+   * @opt_param string parent Required.
    * @return ListTagValuesResponse
    */
   public function listTagValues($optParams = [])
