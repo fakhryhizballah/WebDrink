@@ -5,8 +5,9 @@ namespace App\Libraries;
 use CodeIgniter\I18n\Time;
 use App\Models\LogModel;
 use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
 
-class key
+class kunci
 {
     public static $keys = 'kata kunci';
     private static $arr_cookie_options = null;
@@ -53,15 +54,15 @@ class cookie_options
             'Route' => $url,
             'IP' => $ipAddress,
         ];
-
-        $jwt = JWT::encode($token, key::$keys,  'HS256');
+        $jwt = JWT::encode($token, kunci::$keys,  'HS256');
         $this->LogModel->save([
             'token' => $id_token,
             'IP' => $ipAddress,
             'Route' => $url,
             'Referer' => $referer
         ]);
-        return setCookie("view-web-sapirum", $jwt, key::arr_cookie_options());
+        // dd($jwt);
+        return setCookie("view-web-sapirum", $jwt, kunci::arr_cookie_options());
     }
     public function updateCookies()
     {
@@ -73,23 +74,25 @@ class cookie_options
             $referer = 'Link';
         }
         $token = $_COOKIE['view-web-sapirum'];
-        $data =  json_decode(json_encode(JWT::decode($token, key::$keys, array('HS256'))), true);
-        if ($data['Route'] == $url) {
-            $data['IP'] = $ipAddress;
-            $jwt = JWT::encode($data, key::$keys);
-            return setCookie("view-web-sapirum", $jwt,  key::arr_cookie_options());
+        $data =  json_decode(json_encode(JWT::decode($token, new Key(kunci::$keys, 'HS256'))));
+        if ($data->Route == $url) {
+            $data->IP = $ipAddress;
+            $data = json_decode(json_encode($data), true);
+            $jwt = JWT::encode($data, kunci::$keys,'HS256');
+            return setCookie("view-web-sapirum", $jwt,  kunci::arr_cookie_options());
         } else {
-            $data['Route'] = $url;
-            $data['IP'] = $ipAddress;
-            $data['kunjungan'] = $data['kunjungan'] + 1;
-            $jwt = JWT::encode($data, key::$keys);
+            $data->Route = $url;
+            $data->IP = $ipAddress;
+            $data->kunjungan = $data->kunjungan + 1;
+            $data = json_decode(json_encode($data), true);
+            $jwt = JWT::encode($data, kunci::$keys, 'HS256');
             $this->LogModel->save([
                 'token' => $data['user'],
                 'IP' => $ipAddress,
                 'Route' => $url,
                 'Referer' => $referer
             ]);
-            return setCookie("view-web-sapirum", $jwt, key::arr_cookie_options());
+            return setCookie("view-web-sapirum", $jwt, kunci::arr_cookie_options());
         }
     }
 }
