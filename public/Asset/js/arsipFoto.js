@@ -3,6 +3,8 @@ $(document).ready(function () {
     tb_list = $('#tbfoto').DataTable({
         "ajax": "/AjaxBlog/getFotoAll",
         select: true,
+        // order by id
+        order: [[0, "desc"]],
         columns: [
             { data: 'id' },
             { data: 'url' },
@@ -13,9 +15,9 @@ $(document).ready(function () {
             {
                 targets: 1,
                 render: function (data) {
-                    return '<img src="' + data + '" class="img-fluid img-thumbnail">'
+                    return '<img src="' + data + '" loading="lazy" class="img-fluid img-thumbnail">'
                 }
-            }
+            },
         ]
 
     });

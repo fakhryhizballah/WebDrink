@@ -51,7 +51,7 @@
     <nav class="navbar navbar-expand-lg bg-white fixed-top sticky-top" style="padding-top: 4px; padding-bottom: 4px;">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="/Asset/img/spairum.png" width="auto" height="60" alt="Logo Spairum">
+                <img src="https://cdn.spairum.my.id/image/spairum.webp" width="auto" height="60" alt="Logo Spairum">
             </a>
             <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -123,8 +123,8 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
                             <h3 class="f-title f_600 t_color f_size_18">Spairum</h3>
-                            <h3 class="f-title f_600 t_color f_size_18">PT.EET</h3>
-                            <p>PT.EET Merupakan Perusahaan yang memiliki merek dagang Spairum berlokasi di Pontianak-Kalimantan Barat </p>
+                            <h3 class="f-title f_600 t_color f_size_18">PT. STASIUN PENGISIAN AIR</h3>
+                            <p>PT.SPA Merupakan Perusahaan yang memiliki merek dagang Spairum berlokasi di Pontianak-Kalimantan Barat </p>
                         </div>
                         <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
                             <h3 class="f-title f_600 t_color f_size_18">Follow us and keep updated!</h3>
