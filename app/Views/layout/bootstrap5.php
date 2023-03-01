@@ -15,9 +15,7 @@
 
     <!-- Font -->
     <script src="https://kit.fontawesome.com/30ddaf6bd8.js" crossorigin="anonymous"></script>
-    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
-    <link href="http://fonts.cdnfonts.com/css/quicksand" rel="stylesheet">
-
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
 
     <!-- Vendor CSS Files -->
     <!-- <link href="Asset/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -27,6 +25,11 @@
     <!-- AOS -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <!-- Tiny Slider js & css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+
     <!-- costume css -->
     <link href="\Asset\css\foother.css" rel="stylesheet">
 
@@ -73,7 +76,7 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark status-nav" href="/careers">Karir</a>
                     </li>
-                    <a class="btn btn-sm rounded-pill btn-outline-info nav-link" href="https://air.spairum.my.id">
+                    <a class="btn btn-sm rounded-pill btn-create nav-link" href="https://air.spairum.my.id">
                         <span class="nav-link-inner-text mr-1">Create Account</span>
                     </a>
 
@@ -81,6 +84,7 @@
             </div>
         </div>
     </nav>
+    <br>
     <!-- Navbar END -->
     <?= $this->renderSection('layout'); ?>
 
