@@ -17,8 +17,12 @@
 
 namespace Google\Service\TPU;
 
-class AcceleratorType extends \Google\Model
+class AcceleratorType extends \Google\Collection
 {
+  protected $collection_key = 'acceleratorConfigs';
+  protected $acceleratorConfigsType = AcceleratorConfig::class;
+  protected $acceleratorConfigsDataType = 'array';
+  public $acceleratorConfigs;
   /**
    * @var string
    */
@@ -28,6 +32,20 @@ class AcceleratorType extends \Google\Model
    */
   public $type;
 
+  /**
+   * @param AcceleratorConfig[]
+   */
+  public function setAcceleratorConfigs($acceleratorConfigs)
+  {
+    $this->acceleratorConfigs = $acceleratorConfigs;
+  }
+  /**
+   * @return AcceleratorConfig[]
+   */
+  public function getAcceleratorConfigs()
+  {
+    return $this->acceleratorConfigs;
+  }
   /**
    * @param string
    */
